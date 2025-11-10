@@ -18,9 +18,219 @@
     gtag('config', 'G-Z33ZSSC2VT');
   </script>
 
+  <style>
+    /* Enhanced About Page Styling - Matching index.html */
+    .home-content {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+
+    .content-section {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .content-section:hover {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .highlight-box {
+        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        border-left: 4px solid #3b82f6;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .quote-section {
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        border-left: 4px solid #6366f1;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        margin: 2rem 0;
+        position: relative;
+    }
+
+    .quote-section::before {
+        content: '"';
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        font-size: 3rem;
+        color: #6366f1;
+        opacity: 0.3;
+        font-family: Georgia, serif;
+    }
+
+    .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
+        z-index: 1000;
+        transition: width 0.25s ease-out;
+    }
+
+    .hero-enhanced {
+        background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(55, 65, 81, 0.9) 50%, rgba(17, 24, 39, 0.95) 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-enhanced::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, rgba(59, 130, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 50%, rgba(168, 85, 247, 0.1) 100%);
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .card-hover-effect {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .card-hover-effect:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .fade-in-element {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in-element.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .section-enhanced {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        border-radius: 1.5rem;
+        padding: 3rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+    }
+
+    .stats-card {
+        background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stats-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline-card {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .timeline-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .timeline-card:hover::before {
+        left: 100%;
+    }
+
+    @keyframes slideInFromBottom {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideInFromLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInFromRight {
+        from {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .animate-slide-in-bottom {
+        animation: slideInFromBottom 0.6s ease-out forwards;
+    }
+
+    .animate-slide-in-left {
+        animation: slideInFromLeft 0.6s ease-out forwards;
+    }
+
+    .animate-slide-in-right {
+        animation: slideInFromRight 0.6s ease-out forwards;
+    }
+
+    @media (max-width: 768px) {
+        .content-section {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-enhanced {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        
+        .quote-section::before {
+            font-size: 2rem;
+        }
+    }
+  </style>
+
 </head>
 <body>
   
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="reading-progress"></div>
 
     <!-- Navigation -->
     <nav class="bg-[#111827] sticky top-0 z-50 shadow-xl">
@@ -102,16 +312,15 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-b from-white to-gray-50 py-24 sm:py-32">
-      <div class="absolute inset-0 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.50),transparent)] opacity-50"></div>
-      <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
-      <h1 class="text-center text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl leading-tight mb-16">
-        About <span class="text-indigo-600">Abdulrahman Al Shathry</span>
+    <section class="hero-enhanced py-24 sm:py-32 relative">
+      <div class="hero-content mx-auto max-w-7xl px-6 lg:px-8">
+      <h1 class="fade-in-element text-center text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl leading-tight mb-16">
+        About <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Abdulrahman Al Shathry</span>
       </h1>
       
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6 text-base leading-7 text-gray-600">
-        <p class="text-xl leading-8 text-gray-700 font-medium">
+        <div class="space-y-6 text-base leading-7 text-gray-200 fade-in-element">
+        <p class="text-xl leading-8 text-gray-100 font-medium">
           A visionary leader and accomplished entrepreneur with over 26 years of experience as CEO of Saudi Controls Ltd., spearheading innovation and excellence in controls and engineering solutions.
         </p>
         <p>
@@ -123,19 +332,19 @@
         <p>
           Beyond his executive achievements, he is passionate about nurturing young talent, promoting research and development, and supporting initiatives that strengthen the Kingdom's knowledge-based economy.
         </p>
-        <p class="font-medium text-gray-700">
+        <p class="font-medium text-gray-100">
           His commitment to innovation, excellence, and national progress continues to inspire both his teams and the wider business community.
         </p>
         </div>
         
-        <img src="./image/about-pic.jpg" alt="Abdulrahman Al Shathry" class="w-full aspect-[6/5] rounded-2xl object-cover shadow-2xl ring-1 ring-gray-900/10 hover:shadow-3xl transition-shadow duration-300">
+        <img src="./image/about-pic.jpg" alt="Abdulrahman Al Shathry" class="fade-in-element w-full aspect-[6/5] rounded-2xl object-cover shadow-2xl ring-1 ring-white/20 hover:shadow-3xl transition-all duration-500 card-hover-effect">
       </div>
       
-      <div class="mt-12 flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-        <a href="contact.html" class="rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-lg hover:bg-indigo-500 hover:shadow-xl transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+      <div class="mt-12 flex flex-wrap justify-center items-center gap-4 sm:gap-6 fade-in-element">
+        <a href="contact.html" class="rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-lg hover:from-blue-500 hover:to-purple-500 hover:shadow-xl transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
         Get in touch
         </a>
-        <a href="companies.html" class="group text-sm font-semibold leading-6 text-gray-900 flex items-center gap-2 hover:text-indigo-600 transition-colors">
+        <a href="companies.html" class="group text-sm font-semibold leading-6 text-gray-200 flex items-center gap-2 hover:text-blue-400 transition-colors">
         View companies 
         <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1">→</span>
         </a>
@@ -144,58 +353,55 @@
     </section>
 
     <!-- Professional Background -->
-    <section class="bg-gray-50 pb-24 sm:pb-32">
+    <section class="home-content pb-24 sm:pb-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w lg:mx-0">
+        <div class="content-section fade-in-element">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Professional Background</h2>
           <p class="mt-6 text-lg leading-8 text-gray-600 text-center">
             With decades of experience spanning engineering, business development, and international relations, Abdulrahman Al Shathry has established himself as a pivotal figure in Saudi Arabia's business landscape.
           </p>
         </div>
-        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          <article class="flex flex-col items-start justify-between">
-            <div class="flex items-center gap-x-4 text-xs">
+        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <article class="section-enhanced timeline-card card-hover-effect fade-in-element">
+            <div class="flex items-center gap-x-4 text-xs mb-4">
               <time class="text-gray-500">1998 - Present</time>
-              <span class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Leadership</span>
+              <span class="relative z-10 rounded-full bg-indigo-100 px-3 py-1.5 font-medium text-indigo-600 hover:bg-indigo-200">Leadership</span>
             </div>
             <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                <span class="absolute inset-0"></span>
+              <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-indigo-600 transition-colors">
                 CEO - Saudi Controls Ltd.
               </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              <p class="mt-4 text-sm leading-6 text-gray-600">
                 Leading one of Saudi Arabia's foremost engineering and systems integration companies for over 26 years, driving innovation in control systems and engineering solutions.
               </p>
             </div>
           </article>
 
-          <article class="flex flex-col items-start justify-between">
-            <div class="flex items-center gap-x-4 text-xs">
+          <article class="section-enhanced timeline-card card-hover-effect fade-in-element">
+            <div class="flex items-center gap-x-4 text-xs mb-4">
               <time class="text-gray-500">2003 - 2008</time>
-              <span class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Merger</span>
+              <span class="relative z-10 rounded-full bg-purple-100 px-3 py-1.5 font-medium text-purple-600 hover:bg-purple-200">Merger</span>
             </div>
             <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                <span class="absolute inset-0"></span>
+              <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-purple-600 transition-colors">
                 Al-Shathry and Omrania (A&O)
               </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              <p class="mt-4 text-sm leading-6 text-gray-600">
                 Successfully executed the merger that formed A&O, completing over 200 projects in five years and establishing a major presence in the regional market.
               </p>
             </div>
           </article>
 
-          <article class="flex flex-col items-start justify-between">
-            <div class="flex items-center gap-x-4 text-xs">
+          <article class="section-enhanced timeline-card card-hover-effect fade-in-element">
+            <div class="flex items-center gap-x-4 text-xs mb-4">
               <time class="text-gray-500">1975</time>
-              <span class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Education</span>
+              <span class="relative z-10 rounded-full bg-blue-100 px-3 py-1.5 font-medium text-blue-600 hover:bg-blue-200">Education</span>
             </div>
             <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                <span class="absolute inset-0"></span>
+              <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-blue-600 transition-colors">
                 University of Southern California
               </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              <p class="mt-4 text-sm leading-6 text-gray-600">
                 Bachelor of Science in Civil Engineering, providing the technical foundation for a distinguished career in engineering and business leadership.
               </p>
             </div>
@@ -205,30 +411,28 @@
     </section>
 
     <!-- Leadership & Vision -->
-    <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-      <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
-      <div class="mx-auto max-w-2xl lg:max-w-4xl">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Leadership & Vision</h2>
-        <figure class="mt-10">
-          <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-            <p>"Mr. Al Shathry's leadership extends across a global platform, with significant interests in several companies in the UK and roles as a director and shareholder in various international investment firms. This international experience has equipped him with a strong global perspective, exceptional financial acumen, and a robust network of connections."</p>
-          </blockquote>
-          <figcaption class="mt-10">
-            <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+    <section class="home-content px-6 py-24 sm:py-32 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="content-section fade-in-element">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Leadership & Vision</h2>
+          <div class="quote-section">
+            <p class="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+              "Mr. Al Shathry's leadership extends across a global platform, with significant interests in several companies in the UK and roles as a director and shareholder in various international investment firms. This international experience has equipped him with a strong global perspective, exceptional financial acumen, and a robust network of connections."
+            </p>
+            <div class="mt-6 flex items-center justify-center space-x-3 text-base">
               <div class="font-semibold text-gray-900">Abdulrahman AlShathry</div>
               <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
                 <circle cx="1" cy="1" r="1" />
               </svg>
               <div class="text-gray-600">CEO of AlShathry Group of Companies</div>
             </div>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievement">
+    <section id="achievement" class="fade-in-element">
       <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center">
         <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
@@ -245,19 +449,19 @@
           <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
 
             <dl class="text-center mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-              <div class="flex flex-col-reverse gap-1">
+              <div class="stats-card flex flex-col-reverse gap-1 text-center">
                 <dt class="text-base/7 text-gray-300">Years of Leadership Experience</dt>
                 <dd class="text-4xl font-semibold tracking-tight text-white">45+</dd>
               </div>
-              <div class="flex flex-col-reverse gap-1">
+              <div class="stats-card flex flex-col-reverse gap-1 text-center">
                 <dt class="text-base/7 text-gray-300">Keynote Speeches Delivered</dt>
                 <dd class="text-4xl font-semibold tracking-tight text-white">70+</dd>
               </div>
-              <div class="flex flex-col-reverse gap-1">
+              <div class="stats-card flex flex-col-reverse gap-1 text-center">
                 <dt class="text-base/7 text-gray-300">Industries Impacted</dt>
                 <dd class="text-4xl font-semibold tracking-tight text-white">100+</dd>
               </div>
-              <div class="flex flex-col-reverse gap-1">
+              <div class="stats-card flex flex-col-reverse gap-1 text-center">
                 <dt class="text-base/7 text-gray-300">Projects Completed</dt>
                 <dd class="text-4xl font-semibold tracking-tight text-white">+300</dd>
               </div>
@@ -374,19 +578,175 @@
     </div>
   </footer>
 
-  <!-- Mobile Menu Script -->
+  <!-- Enhanced JavaScript Functionality -->
   <script>
+    // Mobile Menu Functionality
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-    const menuIconOpen = mobileMenuButton.querySelectorAll('svg')[0];
-    const menuIconClose = mobileMenuButton.querySelectorAll('svg')[1];
-    
+
     mobileMenuButton.addEventListener('click', () => {
-      // Toggle the mobile menu visibility
-      mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
-      // Toggle the icons
-      menuIconOpen.classList.toggle('hidden');
-      menuIconClose.classList.toggle('hidden');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Reading Progress Bar
+    function updateReadingProgress() {
+      const progressBar = document.getElementById('reading-progress');
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    }
+
+    window.addEventListener('scroll', updateReadingProgress);
+
+    // Fade-in Animation on Scroll
+    function observeElements() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            
+            // Counter animation for stats
+            if (entry.target.classList.contains('counter-number')) {
+              animateCounter(entry.target);
+            }
+            
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      document.querySelectorAll('.fade-in-element').forEach((el) => {
+        observer.observe(el);
+      });
+    }
+
+    // Counter Animation
+    function animateCounter(element) {
+      const target = parseInt(element.getAttribute('data-target'));
+      const duration = 2500; // 2.5 seconds for smoother animation
+      const startTime = Date.now();
+      
+      function updateCounter() {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Use easing function for smoother animation
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+        const current = Math.floor(easeOutQuart * target);
+        
+        if (progress < 1) {
+          element.textContent = current.toLocaleString() + '+';
+          requestAnimationFrame(updateCounter);
+        } else {
+          element.textContent = target.toLocaleString() + '+';
+        }
+      }
+      
+      updateCounter();
+    }
+
+    // Smooth Scrolling for Internal Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Enhanced Hover Effects for Cards
+    function addParallaxEffect() {
+      const cards = document.querySelectorAll('.card-hover-effect');
+      
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          
+          const rotateX = (y - centerY) / 10;
+          const rotateY = (centerX - x) / 10;
+          
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px) scale(1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px) scale(1)';
+        });
+      });
+    }
+
+    // Initialize all functionality when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      observeElements();
+      addParallaxEffect();
+      
+      // Add loading animation to images
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        img.addEventListener('load', function() {
+          this.style.opacity = '1';
+        });
+        
+        if (img.complete) {
+          img.style.opacity = '1';
+        }
+      });
+
+      // Enhanced timeline card interactions
+      const timelineCards = document.querySelectorAll('.timeline-card');
+      timelineCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.2}s`;
+        
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-8px) scale(1.03)';
+          this.style.zIndex = '10';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0px) scale(1)';
+          this.style.zIndex = '1';
+        });
+      });
+
+      // Add subtle animations to stats cards
+      const statsCards = document.querySelectorAll('.stats-card');
+      statsCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1 + 0.5}s`;
+        
+        // Add glow effect on hover
+        card.addEventListener('mouseenter', function() {
+          this.style.boxShadow = '0 0 30px rgba(59, 130, 246, 0.3), 0 10px 25px rgba(0, 0, 0, 0.2)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.2)';
+        });
+      });
+    });
+
+    // Throttled scroll handler for performance
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+      
+      scrollTimeout = setTimeout(function() {
+        updateReadingProgress();
+      }, 10);
     });
   </script>
 </body>

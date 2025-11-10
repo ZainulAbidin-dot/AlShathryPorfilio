@@ -815,7 +815,7 @@ function initParallaxEffect() {
     
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        const parallaxSpeed = 0.5;
+        const parallaxSpeed = 0.2;
         hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
     });
 }
