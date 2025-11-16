@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Infrastructure Saudi Arabia: Build It Right</title>
+  <meta name="description" content="Learn how Saudi Arabia is building digital infrastructure that lasts. Real insights from 30+ years in automation and tech leadership." />
+  <meta name="slug" content="digital-infrastructure-saudi-arabia-connected-economy" />
+  <link rel="canonical" href="https://yourdomain.com/blog/digital-infrastructure-saudi-arabia-connected-economy" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <meta name="google-site-verification" content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date())
+    gtag('config', 'G-Z33ZSSC2VT')
+  </script>
+
+  <style>
+/* Enhanced Blog Styling */
+.blog-content {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.prose h3 {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 2rem 0 1rem 0;
+    color: #1e293b;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.prose h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    border-radius: 2px;
+}
+
+.prose p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #374151;
+}
+
+.prose dt {
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.prose dd {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.content-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.content-section:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border-left: 4px solid #3b82f6;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.quote-section {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-left: 4px solid #6366f1;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.quote-section::before {
+    content: '"';
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 3rem;
+    color: #6366f1;
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    z-index: 1000;
+    transition: width 0.25s ease-out;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .quote-section::before {
+        font-size: 2rem;
+    }
+}
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="bg-[#111827] sticky top-0 z-50 shadow-xl">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <button id="mobile-menu-button" type="button"
+                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
+                    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Main Navigation -->
+            <div class="flex flex-1 items-center justify-between">
+                <a href="../index.html" class="text-xl font-bold text-white ml-12 sm:ml-0">Abdulrahman AlShathry</a>
+
+                <div class="hidden sm:block">
+                    <div class="flex space-x-6 items-center">
+                        <a href="../index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Home</a>
+                        <a href="../about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">About</a>
+                        <a href="../companies.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Companies</a>
+
+                        <!-- Blog Dropdown -->
+                        <div class="relative group">
+                          <!-- Blog Button -->
+                          <button
+                            class="inline-flex items-end px-3 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-md focus:outline-none">
+                            Blog
+                            <svg class="ml-1 h-4 w-4 transition-transform transform group-hover:rotate-180"
+                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </button>
+
+                          <!-- Dropdown Menu -->
+                          <div
+                            class="absolute left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 flex-col bg-gray-900 text-gray-300 rounded-md shadow-lg mt-2 w-64 border border-gray-700 transition-all duration-500 z-10">
+
+                            <!-- Category 1 -->
+                            <a href="./category1.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Smart Infrastructure & Automation</a>
+
+                            <a href="./first.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Building a Smarter Kingdom</a>
+                            <a href="./second.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Saudi Controls: Pioneering Smart Cities</a>
+                            <a href="./third.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">IoT Building Management</a>
+                            <a href="./fourth.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Energy Efficiency Engineering</a>
+                            <a href="./fifth.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Beyond Smart Cities</a>
+                            <a href="./sixth.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Smart Cities in Saudi Arabia</a>
+
+                            <hr class="border-gray-700 my-2">
+
+                            <!-- Category 2 -->
+                            <a href="./category2.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Technology & Future</a>
+
+                            <a href="./cat2first.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Datastar International: Digital Connectivity</a>
+                            <a href="./cat2second.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">AI & Data Growth: People Drive Digital Change</a>
+                            <a href="./cat2third.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Digital Infrastructure Saudi Arabia</a>
+                          </div>
+                        </div>
+
+                        <a href="../contact.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="sm:hidden hidden bg-[#111827] px-2 pt-2 pb-3 space-y-1">
+        <a href="../index.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+        <a href="../about.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+        <a href="../companies.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Companies</a>
+
+        <!-- Blog Dropdown for Mobile -->
+        <details class="px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
+          <summary class="cursor-pointer hover:bg-gray-700 rounded-md px-2 py-1">Blog</summary>
+
+          <!-- Category 1 -->
+          <a href="./category1.html" class="text-xs uppercase text-gray-400 mt-3 ml-4">Smart Infrastructure & Automation</a>
+          <div class="mt-1 ml-6 space-y-1">
+            <a href="./first.html" class="block text-gray-300 hover:text-white">Building a Smarter Kingdom</a>
+            <a href="./second.html" class="block text-gray-300 hover:text-white">Saudi Controls: Pioneering Smart Cities</a>
+            <a href="./third.html" class="block text-gray-300 hover:text-white">IoT Building Management</a>
+            <a href="./fourth.html" class="block text-gray-300 hover:text-white">Energy Efficiency Engineering</a>
+            <a href="./fifth.html" class="block text-gray-300 hover:text-white">Beyond Smart Cities</a>
+            <a href="./sixth.html" class="block text-gray-300 hover:text-white">Smart Cities in Saudi Arabia</a>
+          </div>
+
+          <!-- Category 2 -->
+          <a href="./category2.html" class="text-xs uppercase text-gray-400 mt-4 ml-4">Technology & Future</a>
+          <div class="mt-1 ml-6 space-y-1 pb-2">
+            <a href="./cat2first.html" class="block text-gray-300 hover:text-white">Datastar International: Digital Connectivity</a>
+            <a href="./cat2second.html" class="block text-gray-300 hover:text-white">AI & Data Growth: People Drive Digital Change</a>
+            <a href="./cat2third.html" class="block text-gray-300 hover:text-white">Digital Infrastructure Saudi Arabia</a>
+          </div>
+        </details>
+
+        <a href="../contact.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative isolate overflow-hidden bg-gray-900">
+    <img src="../image/Pillar 2 images/third cluster pillar 2 images/Building Reliable Digital Infrastructure for a Connected Economy - featured.293Z.png" alt="Digital Infrastructure Saudi Arabia - modern data center with solar panels in Saudi desert" class="absolute inset-0 -z-10 h-full w-full object-cover brightness-75">
+    <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Digital Infrastructure Saudi Arabia: Build It Right</h1>
+      <p class="mt-6 text-lg leading-8 text-gray-300">Real insights from 30+ years in automation and tech leadership on creating infrastructure that lasts</p>
+    </div>
+  </header>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress" class="reading-progress"></div>
+
+  <!-- ARTICLE / CONTENT -->
+  <main class="blog-content mx-auto max-w-6xl px-6 py-16 lg:px-8">
+    <!-- Article Header -->
+    <div class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12">
+      <div class="px-8 py-12 lg:px-12 lg:py-16">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center mb-6">
+            <div class="flex-shrink-0">
+              <img class="h-12 w-12 rounded-full border-2 border-indigo-200" 
+                   src="../image/bg.jpg" 
+                   alt="Abdulrahman AlShathry" />
+            </div>
+            <div class="ml-4">
+              <p class="text-sm font-medium text-gray-900">Abdulrahman AlShathry</p>
+              <p class="text-sm text-gray-500">CEO, AlShathry Group</p>
+            </div>
+            <div class="ml-auto">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+                Digital Infrastructure & Saudi Arabia
+              </span>
+            </div>
+          </div>
+
+          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
+            Digital Infrastructure Saudi Arabia: <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Build It Right</span>
+          </h1>
+
+          <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
+            Real insights from 30+ years in automation and tech leadership on creating infrastructure that lasts in Saudi Arabia. Learn how to build reliable digital foundations for a connected economy.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              10 min read
+            </div>
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              November 2024
+            </div>
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              Saudi Arabia
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="max-w-4xl mx-auto prose prose-lg">
+      <!-- TL;DR Section -->
+      <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border-l-4 border-indigo-400 p-8 lg:p-10 mb-12">
+        <div class="flex items-center mb-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="ml-4 text-2xl font-bold text-gray-900">TL;DR: Key Insights</h3>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <div class="flex items-start">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-3">
+              <h4 class="text-lg font-semibold text-gray-900 mb-3">Building Infrastructure That Lasts</h4>
+              <p class="text-gray-600 leading-relaxed">
+                Building reliable digital infrastructure isn't just about deploying the latest technology. It requires a fundamental shift: <strong class="text-indigo-600">prioritize sustainability, people, and long-term vision over quick wins</strong>. These practical insights come from decades of automation work across the Kingdom.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Digital Infrastructure Matters More Than Ever</h2>
+        
+        <p class="text-lg lg:text-xl leading-relaxed text-gray-700 mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-indigo-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
+          Digital infrastructure is the invisible foundation of modern commerce. Every online transaction, video call, government service, and smart city application depends on it. When we talk about digital infrastructure in Saudi Arabia, we're really talking about the nation's economic future.
+        </p>
+
+        <div class="highlight-box">
+          <p class="text-lg leading-relaxed text-gray-700">
+            The stakes are clear: countries with robust digital infrastructure attract investment, retain talent, and enable innovation at scale. <strong class="text-indigo-600">Those without it fall behind, regardless of their natural resources or geographic advantages</strong>.
+          </p>
+        </div>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          But technology in Saudi Arabia isn't just about keeping pace with global trends. It's about creating systems that work in our unique context: extreme temperatures, vast distances, rapid urbanization, and ambitious transformation timelines.
+        </p>
+      </div>
+
+      <!-- Early Days Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">When Automation Was Still a Foreign Concept</h2>
+        
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          Let me take you back to the early days. When I started Saudi Controls, automation was a foreign concept in our region. We had limited resources but a clear vision: to modernize our nation's infrastructure through technology.
+        </p>
+
+        <div class="quote-section">
+          <p class="text-lg font-medium text-gray-800 italic">
+            I remember walking into industrial facilities where everything was manual. Plant managers asked: "Why do we need this?" The challenge wasn't technical, it was cultural. <strong class="text-indigo-600">We weren't just installing equipment; we were changing mindsets. That determination, not just technology, became the foundation of every success that followed</strong>.
+          </p>
+        </div>
+
+        <figure class="mt-8">
+          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/industrial-control-1990s.jpg" alt="Early industrial control room and engineers" class="rounded-xl shadow-lg">
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">Early automation efforts taught us the importance of training and cultural change</figcaption>
+        </figure>
+      </div>
+
+      <!-- Honest Take Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">My Honest Take: People Transform Industries, Not Technology</h2>
+        
+        <div class="quote-section">
+          <p class="text-lg font-medium text-gray-800 italic">
+            Here I'll challenge conventional wisdom: <strong class="text-indigo-600">Technology doesn't transform industries—people do</strong>. Tools evolve; leadership, collaboration, and curiosity endure. The organizations that succeed invest in training, grow local expertise, and create cultures of continuous learning.
+          </p>
+        </div>
+
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          This is especially critical for ICT in Saudi Arabia as we scale rapidly. We can import technology, but we must grow expertise locally. That takes patience and a different kind of investment—one that doesn't always show immediate ROI but pays dividends for decades.
+        </p>
+
+        <figure class="mt-8">
+          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/team-collaboration-saudi.jpg" alt="Engineers and IT professionals collaborating in Saudi Arabia" class="rounded-xl shadow-lg">
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">Teams who understand the systems keep them running and evolving</figcaption>
+        </figure>
+      </div>
+
+      <!-- Three Pillars Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">The Three Pillars of Dependable Digital Infrastructure</h2>
+        
+        <p class="text-lg leading-relaxed text-gray-700 mb-8">
+          Reliable digital infrastructure rests on three pillars:
+        </p>
+
+        <div class="grid gap-6 md:grid-cols-1 lg:grid-cols-3">
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
+            <div class="flex items-center mb-4">
+              <div class="h-10 w-10 bg-blue-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">1</div>
+              <h4 class="text-lg font-semibold text-gray-900">Network Reliability That Actually Works</h4>
+            </div>
+            <p class="text-gray-600">Plan for failure. Build redundancy into every layer. Train teams to respond when things go wrong — because they will.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
+            <div class="flex items-center mb-4">
+              <div class="h-10 w-10 bg-green-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">2</div>
+              <h4 class="text-lg font-semibold text-gray-900">Cloud Infrastructure with Local Context</h4>
+            </div>
+            <p class="text-gray-600">Use hybrid approaches: global cloud benefits plus local control for latency, sovereignty, and regulatory needs.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200">
+            <div class="flex items-center mb-4">
+              <div class="h-10 w-10 bg-purple-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">3</div>
+              <h4 class="text-lg font-semibold text-gray-900">Data Centers Built for the Long Term</h4>
+            </div>
+            <p class="text-gray-600">Overbuild for growth, prioritize energy efficiency, and choose strategic locations considering connectivity and risk.</p>
+          </div>
+        </div>
+
+        <figure class="mt-8">
+          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/three-pillars-infrastructure.jpg" alt="Network, cloud, and data center imagery representing three pillars" class="rounded-xl shadow-lg">
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">Redundancy, hybrid cloud, and future-proof data centers</figcaption>
+        </figure>
+      </div>
+
+      <!-- Sustainable Infrastructure Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">What Actually Makes Infrastructure Sustainable</h2>
+        
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          Sustainability in digital infrastructure means both environmental sustainability and operational sustainability. Designing for efficiency is essential — cooling alone can represent a huge slice of data center energy use. Operational sustainability means building systems your teams can maintain and evolve without constant rewrites.
+        </p>
+
+        <div class="highlight-box">
+          <p class="text-lg leading-relaxed text-gray-700">
+            Avoid "Frankenstein systems" by making deliberate choices about present and future needs. <strong class="text-indigo-600">Build with enough flexibility to integrate new tech without full rebuilds every few years</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Practical Steps Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Practical Steps for Building Better Infrastructure</h2>
+        
+        <div class="highlight-box">
+          <ul class="space-y-3 text-gray-700 text-lg leading-relaxed">
+            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Start with outcomes, not technology:</strong> Define reliable services, acceptable risks, and growth expectations before picking products.</li>
+            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Invest in people alongside systems:</strong> Allocate meaningful budget to training, documentation, and local talent development.</li>
+            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Plan for failure scenarios:</strong> Run tabletop exercises and outage simulations before crises strike.</li>
+            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Maintain vendor independence:</strong> Build partnerships but avoid single-vendor lock-in that reduces flexibility.</li>
+            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Document everything:</strong> Institutional knowledge must survive staff changes — documentation is insurance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="content-section">
+        <div class="mb-12">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Get answers to the most common questions about digital infrastructure in Saudi Arabia.</p>
+          </div>
+
+          <div class="grid gap-6 md:gap-8">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-100 text-indigo-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What are the types of digital infrastructure?</h3>
+                    <p class="text-gray-600 leading-relaxed">Physical components (data centers, fiber, towers) and virtual components (cloud platforms, software-defined networks, CDNs) together form the stack that enables digital services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-green-100 text-green-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What is the latest digital technology?</h3>
+                    <p class="text-gray-600 leading-relaxed">Edge computing, 5G/6G research, AI-optimized data centers, quantum-safe encryption, and software-defined infrastructure are leading trends — but "latest" must be weighed against local appropriateness.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-purple-100 text-purple-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What sectors rely on digital infrastructure?</h3>
+                    <p class="text-gray-600 leading-relaxed">Telecom, data centers/cloud services, cybersecurity, IoT, digital payments, smart cities, e-government, fintech and industrial IoT (energy, manufacturing) are major consumers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Looking Ahead Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Looking Ahead: The Connected Economy</h2>
+        
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          As Saudi Arabia scales its digital transformation, the architectural choices we make today will shape the economy for decades. We have the resources and vision — now it's about executing with people and sustainability in mind.
+        </p>
+
+        <figure class="mt-8">
+          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/riyadh-connected-skyline.jpg" alt="Riyadh skyline with digital connectivity overlays" class="rounded-xl shadow-lg">
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">A connected Riyadh: infrastructure choices create long-term opportunities</figcaption>
+        </figure>
+      </div>
+
+      <!-- Conclusion Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">The One Thing to Remember</h2>
+        
+        <div class="quote-section">
+          <p class="text-lg font-medium text-gray-800">
+            True progress lies at the intersection of technology, human potential, and sustainable leadership. <strong class="text-indigo-600">Build systems that work, train people who can maintain them, and prioritize sustainability over flashy short-term wins. Technology doesn't transform industries — people do</strong>.
+          </p>
+        </div>
+
+        <hr class="my-8 border-gray-200">
+
+        <div class="flex items-center gap-4">
+          <div class="flex-shrink-0 h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
+            <img src="../image/bg.jpg" alt="Author photo" class="h-12 w-12 rounded-full object-cover">
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900">Abdulrahman AlShathry</p>
+            <p class="text-sm text-gray-500">CEO / Advisor — automation, infrastructure & digital transformation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Section -->
+      <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl text-white p-8 lg:p-12 mb-16 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Build Infrastructure That Lasts?</h2>
+        <p class="text-xl lg:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+          Discover how to create reliable digital infrastructure for Saudi Arabia's connected economy through people-first leadership.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <!-- Placeholder for future action buttons -->
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- RELATED & SHARE -->
+  <section class="max-w-5xl mx-auto px-6 sm:px-8 pb-12">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+      <div>
+        <h4 class="text-lg mt-4 font-semibold">Related Articles</h4>
+        <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./cat2first.html">
+            <h5 class="font-semibold">Datastar International: Digital Connectivity</h5>
+            <p class="text-sm text-gray-500 mt-1">Connecting tomorrow's world through people-first leadership.</p>
+          </a>
+          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./cat2second.html">
+            <h5 class="font-semibold">AI & Data Growth: People Drive Digital Change</h5>
+            <p class="text-sm text-gray-500 mt-1">Why people, not tech, drive real change in AI adoption.</p>
+          </a>
+          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./first.html">
+            <h5 class="font-semibold">Building a Smarter Kingdom</h5>
+            <p class="text-sm text-gray-500 mt-1">Lessons from automation and national infrastructure programs.</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 py-12">
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+        <p class="text-sm">&copy; 2024 Abdulrahman AlShathry. All rights reserved.</p>
+        <div class="mt-4 sm:mt-0 flex gap-4">
+          <a class="hover:text-white" href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/?originalSubdomain=sa" target="_blank">LinkedIn</a>
+          <a class="hover:text-white" href="https://x.com/AbdulA53386" target="_blank">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script>
+    // Mobile menu toggle functionality
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Reading progress bar functionality
+    function updateReadingProgress() {
+        const article = document.querySelector('article');
+        const progressBar = document.getElementById('reading-progress');
+        
+        if (!article || !progressBar) return;
+        
+        const articleTop = article.offsetTop;
+        const articleHeight = article.offsetHeight;
+        const windowHeight = window.innerHeight;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        const articleBottom = articleTop + articleHeight - windowHeight;
+        const scrollProgress = Math.max(0, Math.min(1, (scrollTop - articleTop) / (articleBottom - articleTop)));
+        
+        progressBar.style.width = (scrollProgress * 100) + '%';
+    }
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Fade-in animation for content sections
+    function observeElements() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observe content sections
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    }
+
+    // Enhanced keyboard navigation for FAQ items
+    document.querySelectorAll('details').forEach(detail => {
+        detail.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                detail.open = !detail.open;
+            }
+        });
+    });
+
+    // Initialize all functionality when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        updateReadingProgress();
+        observeElements();
+        
+        // Update reading progress on scroll
+        window.addEventListener('scroll', updateReadingProgress);
+        window.addEventListener('resize', updateReadingProgress);
+    });
+
+    // Enhanced hover effects for cards and buttons
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add subtle hover animations to cards
+        const cards = document.querySelectorAll('.content-section, .bg-white.rounded-lg');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'all 0.3s ease';
+            });
+        });
+    });
+  </script>
+</body>
+</html>
