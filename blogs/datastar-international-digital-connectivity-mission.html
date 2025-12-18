@@ -1,709 +1,964 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Datastar International: Connecting Tomorrow's World</title>
-  <meta name="description" content="Discover how Datastar International builds digital connectivity through people-first leadership and sustainable tech innovation." />
-  <meta name="slug" content="datastar-international-digital-connectivity-mission" />
-  <link rel="canonical" href="https://yourdomain.com/blog/datastar-international-digital-connectivity-mission" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Datastar International: Connecting Tomorrow's World</title>
+    <meta
+      name="description"
+      content="Discover how Datastar International builds digital connectivity through people-first leadership and sustainable tech innovation."
+    />
+    <meta
+      name="slug"
+      content="datastar-international-digital-connectivity-mission"
+    />
+    <link
+      rel="canonical"
+      href="https://yourdomain.com/blog/datastar-international-digital-connectivity-mission"
+    />
 
-  <link rel="icon" type="image/svg+xml" href="../image/about-pic.jpg" />
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="../image/about-pic.jpg" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <meta name="google-site-verification" content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag(){dataLayer.push(arguments)}
-    gtag('js', new Date())
-    gtag('config', 'G-Z33ZSSC2VT')
-  </script>
+    <meta
+      name="google-site-verification"
+      content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Z33ZSSC2VT");
+    </script>
 
-  <style>
-/* Enhanced Blog Styling */
-.blog-content {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-}
+    <style>
+      /* Enhanced Blog Styling */
+      .blog-content {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
 
-.prose h3 {
-    position: relative;
-    padding-left: 1.5rem;
-    margin: 2rem 0 1rem 0;
-    color: #1e293b;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
+      .prose h3 {
+        position: relative;
+        padding-left: 1.5rem;
+        margin: 2rem 0 1rem 0;
+        color: #1e293b;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
 
-.prose h3::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 24px;
-    background: linear-gradient(135deg, #3b82f6, #6366f1);
-    border-radius: 2px;
-}
+      .prose h3::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 24px;
+        background: linear-gradient(135deg, #3b82f6, #6366f1);
+        border-radius: 2px;
+      }
 
-.prose p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    color: #374151;
-}
-
-.prose dt {
-    font-weight: 600;
-    color: #1f2937;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.prose dd {
-    margin-left: 0;
-    margin-bottom: 1rem;
-    color: #6b7280;
-    line-height: 1.7;
-}
-
-.content-section {
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.content-section:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-}
-
-.highlight-box {
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-    border-left: 4px solid #3b82f6;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin: 1.5rem 0;
-}
-
-.quote-section {
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    border-left: 4px solid #6366f1;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    margin: 2rem 0;
-    position: relative;
-}
-
-.quote-section::before {
-    content: '"';
-    position: absolute;
-    top: 1rem;
-    left: 1.5rem;
-    font-size: 3rem;
-    color: #6366f1;
-    opacity: 0.3;
-    font-family: Georgia, serif;
-}
-
-.reading-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 4px;
-    background: linear-gradient(90deg, #3b82f6, #6366f1);
-    z-index: 1000;
-    transition: width 0.25s ease-out;
-}
-
-@media (max-width: 768px) {
-    .content-section {
-        padding: 1.5rem;
+      .prose p {
         margin-bottom: 1.5rem;
-    }
-    
-    .quote-section::before {
-        font-size: 2rem;
-    }
-}
-  </style>
-</head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+        line-height: 1.8;
+        color: #374151;
+      }
 
+      .prose dt {
+        font-weight: 600;
+        color: #1f2937;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
 
-  <!-- Navigation -->
-  <nav class="bg-[#111827] sticky top-0 z-50 shadow-xl">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <button id="mobile-menu-button" type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
-                    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
+      .prose dd {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        color: #6b7280;
+        line-height: 1.7;
+      }
+
+      .content-section {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .content-section:hover {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .highlight-box {
+        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        border-left: 4px solid #3b82f6;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .quote-section {
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        border-left: 4px solid #6366f1;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        margin: 2rem 0;
+        position: relative;
+      }
+
+      .quote-section::before {
+        content: '"';
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        font-size: 3rem;
+        color: #6366f1;
+        opacity: 0.3;
+        font-family: Georgia, serif;
+      }
+
+      .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
+        z-index: 1000;
+        transition: width 0.25s ease-out;
+      }
+
+      @media (max-width: 768px) {
+        .content-section {
+          padding: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .quote-section::before {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Navigation -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <header class="relative isolate overflow-hidden bg-gray-900">
+      <img
+        src="../image/Pillar 2 images/firstcluster pillar 2 images/Inside Datastar International’s Mission to Connect a Smarter World - featured.782Z.png"
+        alt="Datastar International digital connectivity infrastructure"
+        class="absolute inset-0 -z-10 h-full w-full object-cover brightness-75"
+      />
+      <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          Datastar International's Digital Connectivity Mission
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          Connecting Tomorrow's World Through People-First Leadership and
+          Sustainable Innovation
+        </p>
+      </div>
+    </header>
+
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress" class="reading-progress"></div>
+
+    <!-- ARTICLE / CONTENT -->
+    <main class="blog-content mx-auto max-w-6xl px-6 py-16 lg:px-8">
+      <!-- Article Header -->
+      <div
+        class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12"
+      >
+        <div class="px-8 py-12 lg:px-12 lg:py-16">
+          <div class="max-w-4xl mx-auto">
+            <div class="flex items-center mb-6">
+              <div class="flex-shrink-0">
+                <img
+                  class="h-12 w-12 rounded-full border-2 border-indigo-200"
+                  src="../image/bg.jpg"
+                  alt="Abdulrahman AlShathry"
+                />
+              </div>
+              <div class="ml-4">
+                <p class="text-sm font-medium text-gray-900">
+                  Abdulrahman AlShathry
+                </p>
+                <p class="text-sm text-gray-500">CEO, AlShathry Group</p>
+              </div>
+              <div class="ml-auto">
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800"
+                >
+                  Digital Connectivity & Innovation
+                </span>
+              </div>
             </div>
 
-            <!-- Main Navigation -->
-            <div class="flex flex-1 items-center justify-between">
-                <a href="../index.html" class="text-xl font-bold text-white ml-12 sm:ml-0">Abdulrahman AlShathry</a>
+            <h1
+              class="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6"
+            >
+              Inside Datastar International's
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"
+                >Mission to Connect a Smarter World</span
+              >
+            </h1>
 
-                <div class="hidden sm:block">
-                    <div class="flex space-x-6 items-center">
-                        <a href="../index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Home</a>
-                        <a href="../about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">About</a>
-                        <a href="../companies.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Companies</a>
+            <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
+              Discover how Datastar International builds digital connectivity
+              through people-first leadership and sustainable tech innovation. A
+              deep dive into the mission that bridges human potential with
+              technological possibility.
+            </p>
 
-                        <!-- Blog Dropdown -->
-                        <div class="relative group">
-                          <!-- Blog Button -->
-                          <button
-                            class="inline-flex items-end px-3 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-md focus:outline-none">
-                            Blog
-                            <svg class="ml-1 h-4 w-4 transition-transform transform group-hover:rotate-180"
-                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </button>
-
-                          <!-- Dropdown Menu -->
-                          <div
-                            class="absolute left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 flex-col bg-gray-900 text-gray-300 rounded-md shadow-lg mt-2 w-64 border border-gray-700 transition-all duration-500 z-10">
-
-                            <!-- Category 1 -->
-                            <a href="./the-future-of-smart-infrastructure-in-saudi-arabia.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Smart Infrastructure & Automation</a>
-
-                            <a href="./building-automation-evolution-saudi-arabia.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Building a Smarter Kingdom</a>
-                            <a href="./saudi-controls-pioneering-smart-infrastructure.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Saudi Controls: Pioneering Smart Cities</a>
-                            <a href="./iot-building-management-systems-people-first.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">IoT Building Management</a>
-                            <a href="./energy-efficiency-engineering-advanced-control-technology.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Energy Efficiency Engineering</a>
-                            <a href="./how-automation-is-transforming-urban-infrastructure-a-personal-story.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Beyond Smart Cities</a>
-                            <a href="./smart-cities-saudi-arabia.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Smart Cities in Saudi Arabia</a>
-
-                            <hr class="border-gray-700 my-2">
-
-                            <!-- Category 2 -->
-                            <a href="./digital-transformation-leadership-saudi-arabia.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Technology & Future</a>
-
-                            <a href="./datastar-international-digital-connectivity-mission.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Datastar International: Digital Connectivity</a>
-                            <a href="./ai-data-transformation-people-drive-digital-growth.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">AI & Data Growth: People Drive Digital Change</a>
-                            <a href="./digital-infrastructure-saudi-arabia-connected-economy.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Digital Infrastructure Saudi Arabia</a>
-                          
-                            <hr class="border-gray-700 my-2">
-
-                            <!-- Category 3 -->
-                            <a href="../industry-news/alshathry-ice-riyadh-2025.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Alshathry ICE Event in Riyadh 2025</a>
-
-                          </div>
-                        </div>
-
-                        <a href="../contact.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Contact</a>
-                    </div>
-                </div>
+            <div
+              class="flex flex-wrap items-center gap-4 text-sm text-gray-500"
+            >
+              <div class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                8 min read
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                November 2024
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                Global
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="sm:hidden hidden bg-[#111827] px-2 pt-2 pb-3 space-y-1">
-        <a href="../index.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
-        <a href="../about.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-        <a href="../companies.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Companies</a>
-
-        <!-- Blog Dropdown for Mobile -->
-        <details class="px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
-          <summary class="cursor-pointer hover:bg-gray-700 rounded-md px-2 py-1">Blog</summary>
-
-          <!-- Category 1 -->
-          <a href="./the-future-of-smart-infrastructure-in-saudi-arabia.html" class="text-xs uppercase text-gray-400 mt-3 ml-4">Smart Infrastructure & Automation</a>
-          <div class="mt-1 ml-6 space-y-1 pb-2">
-            <a href="./building-automation-evolution-saudi-arabia.html" class="block text-gray-300 hover:text-white">Building a Smarter Kingdom</a>
-            <a href="./saudi-controls-pioneering-smart-infrastructure.html" class="block text-gray-300 hover:text-white">Saudi Controls: Pioneering Smart Cities</a>
-            <a href="./iot-building-management-systems-people-first.html" class="block text-gray-300 hover:text-white">IoT Building Management</a>
-            <a href="./energy-efficiency-engineering-advanced-control-technology.html" class="block text-gray-300 hover:text-white">Energy Efficiency Engineering</a>
-            <a href="./how-automation-is-transforming-urban-infrastructure-a-personal-story.html" class="block text-gray-300 hover:text-white">Beyond Smart Cities</a>
-            <a href="./smart-cities-saudi-arabia.html" class="block text-gray-300 hover:text-white">Smart Cities in Saudi Arabia</a>
-          </div>
-
-          <!-- Category 2 -->
-          <a href="./digital-transformation-leadership-saudi-arabia.html" class="text-xs uppercase text-gray-400 mt-4 ml-4">Technology & Future</a>
-          <div class="mt-1 ml-6 space-y-1 pb-2">
-            <a href="./datastar-international-digital-connectivity-mission.html" class="block text-gray-300 hover:text-white">Datastar International: Digital Connectivity</a>
-            <a href="./ai-data-transformation-people-drive-digital-growth.html" class="block text-gray-300 hover:text-white">AI & Data Growth: People Drive Digital Change</a>
-            <a href="./digital-infrastructure-saudi-arabia-connected-economy.html" class="block text-gray-300 hover:text-white">Digital Infrastructure Saudi Arabia</a>
-          </div>
-
-          <!-- Category 3 -->
-          <a href="../industry-news/alshathry-ice-riyadh-2025.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Alshathry ICE Event in Riyadh 2025</a>
-
-        </details>
-
-        <a href="../contact.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="relative isolate overflow-hidden bg-gray-900">
-    <img src="../image/Pillar 2 images/firstcluster pillar 2 images/Inside Datastar International’s Mission to Connect a Smarter World - featured.782Z.png" alt="Datastar International digital connectivity infrastructure" class="absolute inset-0 -z-10 h-full w-full object-cover brightness-75">
-    <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Datastar International's Digital Connectivity Mission</h1>
-      <p class="mt-6 text-lg leading-8 text-gray-300">Connecting Tomorrow's World Through People-First Leadership and Sustainable Innovation</p>
-    </div>
-  </header>
-
-  <!-- Reading Progress Bar -->
-  <div id="reading-progress" class="reading-progress"></div>
-
-  <!-- ARTICLE / CONTENT -->
-  <main class="blog-content mx-auto max-w-6xl px-6 py-16 lg:px-8">
-    <!-- Article Header -->
-    <div class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12">
-      <div class="px-8 py-12 lg:px-12 lg:py-16">
-        <div class="max-w-4xl mx-auto">
+      </div>
+      <article class="max-w-4xl mx-auto prose prose-lg">
+        <!-- TL;DR Section -->
+        <div
+          class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border-l-4 border-indigo-400 p-8 lg:p-10 mb-12"
+        >
           <div class="flex items-center mb-6">
             <div class="flex-shrink-0">
-              <img class="h-12 w-12 rounded-full border-2 border-indigo-200" 
-                   src="../image/bg.jpg" 
-                   alt="Abdulrahman AlShathry" />
+              <div
+                class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+              </div>
             </div>
-            <div class="ml-4">
-              <p class="text-sm font-medium text-gray-900">Abdulrahman AlShathry</p>
-              <p class="text-sm text-gray-500">CEO, AlShathry Group</p>
-            </div>
-            <div class="ml-auto">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
-                Digital Connectivity & Innovation
-              </span>
-            </div>
+            <h3 class="ml-4 text-2xl font-bold text-gray-900">
+              TL;DR: Key Insights
+            </h3>
           </div>
 
-          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
-            Inside Datastar International's <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Mission to Connect a Smarter World</span>
-          </h1>
-
-          <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-            Discover how Datastar International builds digital connectivity through people-first leadership and sustainable tech innovation. A deep dive into the mission that bridges human potential with technological possibility.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500">
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              8 min read
-            </div>
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-              November 2024
-            </div>
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              Global
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <article class="max-w-4xl mx-auto prose prose-lg">
-      <!-- TL;DR Section -->
-      <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border-l-4 border-indigo-400 p-8 lg:p-10 mb-12">
-        <div class="flex items-center mb-6">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-          </div>
-          <h3 class="ml-4 text-2xl font-bold text-gray-900">TL;DR: Key Insights</h3>
-        </div>
-
-        <div class="grid gap-4 md:grid-cols-2">
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
+          <div class="grid gap-4 md:grid-cols-2">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    People-First Connectivity
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    Datastar International focuses on sustainable digital
+                    connectivity that prioritizes people over technology.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">People-First Connectivity</h4>
-                <p class="mt-1 text-gray-600">Datastar International focuses on sustainable digital connectivity that prioritizes people over technology.</p>
-              </div>
             </div>
-          </div>
 
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
-                  </svg>
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    Leadership & Innovation
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    True telecom innovation comes from leadership and
+                    collaboration, not just advanced tools.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">Leadership & Innovation</h4>
-                <p class="mt-1 text-gray-600">True telecom innovation comes from leadership and collaboration, not just advanced tools.</p>
-              </div>
             </div>
-          </div>
 
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-purple-100 text-purple-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
-                  </svg>
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-purple-100 text-purple-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    Global Impact
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    Connectivity shapes economic opportunity, healthcare access,
+                    education, and social equity worldwide.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">Global Impact</h4>
-                <p class="mt-1 text-gray-600">Connectivity shapes economic opportunity, healthcare access, education, and social equity worldwide.</p>
-              </div>
             </div>
-          </div>
 
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-orange-100 text-orange-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                  </svg>
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-orange-100 text-orange-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    Sustainable Systems
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    Success requires balancing innovation with integrity and
+                    building systems that last.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">Sustainable Systems</h4>
-                <p class="mt-1 text-gray-600">Success requires balancing innovation with integrity and building systems that last.</p>
-              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Introduction -->
-      <div class="content-section">
-        <p class="text-lg lg:text-xl leading-relaxed text-gray-700 mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-indigo-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-          When I look at Datastar International today, I see more than cables, servers, and satellites. I see the same determination that drove me to start Saudi Controls decades ago when automation was still a foreign concept in our region. We had limited resources but a clear vision: to modernize our nation's infrastructure through technology.
-        </p>
-
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800 italic">
-            Today, Datastar International embodies that same philosophy on a global scale. <strong class="text-indigo-600">Connectivity isn't just about faster internet or smarter devices — it's about building bridges between human potential and technological possibility</strong>.
+        <!-- Introduction -->
+        <div class="content-section">
+          <p
+            class="text-lg lg:text-xl leading-relaxed text-gray-700 mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-indigo-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1"
+          >
+            When I look at Datastar International today, I see more than cables,
+            servers, and satellites. I see the same determination that drove me
+            to start Saudi Controls decades ago when automation was still a
+            foreign concept in our region. We had limited resources but a clear
+            vision: to modernize our nation's infrastructure through technology.
           </p>
-        </div>
-      </div>
 
-      <!-- What Makes Datastar Different -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">What Makes Datastar International Different</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Most companies lead with their technology stack. Datastar chooses a different path: asking who benefits, how the system adapts as communities grow, and whether it will still serve its purpose in ten years.
-        </p>
-
-        <div class="highlight-box">
-          <p class="text-lg leading-relaxed text-gray-700">
-            The result is <strong class="text-indigo-600">networks designed for people, not vanity metrics</strong>.
-          </p>
-        </div>
-      </div>
-
-      <!-- Infrastructure Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Building Infrastructure That Lasts</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Datastar's emphasis on longevity means designing every connection point, data center, and protocol with future adaptability in mind. This patient, integrity-driven approach creates systems communities trust for decades.
-        </p>
-
-        <div class="highlight-box">
-          <p class="text-lg leading-relaxed text-gray-700">
-            We design infrastructure not for today's needs, but for <strong class="text-indigo-600">tomorrow's possibilities</strong>.
-          </p>
-        </div>
-      </div>
-
-      <!-- Philosophy Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">My Honest Take: Technology Doesn't Transform Industries, People Do</h2>
-        
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800 italic">
-            Tools evolve; leadership and culture endure. Datastar's people-first philosophy shows that the real transformation stems from <strong class="text-indigo-600">empowering people to make smarter decisions and build resilient systems</strong>.
-          </p>
-        </div>
-      </div>
-
-      <!-- Human Element Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">The Human Element in Digital Connectivity</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Technical excellence means little without human understanding. Datastar studies communities, listens, and adapts.
-        </p>
-
-        <div class="highlight-box">
-          <p class="text-lg leading-relaxed text-gray-700">
-            That separates <strong class="text-indigo-600">meaningful innovation from technological theater</strong>.
-          </p>
-        </div>
-      </div>
-
-      <!-- Power of Connectivity Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">The Real Power of Connectivity</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Connectivity enables economic opportunity, healthcare access, education, and social connection. With reliable internet, a remote clinic can consult specialists, students can access global courses, and small businesses can reach new markets.
-        </p>
-
-        <div class="grid gap-4 md:grid-cols-3">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
-            <h4 class="text-lg font-semibold text-gray-900 mb-2">Healthcare Access</h4>
-            <p class="text-gray-600">Remote consultations and telemedicine</p>
-          </div>
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
-            <h4 class="text-lg font-semibold text-gray-900 mb-2">Education</h4>
-            <p class="text-gray-600">Global courses and learning opportunities</p>
-          </div>
-          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200">
-            <h4 class="text-lg font-semibold text-gray-900 mb-2">Economic Growth</h4>
-            <p class="text-gray-600">Small business market expansion</p>
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800 italic">
+              Today, Datastar International embodies that same philosophy on a
+              global scale.
+              <strong class="text-indigo-600"
+                >Connectivity isn't just about faster internet or smarter
+                devices — it's about building bridges between human potential
+                and technological possibility</strong
+              >.
+            </p>
           </div>
         </div>
-      </div>
 
-      <!-- Why Connectivity Matters Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Digital Connectivity Matters More Than Ever</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          As services move online, infrastructure must be resilient, secure, accessible, and sustainable.
-        </p>
+        <!-- What Makes Datastar Different -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            What Makes Datastar International Different
+          </h2>
 
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800 italic">
-            Datastar views infrastructure as <strong class="text-indigo-600">a long-term investment in community capability</strong>, not just a technical deployment.
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Most companies lead with their technology stack. Datastar chooses a
+            different path: asking who benefits, how the system adapts as
+            communities grow, and whether it will still serve its purpose in ten
+            years.
           </p>
-        </div>
-      </div>
 
-      <!-- Future of Connectivity Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">The Future of Digital Connectivity</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Trends to watch: edge computing, satellite internet, 6G research, and energy-efficient networks.
-        </p>
-
-        <div class="highlight-box">
-          <p class="text-lg leading-relaxed text-gray-700">
-            The winners will be organizations that pair technology with <strong class="text-indigo-600">clear vision and community-focused implementation</strong>.
-          </p>
+          <div class="highlight-box">
+            <p class="text-lg leading-relaxed text-gray-700">
+              The result is
+              <strong class="text-indigo-600"
+                >networks designed for people, not vanity metrics</strong
+              >.
+            </p>
+          </div>
         </div>
 
-        <ul class="space-y-3 text-gray-700 text-lg leading-relaxed mt-6">
-          <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Edge Computing:</strong> Processing data closer to users for faster response times</li>
-          <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Satellite Internet:</strong> Global coverage reaching the most remote areas</li>
-          <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>6G Research:</strong> Next-generation wireless technology development</li>
-          <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Energy-Efficient Networks:</strong> Sustainable infrastructure for long-term viability</li>
-        </ul>
-      </div>
+        <!-- Infrastructure Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Building Infrastructure That Lasts
+          </h2>
 
-      <!-- Innovation and Responsibility Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Balancing Innovation and Responsibility</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Technology brings advantages — efficiency, communication, medical advances — and trade-offs: privacy, digital divide, job displacement, mental health concerns, and environmental costs.
-        </p>
-
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800 italic">
-            <strong class="text-indigo-600">Intentional implementation is the remedy</strong>.
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Datastar's emphasis on longevity means designing every connection
+            point, data center, and protocol with future adaptability in mind.
+            This patient, integrity-driven approach creates systems communities
+            trust for decades.
           </p>
-        </div>
-      </div>
 
-      <!-- FAQ Section -->
-      <div class="content-section">
-        <div class="mb-12">
-          <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Get answers to the most common questions about digital connectivity and Datastar International's mission.</p>
+          <div class="highlight-box">
+            <p class="text-lg leading-relaxed text-gray-700">
+              We design infrastructure not for today's needs, but for
+              <strong class="text-indigo-600">tomorrow's possibilities</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Philosophy Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            My Honest Take: Technology Doesn't Transform Industries, People Do
+          </h2>
+
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800 italic">
+              Tools evolve; leadership and culture endure. Datastar's
+              people-first philosophy shows that the real transformation stems
+              from
+              <strong class="text-indigo-600"
+                >empowering people to make smarter decisions and build resilient
+                systems</strong
+              >.
+            </p>
+          </div>
+        </div>
+
+        <!-- Human Element Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            The Human Element in Digital Connectivity
+          </h2>
+
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Technical excellence means little without human understanding.
+            Datastar studies communities, listens, and adapts.
+          </p>
+
+          <div class="highlight-box">
+            <p class="text-lg leading-relaxed text-gray-700">
+              That separates
+              <strong class="text-indigo-600"
+                >meaningful innovation from technological theater</strong
+              >.
+            </p>
+          </div>
+        </div>
+
+        <!-- Power of Connectivity Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            The Real Power of Connectivity
+          </h2>
+
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Connectivity enables economic opportunity, healthcare access,
+            education, and social connection. With reliable internet, a remote
+            clinic can consult specialists, students can access global courses,
+            and small businesses can reach new markets.
+          </p>
+
+          <div class="grid gap-4 md:grid-cols-3">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200"
+            >
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                Healthcare Access
+              </h4>
+              <p class="text-gray-600">Remote consultations and telemedicine</p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200"
+            >
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                Education
+              </h4>
+              <p class="text-gray-600">
+                Global courses and learning opportunities
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200"
+            >
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                Economic Growth
+              </h4>
+              <p class="text-gray-600">Small business market expansion</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Connectivity Matters Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Why Digital Connectivity Matters More Than Ever
+          </h2>
+
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            As services move online, infrastructure must be resilient, secure,
+            accessible, and sustainable.
+          </p>
+
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800 italic">
+              Datastar views infrastructure as
+              <strong class="text-indigo-600"
+                >a long-term investment in community capability</strong
+              >, not just a technical deployment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future of Connectivity Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            The Future of Digital Connectivity
+          </h2>
+
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Trends to watch: edge computing, satellite internet, 6G research,
+            and energy-efficient networks.
+          </p>
+
+          <div class="highlight-box">
+            <p class="text-lg leading-relaxed text-gray-700">
+              The winners will be organizations that pair technology with
+              <strong class="text-indigo-600"
+                >clear vision and community-focused implementation</strong
+              >.
+            </p>
           </div>
 
-          <div class="grid gap-6 md:gap-8">
-            <!-- FAQ Item 1 -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="p-6 lg:p-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-100 text-indigo-600">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
-                      </svg>
+          <ul class="space-y-3 text-gray-700 text-lg leading-relaxed mt-6">
+            <li class="flex items-start">
+              <span class="text-indigo-500 mr-3 mt-1">•</span
+              ><strong>Edge Computing:</strong> Processing data closer to users
+              for faster response times
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-500 mr-3 mt-1">•</span
+              ><strong>Satellite Internet:</strong> Global coverage reaching the
+              most remote areas
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-500 mr-3 mt-1">•</span
+              ><strong>6G Research:</strong> Next-generation wireless technology
+              development
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-500 mr-3 mt-1">•</span
+              ><strong>Energy-Efficient Networks:</strong> Sustainable
+              infrastructure for long-term viability
+            </li>
+          </ul>
+        </div>
+
+        <!-- Innovation and Responsibility Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Balancing Innovation and Responsibility
+          </h2>
+
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Technology brings advantages — efficiency, communication, medical
+            advances — and trade-offs: privacy, digital divide, job
+            displacement, mental health concerns, and environmental costs.
+          </p>
+
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800 italic">
+              <strong class="text-indigo-600"
+                >Intentional implementation is the remedy</strong
+              >.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="content-section">
+          <div class="mb-12">
+            <div class="text-center mb-8">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Get answers to the most common questions about digital
+                connectivity and Datastar International's mission.
+              </p>
+            </div>
+
+            <div class="grid gap-6 md:gap-8">
+              <!-- FAQ Item 1 -->
+              <div
+                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div class="p-6 lg:p-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-100 text-indigo-600"
+                      >
+                        <svg
+                          class="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                        What is the power of connectivity?
+                      </h3>
+                      <p class="text-gray-600 leading-relaxed">
+                        Connectivity democratizes opportunity — education,
+                        healthcare, commerce — turning isolated communities into
+                        globally connected participants.
+                      </p>
                     </div>
                   </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">What is the power of connectivity?</h3>
-                    <p class="text-gray-600 leading-relaxed">Connectivity democratizes opportunity — education, healthcare, commerce — turning isolated communities into globally connected participants.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div
+                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div class="p-6 lg:p-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600"
+                      >
+                        <svg
+                          class="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                        Why is digital connectivity important?
+                      </h3>
+                      <p class="text-gray-600 leading-relaxed">
+                        It's essential infrastructure enabling modern commerce,
+                        remote work, online education, telemedicine, and civic
+                        engagement.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="p-6 lg:p-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                      </svg>
+              <!-- FAQ Item 3 -->
+              <div
+                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div class="p-6 lg:p-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600"
+                      >
+                        <svg
+                          class="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          ></path>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Why is digital connectivity important?</h3>
-                    <p class="text-gray-600 leading-relaxed">It's essential infrastructure enabling modern commerce, remote work, online education, telemedicine, and civic engagement.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 3 -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="p-6 lg:p-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
+                    <div class="ml-4">
+                      <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                        Does technology affect mental health?
+                      </h3>
+                      <p class="text-gray-600 leading-relaxed">
+                        Yes — both positively and negatively. Implementation
+                        matters: design systems that support wellbeing, privacy,
+                        and accessible help.
+                      </p>
                     </div>
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Does technology affect mental health?</h3>
-                    <p class="text-gray-600 leading-relaxed">Yes — both positively and negatively. Implementation matters: design systems that support wellbeing, privacy, and accessible help.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Conclusion Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Conclusion: Building Connections That Matter</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Datastar International's mission reflects a core lesson: determination and vision matter more than resources. The most sophisticated technology creates no value if implemented without integrity and human-centered leadership.
-        </p>
+        <!-- Conclusion Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Conclusion: Building Connections That Matter
+          </h2>
 
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800">
-            Connecting devices is easy; <strong class="text-indigo-600">connecting possibilities is the real mission</strong>.
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Datastar International's mission reflects a core lesson:
+            determination and vision matter more than resources. The most
+            sophisticated technology creates no value if implemented without
+            integrity and human-centered leadership.
           </p>
-        </div>
 
-        <hr class="my-8 border-gray-200">
-
-        <div class="flex items-center gap-4">
-          <div class="flex-shrink-0 h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
-            <img src="../image/bg.jpg" alt="Author photo" class="h-12 w-12 rounded-full object-cover">
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800">
+              Connecting devices is easy;
+              <strong class="text-indigo-600"
+                >connecting possibilities is the real mission</strong
+              >.
+            </p>
           </div>
-          <div>
-            <p class="font-semibold text-gray-900">Abdulrahman AlShathry</p>
-            <p class="text-sm text-gray-500">CEO / Advisor — infrastructure, automation & digital connectivity</p>
+
+          <hr class="my-8 border-gray-200" />
+
+          <div class="flex items-center gap-4">
+            <div
+              class="flex-shrink-0 h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center"
+            >
+              <img
+                src="../image/bg.jpg"
+                alt="Author photo"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900">Abdulrahman AlShathry</p>
+              <p class="text-sm text-gray-500">
+                CEO / Advisor — infrastructure, automation & digital
+                connectivity
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div
+          class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl text-white p-8 lg:p-12 mb-16 text-center"
+        >
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+            Ready to Build Smarter Connections?
+          </h2>
+          <p class="text-xl lg:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Discover how Datastar International's people-first approach can
+            transform your digital connectivity infrastructure.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <!-- Placeholder for future action buttons -->
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- RELATED & SHARE -->
+    <section class="max-w-5xl mx-auto px-6 sm:px-8 pb-12">
+      <div
+        class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4"
+      >
+        <div>
+          <h4 class="text-lg mt-4 font-semibold">Related Articles</h4>
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a
+              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+              href="./building-automation-evolution-saudi-arabia.html"
+            >
+              <h5 class="font-semibold">Building a Smarter Kingdom</h5>
+              <p class="text-sm text-gray-500 mt-1">
+                Lessons from automation and national infrastructure programs.
+              </p>
+            </a>
+            <a
+              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+              href="./iot-building-management-systems-people-first.html"
+            >
+              <h5 class="font-semibold">IoT & Infrastructure</h5>
+              <p class="text-sm text-gray-500 mt-1">
+                How sensors and networks reduce downtime and improve
+                performance.
+              </p>
+            </a>
+            <a
+              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+              href="./energy-efficiency-engineering-advanced-control-technology.html"
+            >
+              <h5 class="font-semibold">Energy Efficiency Engineering</h5>
+              <p class="text-sm text-gray-500 mt-1">
+                Designing sustainable systems that last.
+              </p>
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Call to Action Section -->
-      <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl text-white p-8 lg:p-12 mb-16 text-center">
-        <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Build Smarter Connections?</h2>
-        <p class="text-xl lg:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
-          Discover how Datastar International's people-first approach can transform your digital connectivity infrastructure.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <!-- Placeholder for future action buttons -->
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 py-12">
+        <div
+          class="flex flex-col sm:flex-row sm:justify-between sm:items-center"
+        >
+          <p class="text-sm">
+            &copy; 2024 Datastar / Abdulrahman AlShathry. All rights reserved.
+          </p>
+          <div class="mt-4 sm:mt-0 flex gap-4">
+            <a
+              class="hover:text-white"
+              href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/?originalSubdomain=sa"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="hover:text-white"
+              href="https://x.com/AbdulA53386"
+              target="_blank"
+              >X</a
+            >
+          </div>
         </div>
       </div>
-    </article>
-  </main>
+    </footer>
 
-  <!-- RELATED & SHARE -->
-  <section class="max-w-5xl mx-auto px-6 sm:px-8 pb-12">
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
-      <div>
-        <h4 class="text-lg mt-4 font-semibold">Related Articles</h4>
-        <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./building-automation-evolution-saudi-arabia.html">
-            <h5 class="font-semibold">Building a Smarter Kingdom</h5>
-            <p class="text-sm text-gray-500 mt-1">Lessons from automation and national infrastructure programs.</p>
-          </a>
-          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./iot-building-management-systems-people-first.html">
-            <h5 class="font-semibold">IoT & Infrastructure</h5>
-            <p class="text-sm text-gray-500 mt-1">How sensors and networks reduce downtime and improve performance.</p>
-          </a>
-          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./energy-efficiency-engineering-advanced-control-technology.html">
-            <h5 class="font-semibold">Energy Efficiency Engineering</h5>
-            <p class="text-sm text-gray-500 mt-1">Designing sustainable systems that last.</p>
-          </a>
-        </div>
-      </div>
+    <!-- scripts -->
+    <script>
+      // mobile menu toggle
+      const mobileToggle = document.getElementById("mobile-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (mobileToggle)
+        mobileToggle.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden")
+        );
 
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8 py-12">
-      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-        <p class="text-sm">&copy; 2024 Datastar / Abdulrahman AlShathry. All rights reserved.</p>
-        <div class="mt-4 sm:mt-0 flex gap-4">
-          <a class="hover:text-white" href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/?originalSubdomain=sa" target="_blank">LinkedIn</a>
-          <a class="hover:text-white" href="https://x.com/AbdulA53386" target="_blank">X</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- scripts -->
-  <script>
-    // mobile menu toggle
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileToggle) mobileToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-
-    // keyboard-friendly details toggles
-    document.querySelectorAll('details').forEach(d => {
-      d.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          d.open = !d.open;
-        }
+      // keyboard-friendly details toggles
+      document.querySelectorAll("details").forEach((d) => {
+        d.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            d.open = !d.open;
+          }
+        });
       });
-    });
-  </script>
-</body>
+
+      fetch("../navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+  </body>
 </html>

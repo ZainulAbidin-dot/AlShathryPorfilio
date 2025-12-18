@@ -1,811 +1,1160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AI & Data Growth: People Drive Digital Change</title>
-  <meta name="description" content="Discover how AI and data transformation succeed through leadership and collaboration. Learn from 30+ years building tech in emerging markets." />
-  <meta name="slug" content="ai-data-transformation-people-drive-digital-growth" />
-  <link rel="canonical" href="https://yourdomain.com/blog/ai-data-transformation-people-drive-digital-growth" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI & Data Growth: People Drive Digital Change</title>
+    <meta
+      name="description"
+      content="Discover how AI and data transformation succeed through leadership and collaboration. Learn from 30+ years building tech in emerging markets."
+    />
+    <meta
+      name="slug"
+      content="ai-data-transformation-people-drive-digital-growth"
+    />
+    <link
+      rel="canonical"
+      href="https://yourdomain.com/blog/ai-data-transformation-people-drive-digital-growth"
+    />
 
-  <link rel="icon" type="image/svg+xml" href="../image/about-pic.jpg" />
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="../image/about-pic.jpg" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Optional: site analytics / verification (kept minimal) -->
-  <meta name="google-site-verification" content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag(){dataLayer.push(arguments)}
-    gtag('js', new Date())
-    gtag('config', 'G-Z33ZSSC2VT')
-  </script>
+    <!-- Optional: site analytics / verification (kept minimal) -->
+    <meta
+      name="google-site-verification"
+      content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Z33ZSSC2VT");
+    </script>
 
-  <style>
-/* Enhanced Blog Styling */
-.blog-content {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-}
+    <style>
+      /* Enhanced Blog Styling */
+      .blog-content {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
 
-.prose h3 {
-    position: relative;
-    padding-left: 1.5rem;
-    margin: 2rem 0 1rem 0;
-    color: #1e293b;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
+      .prose h3 {
+        position: relative;
+        padding-left: 1.5rem;
+        margin: 2rem 0 1rem 0;
+        color: #1e293b;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
 
-.prose h3::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 24px;
-    background: linear-gradient(135deg, #3b82f6, #6366f1);
-    border-radius: 2px;
-}
+      .prose h3::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 24px;
+        background: linear-gradient(135deg, #3b82f6, #6366f1);
+        border-radius: 2px;
+      }
 
-.prose p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    color: #374151;
-}
-
-.prose dt {
-    font-weight: 600;
-    color: #1f2937;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.prose dd {
-    margin-left: 0;
-    margin-bottom: 1rem;
-    color: #6b7280;
-    line-height: 1.7;
-}
-
-.content-section {
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.content-section:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-}
-
-.highlight-box {
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-    border-left: 4px solid #3b82f6;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin: 1.5rem 0;
-}
-
-.quote-section {
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    border-left: 4px solid #6366f1;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    margin: 2rem 0;
-    position: relative;
-}
-
-.quote-section::before {
-    content: '"';
-    position: absolute;
-    top: 1rem;
-    left: 1.5rem;
-    font-size: 3rem;
-    color: #6366f1;
-    opacity: 0.3;
-    font-family: Georgia, serif;
-}
-
-.reading-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 4px;
-    background: linear-gradient(90deg, #3b82f6, #6366f1);
-    z-index: 1000;
-    transition: width 0.25s ease-out;
-}
-
-@media (max-width: 768px) {
-    .content-section {
-        padding: 1.5rem;
+      .prose p {
         margin-bottom: 1.5rem;
-    }
-    
-    .quote-section::before {
-        font-size: 2rem;
-    }
-}
-  </style>
-</head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+        line-height: 1.8;
+        color: #374151;
+      }
 
-  <!-- Navigation -->
-  <nav class="bg-[#111827] sticky top-0 z-50 shadow-xl">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <button id="mobile-menu-button" type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
-                    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
+      .prose dt {
+        font-weight: 600;
+        color: #1f2937;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .prose dd {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        color: #6b7280;
+        line-height: 1.7;
+      }
+
+      .content-section {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .content-section:hover {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .highlight-box {
+        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        border-left: 4px solid #3b82f6;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .quote-section {
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        border-left: 4px solid #6366f1;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        margin: 2rem 0;
+        position: relative;
+      }
+
+      .quote-section::before {
+        content: '"';
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        font-size: 3rem;
+        color: #6366f1;
+        opacity: 0.3;
+        font-family: Georgia, serif;
+      }
+
+      .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
+        z-index: 1000;
+        transition: width 0.25s ease-out;
+      }
+
+      @media (max-width: 768px) {
+        .content-section {
+          padding: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .quote-section::before {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Navigation -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <header class="relative isolate overflow-hidden bg-gray-900">
+      <img
+        src="../image/Pillar 2 images/second cluster pillar 2 iamges/The Role of AI and Data in Accelerating Digital Growth - featured.424Z.png"
+        alt="AI and Data Transformation - diverse team collaborating with AI visualizations"
+        class="absolute inset-0 -z-10 h-full w-full object-cover brightness-75"
+      />
+      <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          AI and Data Transformation: Why People Drive Real Change
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          Lessons from 30+ years building technology in emerging markets — why
+          leadership and collaboration matter most
+        </p>
+      </div>
+    </header>
+
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress" class="reading-progress"></div>
+
+    <!-- ARTICLE / CONTENT -->
+    <main class="blog-content mx-auto max-w-6xl px-6 py-16 lg:px-8">
+      <!-- Article Header -->
+      <div
+        class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12"
+      >
+        <div class="px-8 py-12 lg:px-12 lg:py-16">
+          <div class="max-w-4xl mx-auto">
+            <div class="flex items-center mb-6">
+              <div class="flex-shrink-0">
+                <img
+                  class="h-12 w-12 rounded-full border-2 border-indigo-200"
+                  src="../image/bg.jpg"
+                  alt="Abdulrahman AlShathry"
+                />
+              </div>
+              <div class="ml-4">
+                <p class="text-sm font-medium text-gray-900">
+                  Abdulrahman AlShathry
+                </p>
+                <p class="text-sm text-gray-500">CEO, AlShathry Group</p>
+              </div>
+              <div class="ml-auto">
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800"
+                >
+                  AI & Data Transformation
+                </span>
+              </div>
             </div>
 
-            <!-- Main Navigation -->
-            <div class="flex flex-1 items-center justify-between">
-                <a href="../index.html" class="text-xl font-bold text-white ml-12 sm:ml-0">Abdulrahman AlShathry</a>
+            <h1
+              class="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6"
+            >
+              AI and Data Transformation:
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"
+                >Why People, Not Technology, Drive Real Change</span
+              >
+            </h1>
 
-                <div class="hidden sm:block">
-                    <div class="flex space-x-6 items-center">
-                        <a href="../index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Home</a>
-                        <a href="../about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">About</a>
-                        <a href="../companies.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Companies</a>
+            <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
+              Lessons from 30+ years building technology in emerging markets —
+              why leadership and collaboration matter most. Discover how AI and
+              data transformation succeed through people-first approaches.
+            </p>
 
-                        <!-- Blog Dropdown -->
-                        <div class="relative group">
-                          <!-- Blog Button -->
-                          <button
-                            class="inline-flex items-end px-3 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-md focus:outline-none">
-                            Blog
-                            <svg class="ml-1 h-4 w-4 transition-transform transform group-hover:rotate-180"
-                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </button>
-
-                          <!-- Dropdown Menu -->
-                          <div
-                            class="absolute left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 flex-col bg-gray-900 text-gray-300 rounded-md shadow-lg mt-2 w-64 border border-gray-700 transition-all duration-500 z-10">
-
-                            <!-- Category 1 -->
-                            <a href="./the-future-of-smart-infrastructure-in-saudi-arabia.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Smart Infrastructure & Automation</a>
-
-                            <a href="./building-automation-evolution-saudi-arabia.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Building a Smarter Kingdom</a>
-                            <a href="./saudi-controls-pioneering-smart-infrastructure.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Saudi Controls: Pioneering Smart Cities</a>
-                            <a href="./iot-building-management-systems-people-first.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">IoT Building Management</a>
-                            <a href="./energy-efficiency-engineering-advanced-control-technology.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Energy Efficiency Engineering</a>
-                            <a href="./how-automation-is-transforming-urban-infrastructure-a-personal-story.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Beyond Smart Cities</a>
-                            <a href="./smart-cities-saudi-arabia.html" class="hidden group-hover:block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Smart Cities in Saudi Arabia</a>
-
-                            <hr class="border-gray-700 my-2">
-
-                            <!-- Category 2 -->
-                            <a href="./digital-transformation-leadership-saudi-arabia.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Technology & Future</a>
-
-                            <a href="./datastar-international-digital-connectivity-mission.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Datastar International: Digital Connectivity</a>
-                            <a href="./ai-data-transformation-people-drive-digital-growth.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">AI & Data Growth: People Drive Digital Change</a>
-                            <a href="./digital-infrastructure-saudi-arabia-connected-economy.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-white transition">Digital Infrastructure Saudi Arabia</a>
-                          
-                            <hr class="border-gray-700 my-2">
-
-                            <!-- Category 3 -->
-                            <a href="../industry-news/alshathry-ice-riyadh-2025.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Alshathry ICE Event in Riyadh 2025</a>
-
-                          </div>
-                        </div>
-
-                        <a href="../contact.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Contact</a>
-                    </div>
-                </div>
+            <div
+              class="flex flex-wrap items-center gap-4 text-sm text-gray-500"
+            >
+              <div class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                12 min read
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                November 2024
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                Global
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="sm:hidden hidden bg-[#111827] px-2 pt-2 pb-3 space-y-1">
-        <a href="../index.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
-        <a href="../about.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-        <a href="../companies.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Companies</a>
-
-        <!-- Blog Dropdown for Mobile -->
-        <details class="px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
-          <summary class="cursor-pointer hover:bg-gray-700 rounded-md px-2 py-1">Blog</summary>
-
-          <!-- Category 1 -->
-          <a href="./the-future-of-smart-infrastructure-in-saudi-arabia.html" class="text-xs uppercase text-gray-400 mt-3 ml-4">Smart Infrastructure & Automation</a>
-          <div class="mt-1 ml-6 space-y-1 pb-2">
-            <a href="./building-automation-evolution-saudi-arabia.html" class="block text-gray-300 hover:text-white">Building a Smarter Kingdom</a>
-            <a href="./saudi-controls-pioneering-smart-infrastructure.html" class="block text-gray-300 hover:text-white">Saudi Controls: Pioneering Smart Cities</a>
-            <a href="./iot-building-management-systems-people-first.html" class="block text-gray-300 hover:text-white">IoT Building Management</a>
-            <a href="./energy-efficiency-engineering-advanced-control-technology.html" class="block text-gray-300 hover:text-white">Energy Efficiency Engineering</a>
-            <a href="./how-automation-is-transforming-urban-infrastructure-a-personal-story.html" class="block text-gray-300 hover:text-white">Beyond Smart Cities</a>
-            <a href="./smart-cities-saudi-arabia.html" class="block text-gray-300 hover:text-white">Smart Cities in Saudi Arabia</a>
-          </div>
-
-          <!-- Category 2 -->
-          <a href="./digital-transformation-leadership-saudi-arabia.html" class="text-xs uppercase text-gray-400 mt-4 ml-4">Technology & Future</a>
-          <div class="mt-1 ml-6 space-y-1 pb-2">
-            <a href="./datastar-international-digital-connectivity-mission.html" class="block text-gray-300 hover:text-white">Datastar International: Digital Connectivity</a>
-            <a href="./ai-data-transformation-people-drive-digital-growth.html" class="block text-gray-300 hover:text-white">AI & Data Growth: People Drive Digital Change</a>
-            <a href="./digital-infrastructure-saudi-arabia-connected-economy.html" class="block text-gray-300 hover:text-white">Digital Infrastructure Saudi Arabia</a>
-          </div>
-
-          <!-- Category 3 -->
-          <a href="../industry-news/alshathry-ice-riyadh-2025.html" class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Alshathry ICE Event in Riyadh 2025</a>
-
-        </details>
-
-        <a href="../contact.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="relative isolate overflow-hidden bg-gray-900">
-    <img src="../image/Pillar 2 images/second cluster pillar 2 iamges/The Role of AI and Data in Accelerating Digital Growth - featured.424Z.png" alt="AI and Data Transformation - diverse team collaborating with AI visualizations" class="absolute inset-0 -z-10 h-full w-full object-cover brightness-75">
-    <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">AI and Data Transformation: Why People Drive Real Change</h1>
-      <p class="mt-6 text-lg leading-8 text-gray-300">Lessons from 30+ years building technology in emerging markets — why leadership and collaboration matter most</p>
-    </div>
-  </header>
-
-  <!-- Reading Progress Bar -->
-  <div id="reading-progress" class="reading-progress"></div>
-
-  <!-- ARTICLE / CONTENT -->
-  <main class="blog-content mx-auto max-w-6xl px-6 py-16 lg:px-8">
-    <!-- Article Header -->
-    <div class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12">
-      <div class="px-8 py-12 lg:px-12 lg:py-16">
-        <div class="max-w-4xl mx-auto">
+      </div>
+      <article class="max-w-4xl mx-auto prose prose-lg">
+        <!-- TL;DR Section -->
+        <div
+          class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border-l-4 border-indigo-400 p-8 lg:p-10 mb-12"
+        >
           <div class="flex items-center mb-6">
             <div class="flex-shrink-0">
-              <img class="h-12 w-12 rounded-full border-2 border-indigo-200" 
-                   src="../image/bg.jpg" 
-                   alt="Abdulrahman AlShathry" />
+              <div
+                class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+              </div>
             </div>
-            <div class="ml-4">
-              <p class="text-sm font-medium text-gray-900">Abdulrahman AlShathry</p>
-              <p class="text-sm text-gray-500">CEO, AlShathry Group</p>
-            </div>
-            <div class="ml-auto">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
-                AI & Data Transformation
-              </span>
-            </div>
+            <h3 class="ml-4 text-2xl font-bold text-gray-900">
+              TL;DR: Key Insights
+            </h3>
           </div>
 
-          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
-            AI and Data Transformation: <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Why People, Not Technology, Drive Real Change</span>
-          </h1>
-
-          <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-            Lessons from 30+ years building technology in emerging markets — why leadership and collaboration matter most. Discover how AI and data transformation succeed through people-first approaches.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500">
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              12 min read
-            </div>
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-              November 2024
-            </div>
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              Global
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <article class="max-w-4xl mx-auto prose prose-lg">
-      <!-- TL;DR Section -->
-      <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border-l-4 border-indigo-400 p-8 lg:p-10 mb-12">
-        <div class="flex items-center mb-6">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-          </div>
-          <h3 class="ml-4 text-2xl font-bold text-gray-900">TL;DR: Key Insights</h3>
-        </div>
-
-        <div class="grid gap-4 md:grid-cols-2">
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                  </svg>
+          <div class="grid gap-4 md:grid-cols-2">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    Leadership First
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    AI and data transformation succeed through leadership and
+                    mindset shifts, not just technology adoption.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">Leadership First</h4>
-                <p class="mt-1 text-gray-600">AI and data transformation succeed through leadership and mindset shifts, not just technology adoption.</p>
-              </div>
             </div>
-          </div>
 
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    Team Collaboration
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    Machine learning requires curiosity and collaboration within
+                    teams before models are deployed.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">Team Collaboration</h4>
-                <p class="mt-1 text-gray-600">Machine learning requires curiosity and collaboration within teams before models are deployed.</p>
-              </div>
             </div>
-          </div>
 
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-purple-100 text-purple-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                  </svg>
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-purple-100 text-purple-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    Decision-Making
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    Big data delivers value only when organizations change how
+                    they approach decision-making.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">Decision-Making</h4>
-                <p class="mt-1 text-gray-600">Big data delivers value only when organizations change how they approach decision-making.</p>
-              </div>
             </div>
-          </div>
 
-          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-orange-100 text-orange-600">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
-                  </svg>
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-8 w-8 rounded-md bg-orange-100 text-orange-600"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    Cultural Innovation
+                  </h4>
+                  <p class="mt-1 text-gray-600">
+                    Innovation should be a daily practice embedded in company
+                    culture, not a one-time project.
+                  </p>
                 </div>
               </div>
-              <div class="ml-3">
-                <h4 class="text-lg font-semibold text-gray-900">Cultural Innovation</h4>
-                <p class="mt-1 text-gray-600">Innovation should be a daily practice embedded in company culture, not a one-time project.</p>
-              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Introduction -->
-      <div class="content-section">
-        <p class="text-lg lg:text-xl leading-relaxed text-gray-700 mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-indigo-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-          When I started Saudi Controls decades ago, automation wasn't just new to our region, it was practically science fiction. We had limited resources, skeptical stakeholders, and an entire infrastructure that needed modernizing. But here's what I learned: the technology itself was never the biggest challenge. The real transformation happened when we changed how people thought about innovation.
-        </p>
-
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800 italic">
-            Today, everyone's talking about AI and data transformation like they're magic solutions. Pour some machine learning into your business, sprinkle some big data analytics on top, and watch the digital economy work its wonders, right? <strong class="text-indigo-600">Not quite. After three decades of building technology systems across emerging markets, I've seen the pattern repeat: technology doesn't transform industries, people do</strong>.
+        <!-- Introduction -->
+        <div class="content-section">
+          <p
+            class="text-lg lg:text-xl leading-relaxed text-gray-700 mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-indigo-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1"
+          >
+            When I started Saudi Controls decades ago, automation wasn't just
+            new to our region, it was practically science fiction. We had
+            limited resources, skeptical stakeholders, and an entire
+            infrastructure that needed modernizing. But here's what I learned:
+            the technology itself was never the biggest challenge. The real
+            transformation happened when we changed how people thought about
+            innovation.
           </p>
+
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800 italic">
+              Today, everyone's talking about AI and data transformation like
+              they're magic solutions. Pour some machine learning into your
+              business, sprinkle some big data analytics on top, and watch the
+              digital economy work its wonders, right?
+              <strong class="text-indigo-600"
+                >Not quite. After three decades of building technology systems
+                across emerging markets, I've seen the pattern repeat:
+                technology doesn't transform industries, people do</strong
+              >.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Understanding AI Beyond Buzzwords -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Understanding AI and Data Transformation Beyond the Buzzwords</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Let me be direct: most conversations about AI in digital transformation miss the point entirely. We obsess over algorithms, data lakes, and processing power while ignoring the human infrastructure that makes any of it worthwhile.
-        </p>
+        <!-- Understanding AI Beyond Buzzwords -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Understanding AI and Data Transformation Beyond the Buzzwords
+          </h2>
 
-        <div class="highlight-box">
-          <p class="text-lg leading-relaxed text-gray-700">
-            AI and data transformation isn't about replacing spreadsheets with dashboards or hiring data scientists in siloed teams. <strong class="text-indigo-600">It's about fundamentally changing how an organization thinks, decides, and evolves</strong>.
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Let me be direct: most conversations about AI in digital
+            transformation miss the point entirely. We obsess over algorithms,
+            data lakes, and processing power while ignoring the human
+            infrastructure that makes any of it worthwhile.
           </p>
-        </div>
 
-        <!-- image placeholder -->
-        <figure class="mt-8">
-          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/ai-vs-people-transformation.jpg" alt="Split view: server room vs collaborative team" class="rounded-xl shadow-lg">
-          <figcaption class="text-sm text-gray-500 mt-3 text-center">People-first transformation vs. technology alone approach</figcaption>
-        </figure>
-      </div>
-
-      <!-- AI Transformation Roadmap -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">The AI Transformation Roadmap Nobody Talks About</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Here's where most AI roadmaps go wrong: they start with technology selection. Platform first, people second. That's backwards. When we modernized infrastructure across the Middle East, we began by building trust, demonstrating small wins, and creating a culture where people felt safe experimenting.
-        </p>
-
-        <div class="highlight-box">
-          <h4 class="text-xl font-semibold text-gray-900 mb-4">Your Better AI Roadmap</h4>
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <span class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">1</span>
-              <div>
-                <h5 class="font-semibold text-gray-900">Phase 1 — Build the Human Foundation</h5>
-                <p class="text-gray-700">Invest in curiosity, psychological safety, and reward thoughtful failure.</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <span class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">2</span>
-              <div>
-                <h5 class="font-semibold text-gray-900">Phase 2 — Start with Friction Points</h5>
-                <p class="text-gray-700">Solve real pain — repetitive tasks, slow decisions, bottlenecks.</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <span class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">3</span>
-              <div>
-                <h5 class="font-semibold text-gray-900">Phase 3 — Create Feedback Loops</h5>
-                <p class="text-gray-700">Make adoption iterative — gather input, iterate, and make improvements visible.</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <span class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">4</span>
-              <div>
-                <h5 class="font-semibold text-gray-900">Phase 4 — Scale Through Evangelists</h5>
-                <p class="text-gray-700">Let early users become advocates who spread adoption across teams.</p>
-              </div>
-            </div>
+          <div class="highlight-box">
+            <p class="text-lg leading-relaxed text-gray-700">
+              AI and data transformation isn't about replacing spreadsheets with
+              dashboards or hiring data scientists in siloed teams.
+              <strong class="text-indigo-600"
+                >It's about fundamentally changing how an organization thinks,
+                decides, and evolves</strong
+              >.
+            </p>
           </div>
+
+          <!-- image placeholder -->
+          <figure class="mt-8">
+            <img
+              src="../image/Pillar 2 images/firstcluster pillar 2 images/ai-vs-people-transformation.jpg"
+              alt="Split view: server room vs collaborative team"
+              class="rounded-xl shadow-lg"
+            />
+            <figcaption class="text-sm text-gray-500 mt-3 text-center">
+              People-first transformation vs. technology alone approach
+            </figcaption>
+          </figure>
         </div>
 
-        <!-- image placeholder after roadmap -->
-        <figure class="mt-8">
-          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/ai-transformation-roadmap.jpg" alt="Four-phase AI roadmap illustration" class="rounded-xl shadow-lg">
-          <figcaption class="text-sm text-gray-500 mt-3 text-center">Human-centered AI roadmap — start small, scale with people</figcaption>
-        </figure>
-      </div>
+        <!-- AI Transformation Roadmap -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            The AI Transformation Roadmap Nobody Talks About
+          </h2>
 
-      <!-- Honest Take Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">My Honest Take: AI vs Digital Transformation Is the Wrong Question</h2>
-        
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800 italic">
-            People love comparing AI transformation vs digital transformation like they're competing philosophies. That's missing the forest for the trees. Innovation isn't an outcome — it's a mindset built daily within teams. <strong class="text-indigo-600">Real transformation happens when you embed innovation into how people work, think, and solve problems</strong>.
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Here's where most AI roadmaps go wrong: they start with technology
+            selection. Platform first, people second. That's backwards. When we
+            modernized infrastructure across the Middle East, we began by
+            building trust, demonstrating small wins, and creating a culture
+            where people felt safe experimenting.
           </p>
+
+          <div class="highlight-box">
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">
+              Your Better AI Roadmap
+            </h4>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <span
+                  class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4"
+                  >1</span
+                >
+                <div>
+                  <h5 class="font-semibold text-gray-900">
+                    Phase 1 — Build the Human Foundation
+                  </h5>
+                  <p class="text-gray-700">
+                    Invest in curiosity, psychological safety, and reward
+                    thoughtful failure.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <span
+                  class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4"
+                  >2</span
+                >
+                <div>
+                  <h5 class="font-semibold text-gray-900">
+                    Phase 2 — Start with Friction Points
+                  </h5>
+                  <p class="text-gray-700">
+                    Solve real pain — repetitive tasks, slow decisions,
+                    bottlenecks.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <span
+                  class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4"
+                  >3</span
+                >
+                <div>
+                  <h5 class="font-semibold text-gray-900">
+                    Phase 3 — Create Feedback Loops
+                  </h5>
+                  <p class="text-gray-700">
+                    Make adoption iterative — gather input, iterate, and make
+                    improvements visible.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <span
+                  class="flex-shrink-0 h-8 w-8 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4"
+                  >4</span
+                >
+                <div>
+                  <h5 class="font-semibold text-gray-900">
+                    Phase 4 — Scale Through Evangelists
+                  </h5>
+                  <p class="text-gray-700">
+                    Let early users become advocates who spread adoption across
+                    teams.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image placeholder after roadmap -->
+          <figure class="mt-8">
+            <img
+              src="../image/Pillar 2 images/firstcluster pillar 2 images/ai-transformation-roadmap.jpg"
+              alt="Four-phase AI roadmap illustration"
+              class="rounded-xl shadow-lg"
+            />
+            <figcaption class="text-sm text-gray-500 mt-3 text-center">
+              Human-centered AI roadmap — start small, scale with people
+            </figcaption>
+          </figure>
         </div>
 
-        <!-- image placeholder -->
-        <figure class="mt-8">
-          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/leadership-vision-ai.jpg" alt="Business leader looking out at cityscape with digital overlay" class="rounded-xl shadow-lg">
-          <figcaption class="text-sm text-gray-500 mt-3 text-center">Leadership and vision drive sustainable AI adoption</figcaption>
-        </figure>
-      </div>
+        <!-- Honest Take Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            My Honest Take: AI vs Digital Transformation Is the Wrong Question
+          </h2>
 
-      <!-- Four Pillars Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">The Four Pillars That Actually Matter in Data Analytics</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-8">
-          Technical pillars matter, but these organizational pillars determine success:
-        </p>
-
-        <div class="grid gap-6 md:grid-cols-2">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
-            <div class="flex items-center mb-4">
-              <div class="h-10 w-10 bg-blue-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">1</div>
-              <h4 class="text-lg font-semibold text-gray-900">Question Quality over Data Quantity</h4>
-            </div>
-            <p class="text-gray-600">Ask deeper questions; connect insights to decisions.</p>
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800 italic">
+              People love comparing AI transformation vs digital transformation
+              like they're competing philosophies. That's missing the forest for
+              the trees. Innovation isn't an outcome — it's a mindset built
+              daily within teams.
+              <strong class="text-indigo-600"
+                >Real transformation happens when you embed innovation into how
+                people work, think, and solve problems</strong
+              >.
+            </p>
           </div>
 
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
-            <div class="flex items-center mb-4">
-              <div class="h-10 w-10 bg-green-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">2</div>
-              <h4 class="text-lg font-semibold text-gray-900">Accessible Insights</h4>
-            </div>
-            <p class="text-gray-600">Democratize data literacy so decisions are informed at the point of action.</p>
-          </div>
-
-          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200">
-            <div class="flex items-center mb-4">
-              <div class="h-10 w-10 bg-purple-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">3</div>
-              <h4 class="text-lg font-semibold text-gray-900">Action Orientation</h4>
-            </div>
-            <p class="text-gray-600">Link insights to measurable operational changes — dashboards that lead to decisions.</p>
-          </div>
-
-          <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200">
-            <div class="flex items-center mb-4">
-              <div class="h-10 w-10 bg-orange-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">4</div>
-              <h4 class="text-lg font-semibold text-gray-900">Sustainable Leadership</h4>
-            </div>
-            <p class="text-gray-600">Leaders must align technology with human capability and long-term value.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Machine Learning Adoption Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Making Machine Learning Adoption Actually Work</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          Most machine learning efforts fail because organizations rush. Sustainable adoption follows a different rhythm:
-        </p>
-
-        <div class="highlight-box">
-          <ul class="space-y-3 text-gray-700 text-lg leading-relaxed">
-            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Start embarrassingly small</strong> — one team, one process, one clear use case.</li>
-            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Make the invisible visible</strong> — explain model decisions to build trust.</li>
-            <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1">•</span><strong>Celebrate questions</strong> — they signal engagement and identify hidden risks or opportunities.</li>
-          </ul>
+          <!-- image placeholder -->
+          <figure class="mt-8">
+            <img
+              src="../image/Pillar 2 images/firstcluster pillar 2 images/leadership-vision-ai.jpg"
+              alt="Business leader looking out at cityscape with digital overlay"
+              class="rounded-xl shadow-lg"
+            />
+            <figcaption class="text-sm text-gray-500 mt-3 text-center">
+              Leadership and vision drive sustainable AI adoption
+            </figcaption>
+          </figure>
         </div>
 
-        <!-- infographic placeholder -->
-        <figure class="mt-8">
-          <img src="../image/Pillar 2 images/firstcluster pillar 2 images/data-analytics-pillars.jpg" alt="Infographic of four pillars for data analytics" class="rounded-xl shadow-lg">
-          <figcaption class="text-sm text-gray-500 mt-3 text-center">Four organizational pillars that determine analytics success</figcaption>
-        </figure>
-      </div>
+        <!-- Four Pillars Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            The Four Pillars That Actually Matter in Data Analytics
+          </h2>
 
-      <!-- FAQ Section -->
-      <div class="content-section">
-        <div class="mb-12">
-          <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Get answers to the most common questions about AI and data transformation success factors.</p>
+          <p class="text-lg leading-relaxed text-gray-700 mb-8">
+            Technical pillars matter, but these organizational pillars determine
+            success:
+          </p>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="h-10 w-10 bg-blue-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
+                >
+                  1
+                </div>
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Question Quality over Data Quantity
+                </h4>
+              </div>
+              <p class="text-gray-600">
+                Ask deeper questions; connect insights to decisions.
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="h-10 w-10 bg-green-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
+                >
+                  2
+                </div>
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Accessible Insights
+                </h4>
+              </div>
+              <p class="text-gray-600">
+                Democratize data literacy so decisions are informed at the point
+                of action.
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="h-10 w-10 bg-purple-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
+                >
+                  3
+                </div>
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Action Orientation
+                </h4>
+              </div>
+              <p class="text-gray-600">
+                Link insights to measurable operational changes — dashboards
+                that lead to decisions.
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="h-10 w-10 bg-orange-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
+                >
+                  4
+                </div>
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Sustainable Leadership
+                </h4>
+              </div>
+              <p class="text-gray-600">
+                Leaders must align technology with human capability and
+                long-term value.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Learning Adoption Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Making Machine Learning Adoption Actually Work
+          </h2>
+
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            Most machine learning efforts fail because organizations rush.
+            Sustainable adoption follows a different rhythm:
+          </p>
+
+          <div class="highlight-box">
+            <ul class="space-y-3 text-gray-700 text-lg leading-relaxed">
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-3 mt-1">•</span
+                ><strong>Start embarrassingly small</strong> — one team, one
+                process, one clear use case.
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-3 mt-1">•</span
+                ><strong>Make the invisible visible</strong> — explain model
+                decisions to build trust.
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-3 mt-1">•</span
+                ><strong>Celebrate questions</strong> — they signal engagement
+                and identify hidden risks or opportunities.
+              </li>
+            </ul>
           </div>
 
-          <div class="grid gap-6 md:gap-8">
-            <!-- FAQ Item 1 -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="p-6 lg:p-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-100 text-indigo-600">
-                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
+          <!-- infographic placeholder -->
+          <figure class="mt-8">
+            <img
+              src="../image/Pillar 2 images/firstcluster pillar 2 images/data-analytics-pillars.jpg"
+              alt="Infographic of four pillars for data analytics"
+              class="rounded-xl shadow-lg"
+            />
+            <figcaption class="text-sm text-gray-500 mt-3 text-center">
+              Four organizational pillars that determine analytics success
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="content-section">
+          <div class="mb-12">
+            <div class="text-center mb-8">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Get answers to the most common questions about AI and data
+                transformation success factors.
+              </p>
+            </div>
+
+            <div class="grid gap-6 md:gap-8">
+              <!-- FAQ Item 1 -->
+              <div
+                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div class="p-6 lg:p-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-100 text-indigo-600"
+                      >
+                        <svg
+                          class="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                        What is data transformation in AI?
+                      </h3>
+                      <p class="text-gray-600 leading-relaxed">
+                        Data transformation converts raw data into formats
+                        usable by ML models — cleaning, normalizing, structuring
+                        — and shifts how organizations collect, interpret and
+                        act on information.
+                      </p>
                     </div>
                   </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What is data transformation in AI?</h3>
-                    <p class="text-gray-600 leading-relaxed">Data transformation converts raw data into formats usable by ML models — cleaning, normalizing, structuring — and shifts how organizations collect, interpret and act on information.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div
+                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div class="p-6 lg:p-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-10 w-10 rounded-md bg-green-100 text-green-600"
+                      >
+                        <svg
+                          class="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                        What is the 30% rule for AI?
+                      </h3>
+                      <p class="text-gray-600 leading-relaxed">
+                        The 30% rule suggests aiming for a measurable
+                        improvement (≈30%) to justify AI change management. But
+                        real value often comes from compounding capabilities,
+                        not a single metric.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="p-6 lg:p-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-green-100 text-green-600">
-                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                      </svg>
+              <!-- FAQ Item 3 -->
+              <div
+                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div class="p-6 lg:p-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-10 w-10 rounded-md bg-purple-100 text-purple-600"
+                      >
+                        <svg
+                          class="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                          ></path>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What is the 30% rule for AI?</h3>
-                    <p class="text-gray-600 leading-relaxed">The 30% rule suggests aiming for a measurable improvement (≈30%) to justify AI change management. But real value often comes from compounding capabilities, not a single metric.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 3 -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="p-6 lg:p-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-purple-100 text-purple-600">
-                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
-                      </svg>
+                    <div class="ml-4">
+                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                        What are the 4 Vs of data analytics?
+                      </h3>
+                      <p class="text-gray-600 leading-relaxed">
+                        Volume, Velocity, Variety, and Veracity. These are
+                        technical characteristics; organizational readiness to
+                        use data is equally crucial.
+                      </p>
                     </div>
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What are the 4 Vs of data analytics?</h3>
-                    <p class="text-gray-600 leading-relaxed">Volume, Velocity, Variety, and Veracity. These are technical characteristics; organizational readiness to use data is equally crucial.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Conclusion Section -->
-      <div class="content-section">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Conclusion: Building Systems That Last</h2>
-        
-        <p class="text-lg leading-relaxed text-gray-700 mb-6">
-          After decades of building technology infrastructure across emerging markets, I return to the same truth: progress lies at the intersection of technology, human potential, and sustainable leadership. AI and data transformation will keep evolving, but the companies that thrive will be those that remember people are the primary agents of change.
-        </p>
+        <!-- Conclusion Section -->
+        <div class="content-section">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Conclusion: Building Systems That Last
+          </h2>
 
-        <div class="quote-section">
-          <p class="text-lg font-medium text-gray-800">
-            <strong class="text-indigo-600">The future belongs to organizations that master both technical excellence and human leadership</strong> — those who understand that lasting transformation comes from empowering people to think differently, not just work differently.
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            After decades of building technology infrastructure across emerging
+            markets, I return to the same truth: progress lies at the
+            intersection of technology, human potential, and sustainable
+            leadership. AI and data transformation will keep evolving, but the
+            companies that thrive will be those that remember people are the
+            primary agents of change.
           </p>
-        </div>
 
-        <hr class="my-8 border-gray-200">
-
-        <div class="flex items-center gap-4">
-          <div class="flex-shrink-0 h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
-            <img src="../image/bg.jpg" alt="Author photo" class="h-12 w-12 rounded-full object-cover">
+          <div class="quote-section">
+            <p class="text-lg font-medium text-gray-800">
+              <strong class="text-indigo-600"
+                >The future belongs to organizations that master both technical
+                excellence and human leadership</strong
+              >
+              — those who understand that lasting transformation comes from
+              empowering people to think differently, not just work differently.
+            </p>
           </div>
-          <div>
-            <p class="font-semibold text-gray-900">Abdulrahman AlShathry</p>
-            <p class="text-sm text-gray-500">CEO / Advisor — automation, infrastructure & digital transformation</p>
+
+          <hr class="my-8 border-gray-200" />
+
+          <div class="flex items-center gap-4">
+            <div
+              class="flex-shrink-0 h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center"
+            >
+              <img
+                src="../image/bg.jpg"
+                alt="Author photo"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900">Abdulrahman AlShathry</p>
+              <p class="text-sm text-gray-500">
+                CEO / Advisor — automation, infrastructure & digital
+                transformation
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div
+          class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl text-white p-8 lg:p-12 mb-16 text-center"
+        >
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+            Ready to Transform Through People-First AI?
+          </h2>
+          <p class="text-xl lg:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Discover how to build sustainable AI and data transformation that
+            puts people at the center of technological change.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <!-- Placeholder for future action buttons -->
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- RELATED & SHARE -->
+    <section class="max-w-5xl mx-auto px-6 sm:px-8 pb-12">
+      <div
+        class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4"
+      >
+        <div>
+          <h4 class="text-lg mt-4 font-semibold">Related Articles</h4>
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a
+              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+              href="./building-automation-evolution-saudi-arabia.html"
+            >
+              <h5 class="font-semibold">Building a Smarter Kingdom</h5>
+              <p class="text-sm text-gray-500 mt-1">
+                Lessons from automation and national infrastructure programs.
+              </p>
+            </a>
+            <a
+              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+              href="./datastar-international-digital-connectivity-mission.html"
+            >
+              <h5 class="font-semibold">
+                Datastar International: Digital Connectivity
+              </h5>
+              <p class="text-sm text-gray-500 mt-1">
+                Connecting tomorrow's world through people-first leadership.
+              </p>
+            </a>
+            <a
+              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+              href="./energy-efficiency-engineering-advanced-control-technology.html"
+            >
+              <h5 class="font-semibold">Energy Efficiency Engineering</h5>
+              <p class="text-sm text-gray-500 mt-1">
+                Designing sustainable systems that last.
+              </p>
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Call to Action Section -->
-      <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl text-white p-8 lg:p-12 mb-16 text-center">
-        <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Transform Through People-First AI?</h2>
-        <p class="text-xl lg:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
-          Discover how to build sustainable AI and data transformation that puts people at the center of technological change.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <!-- Placeholder for future action buttons -->
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 py-12">
+        <div
+          class="flex flex-col sm:flex-row sm:justify-between sm:items-center"
+        >
+          <p class="text-sm">
+            &copy; 2024 Abdulrahman AlShathry. All rights reserved.
+          </p>
+          <div class="mt-4 sm:mt-0 flex gap-4">
+            <a
+              class="hover:text-white"
+              href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/?originalSubdomain=sa"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="hover:text-white"
+              href="https://x.com/AbdulA53386"
+              target="_blank"
+              >X</a
+            >
+          </div>
         </div>
       </div>
-    </article>
-  </main>
+    </footer>
 
-  <!-- RELATED & SHARE -->
-  <section class="max-w-5xl mx-auto px-6 sm:px-8 pb-12">
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
-      <div>
-        <h4 class="text-lg mt-4 font-semibold">Related Articles</h4>
-        <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./building-automation-evolution-saudi-arabia.html">
-            <h5 class="font-semibold">Building a Smarter Kingdom</h5>
-            <p class="text-sm text-gray-500 mt-1">Lessons from automation and national infrastructure programs.</p>
-          </a>
-          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./datastar-international-digital-connectivity-mission.html">
-            <h5 class="font-semibold">Datastar International: Digital Connectivity</h5>
-            <p class="text-sm text-gray-500 mt-1">Connecting tomorrow's world through people-first leadership.</p>
-          </a>
-          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md" href="./energy-efficiency-engineering-advanced-control-technology.html">
-            <h5 class="font-semibold">Energy Efficiency Engineering</h5>
-            <p class="text-sm text-gray-500 mt-1">Designing sustainable systems that last.</p>
-          </a>
-        </div>
-      </div>
+    <!-- scripts -->
+    <script>
+      // Mobile menu toggle functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8 py-12">
-      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-        <p class="text-sm">&copy; 2024 Abdulrahman AlShathry. All rights reserved.</p>
-        <div class="mt-4 sm:mt-0 flex gap-4">
-          <a class="hover:text-white" href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/?originalSubdomain=sa" target="_blank">LinkedIn</a>
-          <a class="hover:text-white" href="https://x.com/AbdulA53386" target="_blank">X</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- scripts -->
-  <script>
-    // Mobile menu toggle functionality
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
         });
-    }
+      }
 
-    // Reading progress bar functionality
-    function updateReadingProgress() {
-        const article = document.querySelector('article');
-        const progressBar = document.getElementById('reading-progress');
-        
+      // Reading progress bar functionality
+      function updateReadingProgress() {
+        const article = document.querySelector("article");
+        const progressBar = document.getElementById("reading-progress");
+
         if (!article || !progressBar) return;
-        
+
         const articleTop = article.offsetTop;
         const articleHeight = article.offsetHeight;
         const windowHeight = window.innerHeight;
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
         const articleBottom = articleTop + articleHeight - windowHeight;
-        const scrollProgress = Math.max(0, Math.min(1, (scrollTop - articleTop) / (articleBottom - articleTop)));
-        
-        progressBar.style.width = (scrollProgress * 100) + '%';
-    }
+        const scrollProgress = Math.max(
+          0,
+          Math.min(1, (scrollTop - articleTop) / (articleBottom - articleTop))
+        );
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+        progressBar.style.width = scrollProgress * 100 + "%";
+      }
 
-    // Fade-in animation for content sections
-    function observeElements() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+          }
         });
+      });
+
+      // Fade-in animation for content sections
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+          }
+        );
 
         // Observe content sections
-        document.querySelectorAll('.content-section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
+        document.querySelectorAll(".content-section").forEach((section) => {
+          section.style.opacity = "0";
+          section.style.transform = "translateY(20px)";
+          section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(section);
         });
-    }
+      }
 
-    // Enhanced keyboard navigation for FAQ items
-    document.querySelectorAll('details').forEach(detail => {
-        detail.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                detail.open = !detail.open;
-            }
+      // Enhanced keyboard navigation for FAQ items
+      document.querySelectorAll("details").forEach((detail) => {
+        detail.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            detail.open = !detail.open;
+          }
         });
-    });
+      });
 
-    // Initialize all functionality when DOM is loaded
-    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize all functionality when DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
         updateReadingProgress();
         observeElements();
-        
-        // Update reading progress on scroll
-        window.addEventListener('scroll', updateReadingProgress);
-        window.addEventListener('resize', updateReadingProgress);
-    });
 
-    // Enhanced hover effects for cards and buttons
-    document.addEventListener('DOMContentLoaded', function() {
+        // Update reading progress on scroll
+        window.addEventListener("scroll", updateReadingProgress);
+        window.addEventListener("resize", updateReadingProgress);
+      });
+
+      // Enhanced hover effects for cards and buttons
+      document.addEventListener("DOMContentLoaded", function () {
         // Add subtle hover animations to cards
-        const cards = document.querySelectorAll('.content-section, .bg-white.rounded-lg');
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transition = 'all 0.3s ease';
-            });
+        const cards = document.querySelectorAll(
+          ".content-section, .bg-white.rounded-lg"
+        );
+        cards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.transition = "all 0.3s ease";
+          });
         });
-    });
-  </script>
-</body>
+      });
+
+      fetch("../navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+  </body>
 </html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Blog & Insights | Abdulrahman AlShathry</title>
+
+    <link rel="icon" type="image/svg+xml" href="../image/about-pic.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* MATCHING SITE STYLE */
+      .blog-bg {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+
+      .blog-card {
+        background: white;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        width: 0%;
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
+        z-index: 1000;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- PROGRESS BAR -->
+    <div id="reading-progress" class="reading-progress"></div>
+
+    <!-- ================= NAV (UNCHANGED) ================= -->
+    <div id="navbar"></div>
+
+    <!-- ================= HERO ================= -->
+    <header class="relative bg-gray-900">
+      <div class="mx-auto max-w-7xl px-6 py-24 text-center">
+        <h1 class="text-4xl sm:text-6xl font-bold text-white">
+          Insights & Perspectives
+        </h1>
+        <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+          Leadership, digital transformation, AI, infrastructure & sustainable
+          growth.
+        </p>
+      </div>
+    </header>
+
+    <!-- ================= CONTENT ================= -->
+    <main class="blog-bg px-6 py-20">
+      <!-- ================= TECHNOLOGY ================= -->
+      <section class="max-w-7xl mx-auto mb-20">
+        <h2 class="text-3xl font-bold text-gray-900 mb-10">
+          Smart Infrastructure in Saudi Arabia
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <a
+            href="https://www.alshathryce.com/blogs/building-automation-evolution-saudi-arabia.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 1 first cluster/The Evolution of Building Automation Across the Kingdom - featured image.173Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag"
+                >Building Automation & Smart Infrastructure</span
+              >
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                The Evolution of Building Automation: My Journey in Shaping a
+                Smarter Kingdom
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Discover the evolution of building automation in Saudi Arabia,
+                from early HVAC controls to today's smart, sustainable
+                buildings.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>7 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.alshathryce.com/blogs/saudi-controls-pioneering-smart-infrastructure.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 1 second cluster/How Saudi Controls Ltd. Pioneered Smart Infrastructure Solutions - featured.570Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">Smart Cities & Infrastructure </span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                From Vision to Reality: How Saudi Controls Ltd. Pioneered Smart
+                Infrastructure
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Discover how Saudi Controls transformed a vision into reality,
+                leading smart infrastructure and automation engineering in Saudi
+                Arabia.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>5 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.alshathryce.com/blogs/iot-building-management-systems-people-first.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 1 third cluster/Integrating IoT with Modern Building Management Systems - featured image.031Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">IoT & Smart Buildings</span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                From Vision to Value: The Human Element in IoT Building
+                Management Systems
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Discover how true IoT building management systems go beyond
+                connected devices by focusing on the people behind the
+                technology.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>7 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.alshathryce.com/blogs/energy-efficiency-engineering-advanced-control-technology.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 1 fourth cluster/Energy Efficiency Through Advanced Control Engineering - Featured image.377Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">Energy & Innovation </span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                Energy Efficiency Engineering: A New Take
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Discover how energy efficiency engineering and advanced control
+                technology are revolutionizing industries. Learn from my journey
+                and a contrarian take.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>4 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.alshathryce.com/blogs/how-automation-is-transforming-urban-infrastructure-a-personal-story.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 1 fifth cluster/How Automation Is Transforming Urban Infrastructure - featured image.385Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">Automation & Smart Cities </span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                Beyond Smart Cities: My Journey in Automation
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Discover how automation in urban infrastructure is about more
+                than tech. A personal story on building lasting progress in our
+                cities.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>7 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.alshathryce.com/blogs/smart-cities-saudi-arabia.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 1 sixth cluster/Smart Cities and the Role of Connected Control Systems - featured image.172Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">Smart Cities</span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                Smart Cities in Saudi Arabia
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Discover the future of smart cities in Saudi Arabia. Learn how
+                connected control systems and human-centric leadership are
+                building our digital infrastructure.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>7 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ================= TRANSFORMATION ================= -->
+      <section class="max-w-7xl mx-auto mb-20">
+        <h2 class="text-3xl font-bold text-gray-900 mb-10">
+          Digital Transformation Leadership
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <a
+            href="https://www.alshathryce.com/blogs/datastar-international-digital-connectivity-mission.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 2 images/firstcluster pillar 2 images/Inside Datastar International’s Mission to Connect a Smarter World - featured.782Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">Digital Connectivity & Innovation </span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                Datastar International's Digital Connectivity Mission
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Connecting Tomorrow's World Through People-First Leadership and
+                Sustainable Innovation.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>6 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.alshathryce.com/blogs/ai-data-transformation-people-drive-digital-growth.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 2 images/second cluster pillar 2 iamges/The Role of AI and Data in Accelerating Digital Growth - featured.424Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">AI & Data Transformation </span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                AI and Data Transformation: Why People Drive Real Change
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Lessons from 30+ years building technology in emerging markets —
+                why leadership and collaboration matter most.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>7 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.alshathryce.com/blogs/digital-infrastructure-saudi-arabia-connected-economy.html"
+            class="blog-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+          >
+            <img
+              src="../image/Pillar 2 images/third cluster pillar 2 images/Building Reliable Digital Infrastructure for a Connected Economy - featured.293Z.png"
+              alt=""
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <span class="tag">Digital Infrastructure & Saudi Arabia </span>
+
+              <h3 class="text-xl font-bold text-gray-900 mt-4 mb-3">
+                Digital Infrastructure Saudi Arabia: Build It Right
+              </h3>
+
+              <p class="text-gray-600 text-sm mb-6">
+                Real insights from 30+ years in automation and tech leadership
+                on creating infrastructure that lasts.
+              </p>
+
+              <div class="flex justify-between text-sm text-gray-500">
+                <span>6 min read</span>
+                <span class="text-indigo-600 font-semibold">Read →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== SECTION: TECHNOLOGY ===== -->
+      <section class="max-w-7xl mx-auto mb-20">
+        <h2 class="text-3xl font-bold text-gray-900 mb-10">
+          International Events & Perspectives
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <a
+            href="https://www.alshathryce.com/industry-news/alshathry-ice-riyadh-2025.html"
+            class="blog-card p-6"
+          >
+            <span class="text-xs font-semibold text-indigo-600"
+              >Building Stronger Saudi–Italian Business Partnerships</span
+            >
+            <h3 class="text-xl font-bold mt-3 mb-2">
+              Eng Abdulrahman A Z AlShathry at ICE Riyadh 2025
+            </h3>
+            <p class="text-gray-600 text-sm">
+              ICE Riyadh 2025 — Saudi Italian Investment and Business Forum •
+              Mandarin Oriental Al Faisaliah, Riyadh.
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER (UNCHANGED) ================= -->
+    <footer class="bg-gray-900 text-gray-300">
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between items-center"
+      >
+        <p class="text-sm">
+          &copy; 2024 Abdulrahman AlShathry. All rights reserved.
+        </p>
+        <div class="flex gap-4 mt-4 sm:mt-0">
+          <a href="https://www.linkedin.com/" class="hover:text-white"
+            >LinkedIn</a
+          >
+          <a href="https://x.com/" class="hover:text-white">X</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <script>
+      window.addEventListener("scroll", () => {
+        const progress = document.getElementById("reading-progress");
+        const height =
+          document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (window.scrollY / height) * 100 + "%";
+      });
+
+      fetch("../navbar.html")
+        .then((response) => response.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+    </script>
+  </body>
+</html>
