@@ -1,1447 +1,1176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Bridging Technology and Business Strategy</title>
-    <meta
-      name="description"
-      content="Discover how authentic leadership and human-centered approaches drive successful business technology integration through real experiences."
-    />
-    <meta name="slug" content="bridging-technology-business-datastar-lessons" />
-    <link
-      rel="canonical"
-      href="https://www.alshathryce.com/blogs/bridging-technology-and-business.html"
-    />
 
-    <link rel="icon" type="image/svg+xml" href="../image/about-pic.webp" />
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bridging Technology and Business Strategy</title>
+  <meta name="description"
+    content="Discover how authentic leadership and human-centered approaches drive successful business technology integration through real experiences." />
+  <meta name="slug" content="bridging-technology-business-datastar-lessons" />
+  <link rel="canonical" href="https://www.alshathryce.com/blogs/bridging-technology-and-business.html" />
 
-    <!-- Optional: site analytics / verification (kept minimal) -->
-    <meta
-      name="google-site-verification"
-      content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ"
-    />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-Z33ZSSC2VT");
-    </script>
+  <link rel="icon" type="image/svg+xml" href="../image/about-pic.webp" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-      /* Enhanced Blog Styling */
-      .blog-content {
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-      }
+  <!-- Optional: site analytics / verification (kept minimal) -->
+  <meta name="google-site-verification" content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-Z33ZSSC2VT");
+  </script>
 
-      .prose h3 {
-        position: relative;
-        padding-left: 1.5rem;
-        margin: 2rem 0 1rem 0;
-        color: #1e293b;
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
+  <style>
+    /* Enhanced Blog Styling */
+    .blog-content {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
 
-      .prose h3::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 4px;
-        height: 24px;
-        background: linear-gradient(135deg, #3b82f6, #6366f1);
-        border-radius: 2px;
-      }
+    .prose h3 {
+      position: relative;
+      padding-left: 1.5rem;
+      margin: 2rem 0 1rem 0;
+      color: #1e293b;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
 
-      .prose p {
-        margin-bottom: 1.5rem;
-        line-height: 1.8;
-        color: #374151;
-      }
+    .prose h3::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 24px;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      border-radius: 2px;
+    }
 
-      .prose dt {
-        font-weight: 600;
-        color: #1f2937;
-        margin-top: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
+    .prose p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #374151;
+    }
 
-      .prose dd {
-        margin-left: 0;
-        margin-bottom: 1rem;
-        color: #6b7280;
-        line-height: 1.7;
-      }
+    .prose dt {
+      font-weight: 600;
+      color: #1f2937;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
 
+    .prose dd {
+      margin-left: 0;
+      margin-bottom: 1rem;
+      color: #6b7280;
+      line-height: 1.7;
+    }
+
+    .content-section {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .content-section:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+      border-left: 4px solid #3b82f6;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .quote-section {
+      background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+      border-left: 4px solid #6366f1;
+      padding: 2rem;
+      border-radius: 0.75rem;
+      margin: 2rem 0;
+      position: relative;
+    }
+
+    .quote-section::before {
+      content: '"';
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+      font-size: 3rem;
+      color: #6366f1;
+      opacity: 0.3;
+      font-family: Georgia, serif;
+    }
+
+    .reading-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #3b82f6, #6366f1);
+      z-index: 1000;
+      transition: width 0.25s ease-out;
+    }
+
+    @media (max-width: 768px) {
       .content-section {
-        background: white;
-        border-radius: 1rem;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        border: 1px solid #e5e7eb;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-      }
-
-      .content-section:hover {
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        transform: translateY(-2px);
-      }
-
-      .highlight-box {
-        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-        border-left: 4px solid #3b82f6;
         padding: 1.5rem;
-        border-radius: 0.5rem;
-        margin: 1.5rem 0;
-      }
-
-      .quote-section {
-        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-        border-left: 4px solid #6366f1;
-        padding: 2rem;
-        border-radius: 0.75rem;
-        margin: 2rem 0;
-        position: relative;
+        margin-bottom: 1.5rem;
       }
 
       .quote-section::before {
-        content: '"';
-        position: absolute;
-        top: 1rem;
-        left: 1.5rem;
-        font-size: 3rem;
-        color: #6366f1;
-        opacity: 0.3;
-        font-family: Georgia, serif;
+        font-size: 2rem;
       }
+    }
+  </style>
+</head>
 
-      .reading-progress {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 4px;
-        background: linear-gradient(90deg, #3b82f6, #6366f1);
-        z-index: 1000;
-        transition: width 0.25s ease-out;
-      }
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <!-- Navigation -->
+  <div id="navbar"></div>
 
-      @media (max-width: 768px) {
-        .content-section {
-          padding: 1.5rem;
-          margin-bottom: 1.5rem;
-        }
+  <!-- Hero Section -->
+  <header class="relative isolate overflow-hidden bg-gray-900">
+    <img src="../image/Pillar 2 images/sixth.png"
+      alt="Business and technology teams collaborating on digital transformation strategy in modern office"
+      class="absolute inset-0 -z-10 h-full w-full object-cover brightness-75" />
+    <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+        Bridging Technology and Business: Lessons from Datastar's Evolution
+      </h1>
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        Real-world stories from Datastar and Saudi Controls on aligning
+        technology, people, and leadership to unlock sustainable
+        transformation.
+      </p>
+    </div>
+  </header>
 
-        .quote-section::before {
-          font-size: 2rem;
-        }
-      }
-    </style>
-  </head>
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress" class="reading-progress"></div>
 
-  <body class="bg-gray-50 text-gray-800 antialiased">
-    <!-- Navigation -->
-    <div id="navbar"></div>
-
-    <!-- Hero Section -->
-    <header class="relative isolate overflow-hidden bg-gray-900">
-      <img
-        src="../image/Pillar 2 images/sixth.png"
-        alt="Business and technology teams collaborating on digital transformation strategy in modern office"
-        class="absolute inset-0 -z-10 h-full w-full object-cover brightness-75"
-      />
-      <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          Bridging Technology and Business: Lessons from Datastar's Evolution
-        </h1>
-        <p class="mt-6 text-lg leading-8 text-gray-300">
-          Real-world stories from Datastar and Saudi Controls on aligning
-          technology, people, and leadership to unlock sustainable
-          transformation.
-        </p>
-      </div>
-    </header>
-
-    <!-- Reading Progress Bar -->
-    <div id="reading-progress" class="reading-progress"></div>
-
-    <!-- ARTICLE / CONTENT -->
-    <main class="blog-content mx-auto max-w-6xl px-6 py-16 lg:px-8">
-      <!-- Article Header -->
-      <div
-        class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12"
-      >
-        <div class="px-8 py-12 lg:px-12 lg:py-16">
-          <div class="max-w-4xl mx-auto">
-            <div class="flex items-center mb-6">
-              <div class="flex-shrink-0">
-                <img
-                  class="h-12 w-12 rounded-full border-2 border-indigo-200"
-                  src="../image/bg.jpg"
-                  alt="Abdulrahman AlShathry"
-                />
-              </div>
-              <div class="ml-4">
-                <p class="text-sm font-medium text-gray-900">
-                  Abdulrahman AlShathry
-                </p>
-                <p class="text-sm text-gray-500">Founder, Datastar Group</p>
-              </div>
-              <div class="ml-auto">
-                <span
-                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800"
-                >
-                  Tech-Business Integration
-                </span>
-              </div>
-            </div>
-
-            <h2
-              class="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6"
-            >
-              Bridging Technology and Business:
-              <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"
-                >Real Lessons from Datastar</span
-              >
-            </h2>
-
-            <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-              The most meaningful transformations begin long before software is
-              deployed. They start when leaders champion human-centered change,
-              teams trust the process, and technology is chosen to serve people,
-              not the other way around.
-            </p>
-
-            <div
-              class="flex flex-wrap items-center gap-4 text-sm text-gray-500"
-            >
-              <div class="flex items-center">
-                <svg
-                  class="w-4 h-4 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-                14 min read
-              </div>
-              <div class="flex items-center">
-                <svg
-                  class="w-4 h-4 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  ></path>
-                </svg>
-                December 2024
-              </div>
-              <div class="flex items-center">
-                <svg
-                  class="w-4 h-4 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  ></path>
-                </svg>
-                Global
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <article class="max-w-4xl mx-auto prose prose-lg">
-        <!-- TL;DR Section -->
-        <div
-          class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border-l-4 border-indigo-400 p-8 lg:p-10 mb-12"
-        >
+  <!-- ARTICLE / CONTENT -->
+  <main class="blog-content mx-auto max-w-6xl px-6 py-16 lg:px-8">
+    <!-- Article Header -->
+    <div
+      class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12">
+      <div class="px-8 py-12 lg:px-12 lg:py-16">
+        <div class="max-w-4xl mx-auto">
           <div class="flex items-center mb-6">
             <div class="flex-shrink-0">
-              <div
-                class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white"
-              >
-                <svg
-                  class="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  ></path>
-                </svg>
-              </div>
+              <img class="h-12 w-12 rounded-full border-2 border-indigo-200" src="../image/bg.jpg"
+                alt="Abdulrahman AlShathry" />
             </div>
-            <h3 class="ml-4 text-2xl font-bold text-gray-900">
-              TL;DR: Key Lessons
-            </h3>
-          </div>
-
-          <div class="grid gap-4 md:grid-cols-2">
-            <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
-            >
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-3">
-                  <h4 class="text-lg font-semibold text-gray-900">
-                    People Power Change
-                  </h4>
-                  <p class="mt-1 text-gray-600">
-                    Transformation sticks when people embrace new ways of
-                    working; tools only amplify their readiness.
-                  </p>
-                </div>
-              </div>
+            <div class="ml-4">
+              <p class="text-sm font-medium text-gray-900">
+                Abdulrahman AlShathry
+              </p>
+              <p class="text-sm text-gray-500">Founder, Datastar Group</p>
             </div>
-
-            <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
-            >
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-3">
-                  <h4 class="text-lg font-semibold text-gray-900">
-                    Leadership Shifts First
-                  </h4>
-                  <p class="mt-1 text-gray-600">
-                    Integration succeeds when leaders reframe technology as a
-                    human change initiative, not an IT project.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
-            >
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-8 w-8 rounded-md bg-purple-100 text-purple-600"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-3">
-                  <h4 class="text-lg font-semibold text-gray-900">
-                    Pilot to Build Trust
-                  </h4>
-                  <p class="mt-1 text-gray-600">
-                    Start small, prove value, and let early wins calm fears
-                    while creating internal champions.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
-            >
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-8 w-8 rounded-md bg-orange-100 text-orange-600"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M18 13V5a2 2 0 00-2-2H8l-2-2H2a1 1 0 00-1 1v11a2 2 0 002 2h12a3 3 0 003-3zm-8-1a3 3 0 100-6 3 3 0 000 6z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-3">
-                  <h4 class="text-lg font-semibold text-gray-900">
-                    Bridge Communication Gaps
-                  </h4>
-                  <p class="mt-1 text-gray-600">
-                    Translators who speak technology and business fluently
-                    prevent disconnects that sink integrations.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
-            >
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-8 w-8 rounded-md bg-yellow-100 text-yellow-600"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.166 4.724a1 1 0 011.11-.217l3.639 1.56A2 2 0 018 8.013V9.59a2 2 0 01-.553 1.38l-.894.948a2 2 0 00-.553 1.38v2.384a1 1 0 01-1.447.894l-.553-.276a2 2 0 01-1.106-1.788V5.618a1 1 0 01.322-.724zM12 6a1 1 0 011 1v3.382a2 2 0 00.553 1.381l.894.947a2 2 0 01.553 1.381v2.384a1 1 0 01-1.447.894l-.553-.276A2 2 0 0112 16.272V7a1 1 0 011-1z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-3">
-                  <h4 class="text-lg font-semibold text-gray-900">
-                    Collaboration Sustains Change
-                  </h4>
-                  <p class="mt-1 text-gray-600">
-                    Long-term adoption comes from cross-functional ownership,
-                    not handoffs to a single department.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
-            >
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-8 w-8 rounded-md bg-red-100 text-red-600"
-                  >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M11 17a1 1 0 01-.447-.105l-8-4a1 1 0 010-1.79l8-4a1 1 0 01.894 0l8 4a1 1 0 010 1.79l-8 4A1 1 0 0111 17zm-5.618-5L11 14.382 16.618 12 11 9.618 5.382 12z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-3">
-                  <h4 class="text-lg font-semibold text-gray-900">
-                    Hybrid Skills Win
-                  </h4>
-                  <p class="mt-1 text-gray-600">
-                    Professionals who blend technical literacy with business
-                    judgement are the catalyst for integration.
-                  </p>
-                </div>
-              </div>
+            <div class="ml-auto">
+              <span
+                class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+                Tech-Business Integration
+              </span>
             </div>
           </div>
-        </div>
 
-        <!-- Introduction -->
-        <div class="content-section">
-          <p
-            class="text-lg lg:text-xl leading-relaxed text-gray-700 mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-indigo-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1"
-          >
-            When most conversations about business technology integration fixate
-            on tools, dashboards, or software rollouts, they miss the deeper
-            story. Decades of building Saudi Controls and later Datastar taught
-            me that real transformation takes root in boardrooms, on factory
-            floors, and in the minds of people willing to rethink how work is
-            done.
-          </p>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            My mission has always been to bridge innovation with integrity. This
-            article shares the practical wisdom we earned while helping
-            organizations integrate technology with purpose, empathy, and
-            sustainable leadership.
-          </p>
-
-          <div class="quote-section">
-            <p class="text-lg font-medium text-gray-800 italic">
-              Technology may set the stage, but people change the narrative.
-              Every successful transformation we led began with human curiosity,
-              trust, and a clear purpose that outlived the latest platform.
-            </p>
-          </div>
-        </div>
-
-        <!-- The Foundation Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            The Foundation: When Vision Meets Reality
+          <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
+            Bridging Technology and Business:
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Real Lessons from
+              Datastar</span>
           </h2>
 
-          <p class="text-lg leading-relaxed text-gray-700">
-            In the early days of Saudi Controls, automation still felt foreign
-            across the region. We had ambition but not abundance, vision but not
-            yet validation. What kept us moving was a clear purpose: modernize
-            national infrastructure in a way that respected how people already
-            worked. The insight that stays with me is simple — technology alone
-            does not secure adoption; understanding the human context does.
+          <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
+            The most meaningful transformations begin long before software is
+            deployed. They start when leaders champion human-centered change,
+            teams trust the process, and technology is chosen to serve people,
+            not the other way around.
           </p>
 
-          <p class="text-lg leading-relaxed text-gray-700">
-            Every project began by walking the floor with clients, mapping their
-            workflows, and listening to their fears. We were not just installing
-            control systems. We were proving that innovation could make everyday
-            work more dependable.
-          </p>
-
-          <h3>Understanding the Real Challenge</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            Industry research shows that roughly 70% of digital transformation
-            initiatives miss their targets. The issue is not an absence of
-            capable platforms; it is the presence of cultural resistance,
-            unclear communication, and change fatigue. Most organizations treat
-            technology deployments as technical exercises when, in reality, they
-            are human transformation programs with technical components.
-          </p>
-
-          <div class="highlight-box">
-            <p class="text-lg leading-relaxed text-gray-700">
-              Success begins when leaders reframe integration from "Which system
-              should we buy?" to "Which problem are we solving, and how will it
-              improve work for our people?"
-            </p>
-          </div>
-
-          <figure class="mt-8">
-            <img
-              src="../image/bridging-tech-business/foundation-control-room.jpg"
-              alt="Engineers implementing early automation technology in industrial facility showing tech integration beginnings"
-              class="rounded-xl shadow-lg"
-            />
-            <figcaption class="text-sm text-gray-500 mt-3 text-center">
-              Early automation efforts in the 1990s laid the groundwork for
-              technology and business alignment.
-            </figcaption>
-          </figure>
-        </div>
-
-        <!-- Honest Take Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            My Honest Take: Technology Doesn't Transform Industries—People Do
-          </h2>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            Conventional wisdom says adopting the right platform creates
-            competitive advantage. I have seen the opposite play out. Companies
-            invest heavily in sophisticated systems that end up underused, while
-            smaller teams with modest tools thrive because they built cultures
-            of experimentation and cross-functional trust.
-          </p>
-
-          <div class="quote-section">
-            <p class="text-lg font-medium text-gray-800 italic">
-              Tools evolve constantly, but leadership, collaboration, and
-              curiosity drive meaningful change. Innovation is not an event you
-              budget for — it is a mindset you practice daily.
-            </p>
-          </div>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            As Datastar grew, we made sure teams understood both the technical
-            possibilities and the business realities of every initiative. That
-            balance protected us from silver-bullet thinking and kept
-            investments tied to real outcomes.
-          </p>
-
-          <figure class="mt-8">
-            <img
-              src="../image/bridging-tech-business/cross-functional-strategy-session.jpg"
-              alt="Cross-functional team bridging technology and business perspectives during strategy session"
-              class="rounded-xl shadow-lg"
-            />
-            <figcaption class="text-sm text-gray-500 mt-3 text-center">
-              Breakthroughs happen when technical and business leaders build
-              solutions together.
-            </figcaption>
-          </figure>
-        </div>
-
-        <!-- Practical Framework Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            The Practical Framework: How to Actually Bridge Technology and
-            Business
-          </h2>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            After guiding integrations across industries, we rely on a five-part
-            framework that keeps projects grounded in business value and human
-            adoption.
-          </p>
-
-          <div class="highlight-box">
-            <ol
-              class="list-decimal list-inside space-y-3 text-gray-700 text-lg leading-relaxed"
-            >
-              <li>
-                <strong>Start with the problem.</strong> Define the human pain
-                point or operational bottleneck before ever naming a platform.
-              </li>
-              <li>
-                <strong>Build cross-functional teams.</strong> Include technical
-                experts, business owners, end users, and change leaders from day
-                one.
-              </li>
-              <li>
-                <strong>Pilot before you scale.</strong> Use controlled rollouts
-                to test assumptions, reduce risk, and create internal advocates.
-              </li>
-              <li>
-                <strong>Invest in translation.</strong> Bridge roles keep
-                conversations flowing between technical and business groups,
-                preventing costly misunderstandings.
-              </li>
-              <li>
-                <strong>Measure what matters.</strong> Link uptime and feature
-                adoption to financial and customer impact so everyone sees the
-                business value.
-              </li>
-            </ol>
-          </div>
-        </div>
-
-        <!-- Essential Skills Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            Essential Skills for Bridging Technology and Business
-          </h2>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            The most valuable contributors we work with combine technical
-            literacy, strategic awareness, and empathy for how people adopt
-            change. These hybrid professionals translate possibility into
-            action.
-          </p>
-
-          <div class="grid gap-6 md:grid-cols-2">
-            <div
-              class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="h-10 w-10 bg-blue-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
-                >
-                  1
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900">
-                  Technical Foundation
-                </h4>
-              </div>
-              <p class="text-gray-600">
-                Understand system capabilities, data flows, and security basics
-                to evaluate what is possible and practical.
-              </p>
+          <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              14 min read
             </div>
-
-            <div
-              class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="h-10 w-10 bg-green-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
-                >
-                  2
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900">
-                  Business Acumen
-                </h4>
-              </div>
-              <p class="text-gray-600">
-                Read P&L statements, map workflows, and grasp customer needs so
-                technology aligns with measurable value.
-              </p>
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              December 2024
             </div>
-
-            <div
-              class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="h-10 w-10 bg-purple-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
-                >
-                  3
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900">
-                  Communication & Translation
-                </h4>
-              </div>
-              <p class="text-gray-600">
-                Explain complex concepts in plain language and turn business
-                requirements into actionable technical plans.
-              </p>
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              Global
             </div>
-
-            <div
-              class="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="h-10 w-10 bg-orange-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4"
-                >
-                  4
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900">
-                  Change Leadership
-                </h4>
-              </div>
-              <p class="text-gray-600">
-                Guide teams through uncertainty, build psychological safety, and
-                coach new behaviors until they stick.
-              </p>
-            </div>
-          </div>
-
-          <div class="highlight-box">
-            <p class="text-lg leading-relaxed text-gray-700">
-              Data literacy continues to rank as the most in-demand skill
-              because it blends analysis with storytelling and decision-making —
-              the sweet spot between technical insight and business relevance.
-            </p>
-          </div>
-
-          <figure class="mt-8">
-            <img
-              src="../image/bridging-tech-business/bridging-skills-presentation.jpg"
-              alt="Professional demonstrating bridging skills between technical and business domains in presentation"
-              class="rounded-xl shadow-lg"
-            />
-            <figcaption class="text-sm text-gray-500 mt-3 text-center">
-              The modern integrator balances code literacy with commercial
-              insight and change leadership.
-            </figcaption>
-          </figure>
-        </div>
-
-        <!-- Leadership Alignment Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            Aligning Business and Technology: The Leadership Imperative
-          </h2>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            Alignment does not happen accidentally. It requires deliberate
-            leadership habits that keep technology conversations connected to
-            strategy, customers, and culture.
-          </p>
-
-          <ul class="space-y-3 text-lg leading-relaxed text-gray-700">
-            <li>
-              <strong>Create shared goals.</strong> Overlapping KPIs ensure
-              technology and business teams answer to the same outcomes.
-            </li>
-            <li>
-              <strong>Establish regular rhythms.</strong> Strategic check-ins
-              let leaders surface opportunities and respond to risks before they
-              escalate.
-            </li>
-            <li>
-              <strong>Invite technology into strategy.</strong> Technical
-              leaders belong in planning sessions so they can shape feasible,
-              future-ready roadmaps.
-            </li>
-            <li>
-              <strong>Invest in mutual understanding.</strong> Cross-pollination
-              — from customer visits to technical deep-dives — builds empathy
-              and respect.
-            </li>
-          </ul>
-        </div>
-
-        <!-- Relationship Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            The Relationship Between Technology and Business
-          </h2>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            Technology and business are no longer separate disciplines seeking
-            alignment; they are intertwined elements of strategy. Digital
-            capabilities define competitive positioning, data infrastructure
-            shapes customer insight, and system performance affects operational
-            resilience.
-          </p>
-
-          <div class="quote-section">
-            <p class="text-lg font-medium text-gray-800">
-              Think of business as the destination and technology as the
-              vehicle. Purposeful integration means plotting the route together
-              instead of taking separate journeys.
-            </p>
-          </div>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            Without business context, technology investments become expensive
-            infrastructure. Without technology, business strategies stall. The
-            relationship works when each informs and accelerates the other.
-          </p>
-        </div>
-
-        <!-- Real-World Applications Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            Real-World Applications: Bridging Business and IT
-          </h2>
-
-          <p class="text-lg leading-relaxed text-gray-700">
-            These scenarios highlight how integrated teams solved real
-            challenges by sequencing technology and human change with intention.
-          </p>
-
-          <div class="grid gap-6 md:grid-cols-2">
-            <div
-              class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"
-            >
-              <h3>Manufacturing Client</h3>
-              <p class="mt-3 text-gray-700">
-                IoT sensors promised predictive maintenance, but operations
-                feared downtime. We phased rollout line by line, starting with
-                equipment already scheduled for service. Within six months,
-                production leaders were pushing to scale because uptime gains
-                were undeniable.
-              </p>
-            </div>
-
-            <div
-              class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"
-            >
-              <h3>Financial Services Partner</h3>
-              <p class="mt-3 text-gray-700">
-                Legacy systems blocked new digital products. Instead of a risky
-                rip-and-replace, we introduced an API layer that enabled new
-                services while gradually retiring technical debt.
-              </p>
-            </div>
-
-            <div
-              class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm md:col-span-2"
-            >
-              <h3>Retail Customer</h3>
-              <p class="mt-3 text-gray-700">
-                Inventory issues spanned stores and online channels. We gave
-                frontline teams real-time visibility first, letting them build
-                trust in the data before automating replenishment. Adoption
-                skyrocketed once they saw the value firsthand.
-              </p>
-            </div>
-          </div>
-
-          <figure class="mt-8">
-            <img
-              src="../image/bridging-tech-business/technology-business-harmony.jpg"
-              alt="Successful business technology integration showing people and systems working harmoniously together"
-              class="rounded-xl shadow-lg"
-            />
-            <figcaption class="text-sm text-gray-500 mt-3 text-center">
-              Integrated organizations balance human collaboration with the
-              right digital tools.
-            </figcaption>
-          </figure>
-        </div>
-
-        <!-- FAQ Section -->
-        <div class="content-section">
-          <div class="mb-12">
-            <div class="text-center mb-8">
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Straight answers to the questions leaders ask most when trying
-                to connect technology investments with business growth.
-              </p>
-            </div>
-
-            <div class="grid gap-6 md:gap-8">
-              <div
-                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div class="p-6 lg:p-8">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-100 text-indigo-600"
-                      >
-                        <svg
-                          class="w-6 h-6"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ml-4">
-                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                        What skills are essential for bridging technology and
-                        business?
-                      </h3>
-                      <p class="text-gray-600 leading-relaxed">
-                        Technical literacy, business acumen, communication, and
-                        change management form the core. Together they enable
-                        professionals to translate between possibilities and
-                        practical execution.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div class="p-6 lg:p-8">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 rounded-md bg-green-100 text-green-600"
-                      >
-                        <svg
-                          class="w-6 h-6"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ml-4">
-                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                        Which technology skill is most in demand right now?
-                      </h3>
-                      <p class="text-gray-600 leading-relaxed">
-                        Data literacy stands out because it couples analytical
-                        rigor with the ability to communicate insights that
-                        drive decisions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div class="p-6 lg:p-8">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 rounded-md bg-purple-100 text-purple-600"
-                      >
-                        <svg
-                          class="w-6 h-6"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ml-4">
-                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                        How do you bridge the gap between IT and business teams?
-                      </h3>
-                      <p class="text-gray-600 leading-relaxed">
-                        Form cross-functional squads, align on business metrics,
-                        schedule consistent dialogue, and create roles dedicated
-                        to translating between both sides.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div class="p-6 lg:p-8">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-600"
-                      >
-                        <svg
-                          class="w-6 h-6"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-2m-4 0H7a2 2 0 01-2-2V6a2 2 0 012-2h6l4 4v12a2 2 0 01-2 2z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ml-4">
-                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                        What is the relationship between technology and
-                        business?
-                      </h3>
-                      <p class="text-gray-600 leading-relaxed">
-                        They are interdependent. Technology enables strategy,
-                        and strategy guides technology investments. Treat them
-                        as one integrated discipline.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div class="p-6 lg:p-8">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 rounded-md bg-red-100 text-red-600"
-                      >
-                        <svg
-                          class="w-6 h-6"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M12 8c-1.657 0-3 .895-3 2v4c0 1.105 1.343 2 3 2s3-.895 3-2v-4c0-1.105-1.343-2-3-2z"
-                          ></path>
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M6 12H4m0 0a8 8 0 1116 0H6zm0 0a8 8 0 0016 0"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ml-4">
-                      <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                        How do you align business and technology goals?
-                      </h3>
-                      <p class="text-gray-600 leading-relaxed">
-                        Set shared KPIs, include technology leaders in strategy
-                        formation, run pilots that demonstrate business value,
-                        and cultivate empathy across teams.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Conclusion Section -->
-        <div class="content-section">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            Conclusion: Building Organizations That Last
-          </h2>
-
-          <p class="text-lg leading-relaxed text-gray-700 mb-6">
-            Sustainable success happens when technology initiatives honor the
-            people who will use them. The most advanced systems cannot
-            compensate for teams who feel excluded, nor can they solve problems
-            that were never clearly defined.
-          </p>
-
-          <div class="quote-section">
-            <p class="text-lg font-medium text-gray-800">
-              True progress lives at the intersection of technology, human
-              potential, and principled leadership. When you treat integration
-              as a human journey with technical milestones, you build
-              organizations that last.
-            </p>
-          </div>
-
-          <hr class="my-8 border-gray-200" />
-
-          <div class="flex items-center gap-4">
-            <div
-              class="flex-shrink-0 h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center"
-            >
-              <img
-                src="../image/bg.jpg"
-                alt="Author photo"
-                class="h-12 w-12 rounded-full object-cover"
-              />
-            </div>
-            <div>
-              <p class="font-semibold text-gray-900">Abdulrahman AlShathry</p>
-              <p class="text-sm text-gray-500">
-                Founder & Advisor — technology integration, automation, and
-                digital infrastructure
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Call to Action Section -->
-        <div
-          class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl text-white p-8 lg:p-12 mb-16 text-center"
-        >
-          <h2 class="text-3xl lg:text-4xl font-bold mb-4">
-            Ready to Bridge Technology and Business?
-          </h2>
-          <p class="text-xl lg:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
-            Explore frameworks, coaching, and transformation programs that put
-            people at the center of your next digital initiative.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <!-- Placeholder for future action buttons -->
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <!-- RELATED & SHARE -->
-    <section class="max-w-5xl mx-auto px-6 sm:px-8 pb-12">
-      <div
-        class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4"
-      >
-        <div>
-          <h4 class="text-lg mt-4 font-semibold">Related Articles</h4>
-          <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a
-              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
-              href="./ai-data-transformation-people-drive-digital-growth.html"
-            >
-              <h5 class="font-semibold">AI & Data Transformation</h5>
-              <p class="text-sm text-gray-500 mt-1">
-                Why people-first leadership determines the success of modern AI
-                initiatives.
-              </p>
-            </a>
-            <a
-              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
-              href="./datastar-international-digital-connectivity-mission.html"
-            >
-              <h5 class="font-semibold">
-                Datastar International: Digital Connectivity
-              </h5>
-              <p class="text-sm text-gray-500 mt-1">
-                Connecting global partners through trust, talent, and resilient
-                infrastructure.
-              </p>
-            </a>
-            <a
-              class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
-              href="./energy-efficiency-engineering-advanced-control-technology.html"
-            >
-              <h5 class="font-semibold">Energy Efficiency Engineering</h5>
-              <p class="text-sm text-gray-500 mt-1">
-                Designing sustainable systems that last while honoring human
-                expertise.
-              </p>
-            </a>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900">
-      <div
-        class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
-      >
-        <div class="flex justify-center space-x-6 md:order-2">
-          <a
-            href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/?originalSubdomain=sa"
-            target="_blank"
-            class="text-gray-400 hover:text-gray-500"
-            aria-label="LinkedIn"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61581839398982"
-            target="_blank"
-            class="text-gray-400 hover:text-gray-500"
-            aria-label="Facebook"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.instagram.com/abudlrehmanalshathry/"
-            target="_blank"
-            class="text-gray-400 hover:text-gray-500"
-            aria-label="Instagram"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://x.com/AbdulA53386"
-            target="_blank"
-            class="text-gray-400 hover:text-gray-500"
-            aria-label="X"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z"
-              />
-            </svg>
-          </a>
+    </div>
+    <article class="max-w-4xl mx-auto prose prose-lg">
+      <!-- TL;DR Section -->
+      <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl border-l-4 border-indigo-400 p-8 lg:p-10 mb-12">
+        <div class="flex items-center mb-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="ml-4 text-2xl font-bold text-gray-900">
+            TL;DR: Key Lessons
+          </h3>
         </div>
-        <div class="mt-8 md:order-1 md:mt-0">
-          <p class="text-center text-xs leading-5 text-gray-500">
-            &copy; 2025 Abdulrahman AlShathry. All rights reserved.
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <div
+            class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-green-100 text-green-600">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  People Power Change
+                </h4>
+                <p class="mt-1 text-gray-600">
+                  Transformation sticks when people embrace new ways of
+                  working; tools only amplify their readiness.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-blue-100 text-blue-600">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Leadership Shifts First
+                </h4>
+                <p class="mt-1 text-gray-600">
+                  Integration succeeds when leaders reframe technology as a
+                  human change initiative, not an IT project.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-purple-100 text-purple-600">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Pilot to Build Trust
+                </h4>
+                <p class="mt-1 text-gray-600">
+                  Start small, prove value, and let early wins calm fears
+                  while creating internal champions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-orange-100 text-orange-600">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M18 13V5a2 2 0 00-2-2H8l-2-2H2a1 1 0 00-1 1v11a2 2 0 002 2h12a3 3 0 003-3zm-8-1a3 3 0 100-6 3 3 0 000 6z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Bridge Communication Gaps
+                </h4>
+                <p class="mt-1 text-gray-600">
+                  Translators who speak technology and business fluently
+                  prevent disconnects that sink integrations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-yellow-100 text-yellow-600">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M2.166 4.724a1 1 0 011.11-.217l3.639 1.56A2 2 0 018 8.013V9.59a2 2 0 01-.553 1.38l-.894.948a2 2 0 00-.553 1.38v2.384a1 1 0 01-1.447.894l-.553-.276a2 2 0 01-1.106-1.788V5.618a1 1 0 01.322-.724zM12 6a1 1 0 011 1v3.382a2 2 0 00.553 1.381l.894.947a2 2 0 01.553 1.381v2.384a1 1 0 01-1.447.894l-.553-.276A2 2 0 0112 16.272V7a1 1 0 011-1z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Collaboration Sustains Change
+                </h4>
+                <p class="mt-1 text-gray-600">
+                  Long-term adoption comes from cross-functional ownership,
+                  not handoffs to a single department.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-8 w-8 rounded-md bg-red-100 text-red-600">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M11 17a1 1 0 01-.447-.105l-8-4a1 1 0 010-1.79l8-4a1 1 0 01.894 0l8 4a1 1 0 010 1.79l-8 4A1 1 0 0111 17zm-5.618-5L11 14.382 16.618 12 11 9.618 5.382 12z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Hybrid Skills Win
+                </h4>
+                <p class="mt-1 text-gray-600">
+                  Professionals who blend technical literacy with business
+                  judgement are the catalyst for integration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <div class="content-section">
+        <p
+          class="text-lg lg:text-xl leading-relaxed text-gray-700 mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-indigo-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
+          When most conversations about business technology integration fixate
+          on tools, dashboards, or software rollouts, they miss the deeper
+          story. Decades of building Saudi Controls and later Datastar taught
+          me that real transformation takes root in boardrooms, on factory
+          floors, and in the minds of people willing to rethink how work is
+          done.
+        </p>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          My mission has always been to bridge innovation with integrity. This
+          article shares the practical wisdom we earned while helping
+          organizations integrate technology with purpose, empathy, and
+          sustainable leadership.
+        </p>
+
+        <div class="quote-section">
+          <p class="text-lg font-medium text-gray-800 italic">
+            Technology may set the stage, but people change the narrative.
+            Every successful transformation we led began with human curiosity,
+            trust, and a clear purpose that outlived the latest platform.
           </p>
         </div>
       </div>
-    </footer>
 
-    <!-- scripts -->
-    <script>
-      // Mobile menu toggle functionality
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
+      <!-- The Foundation Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          The Foundation: When Vision Meets Reality
+        </h2>
 
-      if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      }
+        <p class="text-lg leading-relaxed text-gray-700">
+          In the early days of Saudi Controls, automation still felt foreign
+          across the region. We had ambition but not abundance, vision but not
+          yet validation. What kept us moving was a clear purpose: modernize
+          national infrastructure in a way that respected how people already
+          worked. The insight that stays with me is simple — technology alone
+          does not secure adoption; understanding the human context does.
+        </p>
 
-      // Reading progress bar functionality
-      function updateReadingProgress() {
-        const article = document.querySelector("article");
-        const progressBar = document.getElementById("reading-progress");
+        <p class="text-lg leading-relaxed text-gray-700">
+          Every project began by walking the floor with clients, mapping their
+          workflows, and listening to their fears. We were not just installing
+          control systems. We were proving that innovation could make everyday
+          work more dependable.
+        </p>
 
-        if (!article || !progressBar) return;
+        <h3>Understanding the Real Challenge</h3>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Industry research shows that roughly 70% of digital transformation
+          initiatives miss their targets. The issue is not an absence of
+          capable platforms; it is the presence of cultural resistance,
+          unclear communication, and change fatigue. Most organizations treat
+          technology deployments as technical exercises when, in reality, they
+          are human transformation programs with technical components.
+        </p>
 
-        const articleTop = article.offsetTop;
-        const articleHeight = article.offsetHeight;
-        const windowHeight = window.innerHeight;
-        const scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+        <div class="highlight-box">
+          <p class="text-lg leading-relaxed text-gray-700">
+            Success begins when leaders reframe integration from "Which system
+            should we buy?" to "Which problem are we solving, and how will it
+            improve work for our people?"
+          </p>
+        </div>
 
-        const articleBottom = articleTop + articleHeight - windowHeight;
-        const scrollProgress = Math.max(
-          0,
-          Math.min(1, (scrollTop - articleTop) / (articleBottom - articleTop))
-        );
+        <figure class="mt-8">
+          <img src="../image/bridging-tech-business/foundation-control-room.jpg"
+            alt="Engineers implementing early automation technology in industrial facility showing tech integration beginnings"
+            class="rounded-xl shadow-lg" />
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">
+            Early automation efforts in the 1990s laid the groundwork for
+            technology and business alignment.
+          </figcaption>
+        </figure>
+      </div>
 
-        progressBar.style.width = scrollProgress * 100 + "%";
-      }
+      <!-- Honest Take Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          My Honest Take: Technology Doesn't Transform Industries—People Do
+        </h2>
 
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
+        <p class="text-lg leading-relaxed text-gray-700">
+          Conventional wisdom says adopting the right platform creates
+          competitive advantage. I have seen the opposite play out. Companies
+          invest heavily in sophisticated systems that end up underused, while
+          smaller teams with modest tools thrive because they built cultures
+          of experimentation and cross-functional trust.
+        </p>
+
+        <div class="quote-section">
+          <p class="text-lg font-medium text-gray-800 italic">
+            Tools evolve constantly, but leadership, collaboration, and
+            curiosity drive meaningful change. Innovation is not an event you
+            budget for — it is a mindset you practice daily.
+          </p>
+        </div>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          As Datastar grew, we made sure teams understood both the technical
+          possibilities and the business realities of every initiative. That
+          balance protected us from silver-bullet thinking and kept
+          investments tied to real outcomes.
+        </p>
+
+        <figure class="mt-8">
+          <img src="../image/bridging-tech-business/cross-functional-strategy-session.jpg"
+            alt="Cross-functional team bridging technology and business perspectives during strategy session"
+            class="rounded-xl shadow-lg" />
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">
+            Breakthroughs happen when technical and business leaders build
+            solutions together.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Practical Framework Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          The Practical Framework: How to Actually Bridge Technology and
+          Business
+        </h2>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          After guiding integrations across industries, we rely on a five-part
+          framework that keeps projects grounded in business value and human
+          adoption.
+        </p>
+
+        <div class="highlight-box">
+          <ol class="list-decimal list-inside space-y-3 text-gray-700 text-lg leading-relaxed">
+            <li>
+              <strong>Start with the problem.</strong> Define the human pain
+              point or operational bottleneck before ever naming a platform.
+            </li>
+            <li>
+              <strong>Build cross-functional teams.</strong> Include technical
+              experts, business owners, end users, and change leaders from day
+              one.
+            </li>
+            <li>
+              <strong>Pilot before you scale.</strong> Use controlled rollouts
+              to test assumptions, reduce risk, and create internal advocates.
+            </li>
+            <li>
+              <strong>Invest in translation.</strong> Bridge roles keep
+              conversations flowing between technical and business groups,
+              preventing costly misunderstandings.
+            </li>
+            <li>
+              <strong>Measure what matters.</strong> Link uptime and feature
+              adoption to financial and customer impact so everyone sees the
+              business value.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Essential Skills Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          Essential Skills for Bridging Technology and Business
+        </h2>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          The most valuable contributors we work with combine technical
+          literacy, strategic awareness, and empathy for how people adopt
+          change. These hybrid professionals translate possibility into
+          action.
+        </p>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
+            <div class="flex items-center mb-4">
+              <div
+                class="h-10 w-10 bg-blue-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">
+                1
+              </div>
+              <h4 class="text-lg font-semibold text-gray-900">
+                Technical Foundation
+              </h4>
+            </div>
+            <p class="text-gray-600">
+              Understand system capabilities, data flows, and security basics
+              to evaluate what is possible and practical.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
+            <div class="flex items-center mb-4">
+              <div
+                class="h-10 w-10 bg-green-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">
+                2
+              </div>
+              <h4 class="text-lg font-semibold text-gray-900">
+                Business Acumen
+              </h4>
+            </div>
+            <p class="text-gray-600">
+              Read P&L statements, map workflows, and grasp customer needs so
+              technology aligns with measurable value.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200">
+            <div class="flex items-center mb-4">
+              <div
+                class="h-10 w-10 bg-purple-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">
+                3
+              </div>
+              <h4 class="text-lg font-semibold text-gray-900">
+                Communication & Translation
+              </h4>
+            </div>
+            <p class="text-gray-600">
+              Explain complex concepts in plain language and turn business
+              requirements into actionable technical plans.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200">
+            <div class="flex items-center mb-4">
+              <div
+                class="h-10 w-10 bg-orange-500 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">
+                4
+              </div>
+              <h4 class="text-lg font-semibold text-gray-900">
+                Change Leadership
+              </h4>
+            </div>
+            <p class="text-gray-600">
+              Guide teams through uncertainty, build psychological safety, and
+              coach new behaviors until they stick.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <p class="text-lg leading-relaxed text-gray-700">
+            Data literacy continues to rank as the most in-demand skill
+            because it blends analysis with storytelling and decision-making —
+            the sweet spot between technical insight and business relevance.
+          </p>
+        </div>
+
+        <figure class="mt-8">
+          <img src="../image/bridging-tech-business/bridging-skills-presentation.jpg"
+            alt="Professional demonstrating bridging skills between technical and business domains in presentation"
+            class="rounded-xl shadow-lg" />
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">
+            The modern integrator balances code literacy with commercial
+            insight and change leadership.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Leadership Alignment Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          Aligning Business and Technology: The Leadership Imperative
+        </h2>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          Alignment does not happen accidentally. It requires deliberate
+          leadership habits that keep technology conversations connected to
+          strategy, customers, and culture.
+        </p>
+
+        <ul class="space-y-3 text-lg leading-relaxed text-gray-700">
+          <li>
+            <strong>Create shared goals.</strong> Overlapping KPIs ensure
+            technology and business teams answer to the same outcomes.
+          </li>
+          <li>
+            <strong>Establish regular rhythms.</strong> Strategic check-ins
+            let leaders surface opportunities and respond to risks before they
+            escalate.
+          </li>
+          <li>
+            <strong>Invite technology into strategy.</strong> Technical
+            leaders belong in planning sessions so they can shape feasible,
+            future-ready roadmaps.
+          </li>
+          <li>
+            <strong>Invest in mutual understanding.</strong> Cross-pollination
+            — from customer visits to technical deep-dives — builds empathy
+            and respect.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Relationship Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          The Relationship Between Technology and Business
+        </h2>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          Technology and business are no longer separate disciplines seeking
+          alignment; they are intertwined elements of strategy. Digital
+          capabilities define competitive positioning, data infrastructure
+          shapes customer insight, and system performance affects operational
+          resilience.
+        </p>
+
+        <div class="quote-section">
+          <p class="text-lg font-medium text-gray-800">
+            Think of business as the destination and technology as the
+            vehicle. Purposeful integration means plotting the route together
+            instead of taking separate journeys.
+          </p>
+        </div>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          Without business context, technology investments become expensive
+          infrastructure. Without technology, business strategies stall. The
+          relationship works when each informs and accelerates the other.
+        </p>
+      </div>
+
+      <!-- Real-World Applications Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          Real-World Applications: Bridging Business and IT
+        </h2>
+
+        <p class="text-lg leading-relaxed text-gray-700">
+          These scenarios highlight how integrated teams solved real
+          challenges by sequencing technology and human change with intention.
+        </p>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+            <h3>Manufacturing Client</h3>
+            <p class="mt-3 text-gray-700">
+              IoT sensors promised predictive maintenance, but operations
+              feared downtime. We phased rollout line by line, starting with
+              equipment already scheduled for service. Within six months,
+              production leaders were pushing to scale because uptime gains
+              were undeniable.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+            <h3>Financial Services Partner</h3>
+            <p class="mt-3 text-gray-700">
+              Legacy systems blocked new digital products. Instead of a risky
+              rip-and-replace, we introduced an API layer that enabled new
+              services while gradually retiring technical debt.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm md:col-span-2">
+            <h3>Retail Customer</h3>
+            <p class="mt-3 text-gray-700">
+              Inventory issues spanned stores and online channels. We gave
+              frontline teams real-time visibility first, letting them build
+              trust in the data before automating replenishment. Adoption
+              skyrocketed once they saw the value firsthand.
+            </p>
+          </div>
+        </div>
+
+        <figure class="mt-8">
+          <img src="../image/bridging-tech-business/technology-business-harmony.jpg"
+            alt="Successful business technology integration showing people and systems working harmoniously together"
+            class="rounded-xl shadow-lg" />
+          <figcaption class="text-sm text-gray-500 mt-3 text-center">
+            Integrated organizations balance human collaboration with the
+            right digital tools.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="content-section">
+        <div class="mb-12">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Straight answers to the questions leaders ask most when trying
+              to connect technology investments with business growth.
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:gap-8">
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-indigo-100 text-indigo-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                      What skills are essential for bridging technology and
+                      business?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Technical literacy, business acumen, communication, and
+                      change management form the core. Together they enable
+                      professionals to translate between possibilities and
+                      practical execution.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-green-100 text-green-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                      Which technology skill is most in demand right now?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Data literacy stands out because it couples analytical
+                      rigor with the ability to communicate insights that
+                      drive decisions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-purple-100 text-purple-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                      How do you bridge the gap between IT and business teams?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Form cross-functional squads, align on business metrics,
+                      schedule consistent dialogue, and create roles dedicated
+                      to translating between both sides.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-2m-4 0H7a2 2 0 01-2-2V6a2 2 0 012-2h6l4 4v12a2 2 0 01-2 2z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                      What is the relationship between technology and
+                      business?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      They are interdependent. Technology enables strategy,
+                      and strategy guides technology investments. Treat them
+                      as one integrated discipline.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div class="p-6 lg:p-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-10 w-10 rounded-md bg-red-100 text-red-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 8c-1.657 0-3 .895-3 2v4c0 1.105 1.343 2 3 2s3-.895 3-2v-4c0-1.105-1.343-2-3-2z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M6 12H4m0 0a8 8 0 1116 0H6zm0 0a8 8 0 0016 0"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                      How do you align business and technology goals?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Set shared KPIs, include technology leaders in strategy
+                      formation, run pilots that demonstrate business value,
+                      and cultivate empathy across teams.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conclusion Section -->
+      <div class="content-section">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          Conclusion: Building Organizations That Last
+        </h2>
+
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          Sustainable success happens when technology initiatives honor the
+          people who will use them. The most advanced systems cannot
+          compensate for teams who feel excluded, nor can they solve problems
+          that were never clearly defined.
+        </p>
+
+        <div class="quote-section">
+          <p class="text-lg font-medium text-gray-800">
+            True progress lives at the intersection of technology, human
+            potential, and principled leadership. When you treat integration
+            as a human journey with technical milestones, you build
+            organizations that last.
+          </p>
+        </div>
+
+        <hr class="my-8 border-gray-200" />
+
+        <div class="flex items-center gap-4">
+          <div class="flex-shrink-0 h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
+            <img src="../image/bg.jpg" alt="Author photo" class="h-12 w-12 rounded-full object-cover" />
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900">Abdulrahman AlShathry</p>
+            <p class="text-sm text-gray-500">
+              Founder & Advisor — technology integration, automation, and
+              digital infrastructure
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Section -->
+      <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl text-white p-8 lg:p-12 mb-16 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+          Ready to Bridge Technology and Business?
+        </h2>
+        <p class="text-xl lg:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+          Explore frameworks, coaching, and transformation programs that put
+          people at the center of your next digital initiative.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <!-- Placeholder for future action buttons -->
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- RELATED & SHARE -->
+  <section class="max-w-5xl mx-auto px-6 sm:px-8 pb-12">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+      <div>
+        <h4 class="text-lg mt-4 font-semibold">Related Articles</h4>
+        <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+            href="./ai-data-transformation-people-drive-digital-growth.html">
+            <h5 class="font-semibold">AI & Data Transformation</h5>
+            <p class="text-sm text-gray-500 mt-1">
+              Why people-first leadership determines the success of modern AI
+              initiatives.
+            </p>
+          </a>
+          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+            href="./datastar-international-digital-connectivity-mission.html">
+            <h5 class="font-semibold">
+              Datastar International: Digital Connectivity
+            </h5>
+            <p class="text-sm text-gray-500 mt-1">
+              Connecting global partners through trust, talent, and resilient
+              infrastructure.
+            </p>
+          </a>
+          <a class="block p-4 bg-white rounded-md shadow-sm hover:shadow-md"
+            href="./energy-efficiency-engineering-advanced-control-technology.html">
+            <h5 class="font-semibold">Energy Efficiency Engineering</h5>
+            <p class="text-sm text-gray-500 mt-1">
+              Designing sustainable systems that last while honoring human
+              expertise.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900">
+    <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+      <div class="flex justify-center space-x-6 md:order-2">
+        <a href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/?originalSubdomain=sa" target="_blank"
+          class="text-gray-400 hover:text-gray-500" aria-label="LinkedIn">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61581839398982" target="_blank"
+          class="text-gray-400 hover:text-gray-500" aria-label="Facebook">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/abudlrehmanalshathry/" target="_blank"
+          class="text-gray-400 hover:text-gray-500" aria-label="Instagram">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="https://x.com/AbdulA53386" target="_blank" class="text-gray-400 hover:text-gray-500" aria-label="X">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+          </svg>
+        </a>
+      </div>
+      <div class="mt-8 md:order-1 md:mt-0">
+        <p class="text-center text-xs leading-5 text-gray-500">
+          &copy; 2025 Abdulrahman AlShathry. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script>
+    // Mobile menu toggle functionality
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
       });
+    }
 
-      // Fade-in animation for content sections
-      function observeElements() {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-              }
-            });
-          },
-          {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px",
-          }
-        );
+    // Reading progress bar functionality
+    function updateReadingProgress() {
+      const article = document.querySelector("article");
+      const progressBar = document.getElementById("reading-progress");
 
-        // Observe content sections
-        document.querySelectorAll(".content-section").forEach((section) => {
-          section.style.opacity = "0";
-          section.style.transform = "translateY(20px)";
-          section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-          observer.observe(section);
-        });
-      }
+      if (!article || !progressBar) return;
 
-      // Enhanced keyboard navigation for FAQ items
-      document.querySelectorAll("details").forEach((detail) => {
-        detail.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            detail.open = !detail.open;
-          }
-        });
-      });
+      const articleTop = article.offsetTop;
+      const articleHeight = article.offsetHeight;
+      const windowHeight = window.innerHeight;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
-      // Initialize all functionality when DOM is loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        updateReadingProgress();
-        observeElements();
+      const articleBottom = articleTop + articleHeight - windowHeight;
+      const scrollProgress = Math.max(
+        0,
+        Math.min(1, (scrollTop - articleTop) / (articleBottom - articleTop))
+      );
 
-        // Update reading progress on scroll
-        window.addEventListener("scroll", updateReadingProgress);
-        window.addEventListener("resize", updateReadingProgress);
-      });
+      progressBar.style.width = scrollProgress * 100 + "%";
+    }
 
-      // Enhanced hover effects for cards and buttons
-      document.addEventListener("DOMContentLoaded", function () {
-        // Add subtle hover animations to cards
-        const cards = document.querySelectorAll(
-          ".content-section, .bg-white.rounded-lg"
-        );
-        cards.forEach((card) => {
-          card.addEventListener("mouseenter", function () {
-            this.style.transition = "all 0.3s ease";
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
           });
+        }
+      });
+    });
+
+    // Fade-in animation for content sections
+    function observeElements() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        }
+      );
+
+      // Observe content sections
+      document.querySelectorAll(".content-section").forEach((section) => {
+        section.style.opacity = "0";
+        section.style.transform = "translateY(20px)";
+        section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(section);
+      });
+    }
+
+    // Enhanced keyboard navigation for FAQ items
+    document.querySelectorAll("details").forEach((detail) => {
+      detail.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          detail.open = !detail.open;
+        }
+      });
+    });
+
+    // Initialize all functionality when DOM is loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      updateReadingProgress();
+      observeElements();
+
+      // Update reading progress on scroll
+      window.addEventListener("scroll", updateReadingProgress);
+      window.addEventListener("resize", updateReadingProgress);
+    });
+
+    // Enhanced hover effects for cards and buttons
+    document.addEventListener("DOMContentLoaded", function () {
+      // Add subtle hover animations to cards
+      const cards = document.querySelectorAll(
+        ".content-section, .bg-white.rounded-lg"
+      );
+      cards.forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transition = "all 0.3s ease";
         });
       });
+    });
 
-      fetch("../navbar.html")
-        .then((response) => response.text())
-        .then((html) => (document.getElementById("navbar").innerHTML = html));
-    </script>
-  </body>
+    fetch("../navbar.html")
+      .then((response) => response.text())
+      .then((html) => (document.getElementById("navbar").innerHTML = html));
+  </script>
+</body>
+
 </html>
