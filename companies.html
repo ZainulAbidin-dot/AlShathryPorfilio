@@ -2,31 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/svg+xml" href="../image/about-pic.webp" />
-  <title>Companies Led by Abdul Rahman Al Shathry</title>
-  <link rel="canonical" href="https://www.alshathryce.com/companies.html" />
+  <title>Contact - Abdulrahman AlShathry AZ</title>
+  <link rel="canonical" href="https://www.alshathryce.com/contact.html" />
   <meta name="description"
-    content="Discover the companies led by AbdulRahman AlShathry AZ delivering enterprise IT solutions and smart infrastructure across Saudi Arabia" />
-
+    content="Contact AbdulRahman AlShathry AZ to discuss enterprise IT solutions, digital transformation and strategic initiatives." />
   <meta name="google-site-verification" content="T9Id_PISm8IFSGrsaXh310ZjpIoD8dT-K3QRV8gyyHQ" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z33ZSSC2VT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    gtag("config", "G-Z33ZSSC2VT");
+    gtag('config', 'G-Z33ZSSC2VT');
   </script>
 
   <style>
-    /* Enhanced Companies Page Styling - Matching index.html */
+    /* Enhanced Contact Page Styling - Matching index.html */
     .home-content {
       background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     }
@@ -86,25 +83,19 @@
     }
 
     .hero-enhanced {
-      background: linear-gradient(135deg,
-          rgba(17, 24, 39, 0.95) 0%,
-          rgba(55, 65, 81, 0.9) 50%,
-          rgba(17, 24, 39, 0.95) 100%);
+      background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(55, 65, 81, 0.9) 50%, rgba(17, 24, 39, 0.95) 100%);
       position: relative;
       overflow: hidden;
     }
 
     .hero-enhanced::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(45deg,
-          rgba(59, 130, 246, 0.1) 0%,
-          rgba(99, 102, 241, 0.1) 50%,
-          rgba(168, 85, 247, 0.1) 100%);
+      background: linear-gradient(45deg, rgba(59, 130, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 50%, rgba(168, 85, 247, 0.1) 100%);
       z-index: 1;
     }
 
@@ -120,8 +111,7 @@
 
     .card-hover-effect:hover {
       transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
 
     .fade-in-element {
@@ -157,57 +147,37 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
-    .timeline-card {
+    .form-enhanced {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border-radius: 1.5rem;
+      padding: 3rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e2e8f0;
       transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
     }
 
-    .timeline-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg,
-          transparent,
-          rgba(99, 102, 241, 0.1),
-          transparent);
-      transition: left 0.5s ease;
+    .form-enhanced:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
     }
 
-    .timeline-card:hover::before {
-      left: 100%;
+    .form-field {
+      transition: all 0.3s ease;
     }
 
-    .company-card {
-      transition: all 0.4s ease;
-      position: relative;
-      overflow: hidden;
+    .form-field:focus-within {
+      transform: translateY(-2px);
     }
 
-    .company-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    .form-field input,
+    .form-field textarea {
+      transition: all 0.3s ease;
     }
 
-    .company-card::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg,
-          transparent,
-          rgba(255, 255, 255, 0.4),
-          transparent);
-      transition: left 0.6s ease;
-    }
-
-    .company-card:hover::after {
-      left: 100%;
+    .form-field input:focus,
+    .form-field textarea:focus {
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      border-color: #3b82f6;
     }
 
     @keyframes slideInFromBottom {
@@ -269,20 +239,23 @@
         margin: 1rem 0;
       }
 
+      .form-enhanced {
+        padding: 2rem;
+      }
+
       .quote-section::before {
         font-size: 2rem;
       }
-
-      .company-card:hover {
-        transform: translateY(-4px) scale(1.01);
-      }
     }
   </style>
+
 </head>
 
 <body>
+
   <!-- Reading Progress Bar -->
   <div class="reading-progress" id="reading-progress"></div>
+
 
   <!-- Navigation -->
   <nav class="bg-[#111827] sticky top-0 z-50 shadow-xl">
@@ -337,14 +310,12 @@
 
                   <hr class="border-gray-700 my-2" />
 
-
                   <!-- Category 3 -->
                   <a href="./blogs/bridging-technology-business-saudi-arabia-future.html"
                     class="block px-4 py-2 text-sm uppercase text-gray-400 hover:bg-gray-800 hover:text-white transition">Bridging
                     Technology & Business in Saudi Arabia’s Future</a>
 
                   <hr class="border-gray-700 my-2" />
-
 
                   <!-- Category 3 -->
                   <a href="./industry-news/alshathry-ice-riyadh-2025.html"
@@ -386,8 +357,7 @@
 
         <!-- Category 3 -->
         <a href="./blogs/bridging-technology-business-saudi-arabia-future.html"
-          class="text-xs uppercase text-gray-400 mt-4 ml-4">Bridging
-          Technology & Business in Saudi Arabia’s Future</a>
+          class="text-xs uppercase text-gray-400 mt-4 ml-4">Bridging Technology & Business in Saudi Arabia’s Future</a>
 
 
         <!-- Category 3 -->
@@ -400,271 +370,100 @@
     </div>
   </nav>
 
+
   <main>
     <!-- Hero Section -->
     <section class="hero-enhanced pt-24 pb-12 sm:pt-32 sm:pb-12 relative">
       <div class="hero-content mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-4xl text-center">
+        <div class="mx-auto max-w text-center">
           <h1 class="fade-in-element text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Building
-            <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Landmarks</span>,
-            Driving Innovation
+            Get in <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Touch</span>
           </h1>
           <p class="fade-in-element mt-6 text-lg leading-8 text-gray-200">
-            Explore the portfolio of companies and ventures that have shaped
-            industries across Saudi Arabia and beyond, from engineering
-            excellence to international business development.
+            Connect with me for business opportunities, partnerships, or professional consultations. I'm always
+            interested in discussing innovative projects and strategic collaborations.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Companies Grid -->
-    <section class="home-content pb-24 sm:pb-32 pt-12 sm:pt-12">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <!-- Contact Form & Info -->
+    <section class="home-content px-6 pb-24 sm:pb-32 lg:px-8">
+      <div class="mx-auto max-w-7xl">
         <div class="content-section fade-in-element text-center">
-          <h2 class="text-4xl font-bold tracking-tight text-gray-900">
-            List of Companies
-          </h2>
-        </div>
-      </div>
-      <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-          <!-- Saudi Controls Ltd. -->
-          <div class="relative lg:row-span-2 company-card fade-in-element">
-            <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
-            <div
-              class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-              <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                <h3 class="mt-2 text-xl font-bold tracking-tight text-gray-950 max-lg:text-center">
-                  Saudi Controls Ltd.
-                </h3>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  One of Saudi Arabia's foremost engineering and systems
-                  integration companies, specializing in advanced control
-                  systems and engineering solutions for over 26 years.
-                </p>
-              </div>
-              <div
-                class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-                <div
-                  class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                  <div class="flex p-6 text-white">
-                    <div class="w-full">
-                      <h4 class="font-semibold mb-4 mt-4">Key Services:</h4>
-                      <ul class="text-sm space-y-2">
-                        <li>• Engineering Consultancy</li>
-                        <li>• Systems Integration</li>
-                        <li>• Project Management</li>
-                        <li>• Control Systems Design</li>
-                        <li>• Automation Solutions</li>
-                        <li>• Control Systems Maintenance</li>
-                        <li>• Technical Support</li>
-                        <li>• Training and Development</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="https://www.saudicontrols.com/" target="_blank"
-              class="absolute inset-0 rounded-lg lg:rounded-l-[2rem] flex items-center justify-center opacity-0 hover:opacity-100 bg-black/50 transition-opacity duration-300">
-              <span class="text-white font-semibold px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700">Learn
-                More</span>
-            </a>
-          </div>
-
-          <!-- DataStar Ltd. -->
-          <div class="relative max-lg:row-start-1 company-card fade-in-element">
-            <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
-            <div
-              class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                <h3 class="mt-2 text-lg font-bold tracking-tight text-gray-950 max-lg:text-center">
-                  DataStar Ltd.
-                </h3>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Leading provider of survey management, data processing and
-                  tabulation services to researchers and organizations
-                  worldwide.
-                </p>
-              </div>
-              <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                <div class="w-full p-4 bg-gray-50 rounded-lg">
-                  <h4 class="font-semibold text-gray-900 mb-2">
-                    Specializations:
-                  </h4>
-                  <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• Market Research</li>
-                    <li>• Data Analytics</li>
-                    <li>• Survey Design</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <a href="https://www.linkedin.com/company/datastar-international-ltd." target="_blank"
-              class="absolute inset-0 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 bg-black/50 transition-opacity duration-300">
-              <span class="text-white font-semibold px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700">Learn
-                More</span>
-            </a>
-            <div
-              class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]">
-            </div>
-          </div>
-
-          <!-- Al-Shathry Group -->
-          <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 company-card fade-in-element">
-            <div class="absolute inset-px rounded-lg bg-white"></div>
-            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                <h3 class="mt-2 text-lg font-bold tracking-tight text-gray-950 max-lg:text-center">
-                  Al-Shathry Group of Companies
-                </h3>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Parent company involved in diverse projects across multiple
-                  industries, collectively fielding over 300 professional and
-                  technical staff members.
-                </p>
-              </div>
-              <div class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                <div class="w-full p-4">
-                  <div class="text-center stats-card bg-gradient-to-br from-indigo-600 to-purple-700">
-                    <span class="text-2xl font-bold text-white counter-number" data-target="300">300+</span>
-                    <p class="text-sm text-indigo-100 mt-1">
-                      Professional Staff
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- <a href="https://sau.soopage.com/company/AL-SHATHRY-CONSULTING-ENGINEERS_gpP.html" target="_blank" class="absolute inset-0 rounded-lg lg:rounded-l-[2rem] flex items-center justify-center opacity-0 hover:opacity-100 bg-black/50 transition-opacity duration-300">
-              <span class="text-white font-semibold px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700">Learn More</span>
-            </a> -->
-            <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-          </div>
-
-          <!-- AlShathry Consulting Engineers -->
-          <div class="relative lg:row-span-2 company-card fade-in-element">
-            <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-            <div
-              class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-              <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                <h3 class="mt-2 text-lg font-bold tracking-tight text-gray-950 max-lg:text-center">
-                  AlShathry Consulting Engineers
-                </h3>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Specialized engineering consultancy providing comprehensive
-                  solutions for complex infrastructure and development
-                  projects.
-                </p>
-              </div>
-              <div class="relative min-h-[30rem] w-full grow">
-                <div
-                  class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
-                  <div class="flex ring-1 ring-white/5">
-                    <div class="flex text-sm font-medium text-white p-4">
-                      <div>Major Projects</div>
-                    </div>
-                  </div>
-                  <div class="px-6 pb-6 pt-6 text-white text-sm">
-                    <div class="space-y-3">
-                      <div class="border-l-2 border-indigo-500 pl-3">
-                        <h4 class="font-semibold">Coastal Development</h4>
-                        <p class="text-gray-300">
-                          Tabuk – Hakeel Waterfront offshore projects
-                        </p>
-                      </div>
-                      <div class="border-l-2 border-green-500 pl-3">
-                        <h4 class="font-semibold">Infrastructure</h4>
-                        <p class="text-gray-300">
-                          Road maintenance and flood disposal in Riyadh
-                        </p>
-                      </div>
-                      <div class="border-l-2 border-blue-500 pl-3">
-                        <h4 class="font-semibold">Engineering Solutions</h4>
-                        <p class="text-gray-300">
-                          Comprehensive consulting across multiple sectors
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <a href="https://www.linkedin.com/company/datastar-international-ltd." target="_blank"
-              class="absolute inset-0 rounded-lg lg:rounded-r-[2rem] flex items-center justify-center opacity-0 hover:opacity-100 bg-black/50 transition-opacity duration-300">
-              <span class="text-white font-semibold px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700">Learn
-                More</span>
-            </a>
-            <div
-              class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- International Ventures -->
-    <section class="home-content pb-24 sm:pb-32 pt-12 sm:pt-12">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="content-section fade-in-element">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            International Ventures
-          </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
-            Global business interests and strategic partnerships that extend
-            our reach across international markets.
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Information</h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            I'd love to hear from you. Send me a message and I'll respond as soon as possible.
           </p>
         </div>
-        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          <div class="section-enhanced timeline-card card-hover-effect fade-in-element">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              UK Business Interests
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Significant interests in several UK-based companies, providing
-              international market access and cross-cultural business
-              expertise.
-            </p>
-            <div class="mt-auto">
-              <span
-                class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">International</span>
-            </div>
-          </div>
+        <div class="form-enhanced fade-in-element mx-auto mt-16 max-w-xl sm:mt-20">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Required Access Key -->
+            <input type="hidden" name="access_key" value="3324681e-90da-4b98-97d8-07e43f7ef115">
 
-          <div class="section-enhanced timeline-card card-hover-effect fade-in-element">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Saudi-French Business Council
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Active member fostering trade relationships and business
-              opportunities between Saudi Arabia and France.
-            </p>
-            <div class="mt-auto">
-              <span
-                class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Partnership</span>
-            </div>
-          </div>
+            <!-- Optional Redirect URL after submit -->
+            <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thankyou.html"> -->
 
-          <div class="section-enhanced timeline-card card-hover-effect fade-in-element">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Saudi-Italian Business Council
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Strategic involvement in promoting bilateral trade and
-              investment opportunities between Saudi Arabia and Italy.
-            </p>
-            <div class="mt-auto">
-              <span
-                class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">Council</span>
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div class="form-field">
+                <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+                <div class="mt-2.5">
+                  <input type="text" name="first-name" id="first-name" required
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+                <div class="mt-2.5">
+                  <input type="text" name="last-name" id="last-name" required
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="sm:col-span-2 form-field">
+                <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+                <div class="mt-2.5">
+                  <input type="text" name="company" id="company"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="sm:col-span-2 form-field">
+                <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                <div class="mt-2.5">
+                  <input type="email" name="email" id="email" required
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="sm:col-span-2 form-field">
+                <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone
+                  number</label>
+                <div class="relative mt-2.5">
+                  <input type="tel" name="phone-number" id="phone-number"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="sm:col-span-2 form-field">
+                <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+                <div class="mt-2.5">
+                  <textarea name="message" id="message" rows="4" required
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                </div>
+              </div>
             </div>
-          </div>
+
+            <!-- Hidden recipient -->
+            <input type="hidden" name="to" value="z@saudi.com">
+
+            <div class="mt-10">
+              <button type="submit"
+                class="card-hover-effect block w-full rounded-md bg-gradient-to-r from-indigo-600 to-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:from-indigo-500 hover:to-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-300">
+                Let's talk
+              </button>
+            </div>
+          </form>
         </div>
-      </div>
+
     </section>
+
 
     <!-- Links Section -->
     <section class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
@@ -682,9 +481,7 @@
               <a href="https://www.linkedin.com/company/9485930/" target="_blank" class="hover:text-indigo-400">LinkedIn
                 of Saudi Controls Ltd.</a>
             </dt>
-            <dd class="mt-2 text-base/7 text-gray-400">
-              Professional network and updates
-            </dd>
+            <dd class="mt-2 text-base/7 text-gray-400">Professional network and updates</dd>
           </div>
           <div class="flex flex-col lg:items-start items-center">
             <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
@@ -709,13 +506,9 @@
                   d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
               </svg>
             </div>
-            <dt class="mt-4 text-base font-semibold text-white">
-              Office Location
-            </dt>
-            <dd class="mt-2 text-base/7 text-gray-400">
-              5682 Makkah Al Mukarramah Br Rd, Umm Al Hamam Al Sharqi, Riyadh
-              12321
-            </dd>
+            <dt class="mt-4 text-base font-semibold text-white">Office Location</dt>
+            <dd class="mt-2 text-base/7 text-gray-400">5682 Makkah Al Mukarramah Br Rd, Umm Al Hamam Al Sharqi, Riyadh
+              12321</dd>
           </div>
           <div class="flex flex-col lg:items-start items-center">
             <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
@@ -725,12 +518,8 @@
                   d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3s-4.5 4.03-4.5 9 2.015 9 4.5 9Z" />
               </svg>
             </div>
-            <dt class="mt-4 text-base font-semibold text-white">
-              International Reach
-            </dt>
-            <dd class="mt-2 text-base/7 text-gray-400">
-              Saudi Arabia, UK, France, Italy
-            </dd>
+            <dt class="mt-4 text-base font-semibold text-white">International Reach</dt>
+            <dd class="mt-2 text-base/7 text-gray-400">Saudi Arabia, UK, France, Italy</dd>
           </div>
           <div class="flex flex-col lg:items-start items-center">
             <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
@@ -740,50 +529,24 @@
                   d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
             </div>
-            <dt class="mt-4 text-base font-semibold text-white">
-              Quick Links
-            </dt>
+            <dt class="mt-4 text-base font-semibold text-white">Quick Links</dt>
             <dd class="mt-2 text-base/7 text-gray-400 space-y-1">
-              <div>
-                <a href="index.html" class="hover:text-indigo-400">Home</a>
-              </div>
-              <div>
-                <a href="about.html" class="hover:text-indigo-400">About</a>
-              </div>
-              <div>
-                <a href="companies.html" class="hover:text-indigo-400">Companies</a>
-              </div>
-              <div>
-                <a href="contact.html" class="hover:text-indigo-400">Contact</a>
-              </div>
+              <div><a href="index.html" class="hover:text-indigo-400">Home</a></div>
+              <div><a href="about.html" class="hover:text-indigo-400">About</a></div>
+              <div><a href="companies.html" class="hover:text-indigo-400">Companies</a></div>
+              <div><a href="contact.html" class="hover:text-indigo-400">Contact</a></div>
             </dd>
           </div>
         </dl>
       </div>
       <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
-        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="
-              clip-path: polygon(
-                74.1% 44.1%,
-                100% 61.6%,
-                97.5% 26.9%,
-                85.5% 0.1%,
-                80.7% 2%,
-                72.5% 32.5%,
-                60.2% 62.4%,
-                52.4% 68.1%,
-                47.5% 58.3%,
-                45.2% 34.5%,
-                27.5% 76.7%,
-                0.1% 64.9%,
-                17.9% 100%,
-                27.6% 76.8%,
-                76.1% 97.7%,
-                74.1% 44.1%
-              );
-            "></div>
+        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
       </div>
     </section>
   </main>
+
 
   <!-- Footer -->
   <footer class="bg-gray-900">
@@ -832,209 +595,102 @@
     </div>
   </footer>
 
-  <!-- Enhanced JavaScript Functionality -->
-  <script>
-    // Mobile Menu Functionality
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
 
-    mobileMenuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+  <!-- Enhanced Interactive Scripts -->
+  <script>
+    // Mobile Menu Script
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconOpen = mobileMenuButton.querySelectorAll('svg')[0];
+    const menuIconClose = mobileMenuButton.querySelectorAll('svg')[1];
+
+    mobileMenuButton.addEventListener('click', () => {
+      // Toggle the mobile menu visibility
+      mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
+      // Toggle the icons
+      menuIconOpen.classList.toggle('hidden');
+      menuIconClose.classList.toggle('hidden');
     });
 
     // Reading Progress Bar
-    function updateReadingProgress() {
-      const progressBar = document.getElementById("reading-progress");
-      const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
-      progressBar.style.width = scrollPercent + "%";
-    }
-
-    window.addEventListener("scroll", updateReadingProgress);
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progress-bar').style.width = progress + '%';
+    });
 
     // Fade-in Animation on Scroll
-    function observeElements() {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
 
-              // Counter animation for stats
-              if (entry.target.classList.contains("counter-number")) {
-                animateCounter(entry.target);
-              }
-
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          threshold: 0.1,
-          rootMargin: "0px 0px -50px 0px",
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
         }
-      );
-
-      document.querySelectorAll(".fade-in-element").forEach((el) => {
-        observer.observe(el);
       });
-    }
+    }, observerOptions);
 
-    // Counter Animation
-    function animateCounter(element) {
-      const target = parseInt(element.getAttribute("data-target"));
-      const duration = 2500; // 2.5 seconds for smoother animation
-      const startTime = Date.now();
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in-element').forEach(element => {
+      observer.observe(element);
+    });
 
-      function updateCounter() {
-        const elapsed = Date.now() - startTime;
-        const progress = Math.min(elapsed / duration, 1);
+    // Enhanced Form Interactions
+    document.querySelectorAll('.form-field input, .form-field textarea').forEach(field => {
+      field.addEventListener('focus', () => {
+        field.parentElement.parentElement.style.transform = 'translateY(-2px)';
+      });
 
-        // Use easing function for smoother animation
-        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-        const current = Math.floor(easeOutQuart * target);
+      field.addEventListener('blur', () => {
+        field.parentElement.parentElement.style.transform = 'translateY(0)';
+      });
+    });
 
-        if (progress < 1) {
-          element.textContent = current.toLocaleString() + "+";
-          requestAnimationFrame(updateCounter);
-        } else {
-          element.textContent = target.toLocaleString() + "+";
-        }
-      }
+    // Card Hover Effects Enhancement
+    document.querySelectorAll('.card-hover-effect, .stats-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-4px) scale(1.02)';
+      });
 
-      updateCounter();
-    }
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+      });
+    });
 
-    // Smooth Scrolling for Internal Links
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
+    // Smooth Scroll Enhancement for Internal Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
+        const target = document.querySelector(this.getAttribute('href'));
         if (target) {
           target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
+            behavior: 'smooth',
+            block: 'start'
           });
         }
       });
     });
 
-    // Enhanced Hover Effects for Company Cards
-    function addParallaxEffect() {
-      const cards = document.querySelectorAll(
-        ".card-hover-effect, .company-card"
-      );
-
-      cards.forEach((card) => {
-        card.addEventListener("mousemove", (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-
-          const centerX = rect.width / 2;
-          const centerY = rect.height / 2;
-
-          const rotateX = (y - centerY) / 15;
-          const rotateY = (centerX - x) / 15;
-
-          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
+    // Page Load Animations
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.fade-in-element').forEach((element, index) => {
+          setTimeout(() => {
+            element.classList.add('visible');
+          }, index * 100);
         });
-
-        card.addEventListener("mouseleave", () => {
-          card.style.transform =
-            "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px) scale(1)";
-        });
-      });
-    }
-
-    // Initialize all functionality when DOM is loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      observeElements();
-      addParallaxEffect();
-
-      // Add loading animation to images
-      const images = document.querySelectorAll("img");
-      images.forEach((img) => {
-        img.addEventListener("load", function () {
-          this.style.opacity = "1";
-        });
-
-        if (img.complete) {
-          img.style.opacity = "1";
-        }
-      });
-
-      // Enhanced timeline card interactions
-      const timelineCards = document.querySelectorAll(".timeline-card");
-      timelineCards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.2}s`;
-
-        card.addEventListener("mouseenter", function () {
-          this.style.transform = "translateY(-8px) scale(1.03)";
-          this.style.zIndex = "10";
-        });
-
-        card.addEventListener("mouseleave", function () {
-          this.style.transform = "translateY(0px) scale(1)";
-          this.style.zIndex = "1";
-        });
-      });
-
-      // Enhanced company card animations
-      const companyCards = document.querySelectorAll(".company-card");
-      companyCards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.15}s`;
-
-        // Add subtle glow effect on hover
-        card.addEventListener("mouseenter", function () {
-          this.style.filter =
-            "drop-shadow(0 25px 50px rgba(59, 130, 246, 0.15))";
-        });
-
-        card.addEventListener("mouseleave", function () {
-          this.style.filter = "none";
-        });
-      });
-
-      // Add subtle animations to stats cards
-      const statsCards = document.querySelectorAll(".stats-card");
-      statsCards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.1 + 0.5}s`;
-
-        // Add glow effect on hover
-        card.addEventListener("mouseenter", function () {
-          this.style.boxShadow =
-            "0 0 30px rgba(59, 130, 246, 0.3), 0 10px 25px rgba(0, 0, 0, 0.2)";
-        });
-
-        card.addEventListener("mouseleave", function () {
-          this.style.boxShadow = "0 10px 25px rgba(0, 0, 0, 0.2)";
-        });
-      });
-
-      // Stagger company card animations
-      const allCards = document.querySelectorAll(
-        ".company-card, .timeline-card"
-      );
-      allCards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.1}s`;
-        card.classList.add("animate-slide-in-bottom");
-      });
+      }, 200);
     });
 
-    // Throttled scroll handler for performance
-    let scrollTimeout;
-    window.addEventListener("scroll", function () {
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout);
-      }
-
-      scrollTimeout = setTimeout(function () {
-        updateReadingProgress();
-      }, 10);
-    });
+    // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-123456789'); // Replace with actual GA ID
   </script>
 </body>
 
