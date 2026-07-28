@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 
 export const Route = createFileRoute("/")({
@@ -10,7 +10,10 @@ export const Route = createFileRoute("/")({
         content:
           "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
-      { property: "og:title", content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor" },
+      {
+        property: "og:title",
+        content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor",
+      },
       {
         property: "og:description",
         content:
@@ -110,15 +113,30 @@ function Nav() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <span className="h-8 w-8 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">A</span>
+          <span className="h-8 w-8 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
+            A
+          </span>
           <span className="font-display text-lg tracking-wide">Al-Shathry</span>
         </a>
         <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
-          <a href="#about" className="hover:text-gold transition-colors">Profile</a>
-          <a href="#career" className="hover:text-gold transition-colors">Career</a>
-          <a href="#investments" className="hover:text-gold transition-colors">Investments</a>
-          <a href="#boards" className="hover:text-gold transition-colors">Boards</a>
-          <a href="#contact" className="hover:text-gold transition-colors">Contact</a>
+          <a href="#about" className="hover:text-gold transition-colors">
+            Profile
+          </a>
+          <a href="#career" className="hover:text-gold transition-colors">
+            Career
+          </a>
+          <a href="#investments" className="hover:text-gold transition-colors">
+            Investments
+          </a>
+          <a href="#boards" className="hover:text-gold transition-colors">
+            Boards
+          </a>
+          <Link to="/blogs" className="hover:text-gold transition-colors">
+            Insights
+          </Link>
+          <a href="#contact" className="hover:text-gold transition-colors">
+            Contact
+          </a>
         </nav>
         <a
           href="#contact"
@@ -158,10 +176,9 @@ function Hero() {
             Chairman &amp; Chief Executive Officer · Entrepreneur · Investor
           </p>
           <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            Visionary Saudi business leader with over four decades of experience in
-            engineering, construction, technology, and international investment —
-            recognized for founding, expanding, and restructuring organizations into
-            multidisciplinary enterprises.
+            Visionary Saudi business leader with over four decades of experience in engineering,
+            construction, technology, and international investment — recognized for founding,
+            expanding, and restructuring organizations into multidisciplinary enterprises.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -190,7 +207,10 @@ function Hero() {
 
         <div className="lg:col-span-5">
           <div className="relative">
-            <div className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-gold/20 via-transparent to-gold/10 blur-2xl" aria-hidden />
+            <div
+              className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-gold/20 via-transparent to-gold/10 blur-2xl"
+              aria-hidden
+            />
             <div className="relative rounded-xl overflow-hidden border-hairline shadow-2xl">
               <img
                 src={heroPortrait}
@@ -246,24 +266,26 @@ function About() {
           <div className="mt-10 space-y-6">
             <FactRow label="Date of Birth" value="22 January 1958" />
             <FactRow label="Nationality" value="Saudi" />
-            <FactRow label="Education" value="B.Sc. Civil Engineering — University of Southern California, USA" />
+            <FactRow
+              label="Education"
+              value="B.Sc. Civil Engineering — University of Southern California, USA"
+            />
             <FactRow label="Secondary" value="Choueifat, Lebanon" />
           </div>
         </div>
 
         <div className="lg:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            For more than forty years, Abdulrahman Al-Shathry has stood at the
-            intersection of engineering discipline and executive vision — founding,
-            scaling, and restructuring enterprises that helped define Saudi Arabia's
-            modern industrial and technological landscape.
+            For more than forty years, Abdulrahman Al-Shathry has stood at the intersection of
+            engineering discipline and executive vision — founding, scaling, and restructuring
+            enterprises that helped define Saudi Arabia's modern industrial and technological
+            landscape.
           </p>
           <p>
-            His career spans engineering and construction, automation and controls,
-            satellite communications, and a portfolio of international investments
-            across food, lifestyle, sustainable technology, mining, and design. The
-            through-line is consistent: disciplined capital, multidisciplinary
-            thinking, and enterprises built to endure.
+            His career spans engineering and construction, automation and controls, satellite
+            communications, and a portfolio of international investments across food, lifestyle,
+            sustainable technology, mining, and design. The through-line is consistent: disciplined
+            capital, multidisciplinary thinking, and enterprises built to endure.
           </p>
           <div className="rule-gold my-10" />
           <div>
@@ -304,13 +326,16 @@ function Career() {
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            From founding Saudi Controls to shaping cross-continental partnerships —
-            a record measured in enterprises created, scaled, and stewarded.
+            From founding Saudi Controls to shaping cross-continental partnerships — a record
+            measured in enterprises created, scaled, and stewarded.
           </p>
         </div>
 
         <div className="relative">
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-1/2" aria-hidden />
+          <div
+            className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-1/2"
+            aria-hidden
+          />
           <div className="space-y-12">
             {careerHighlights.map((c, i) => (
               <div
@@ -350,8 +375,8 @@ function Investments() {
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Selected investments spanning food, technology, sustainability, mining,
-            and design — each chosen for durable value and category leadership.
+            Selected investments spanning food, technology, sustainability, mining, and design —
+            each chosen for durable value and category leadership.
           </p>
         </div>
 
@@ -378,7 +403,9 @@ function Investments() {
               </ul>
               <div
                 className="absolute inset-x-0 bottom-0 h-px opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ background: "linear-gradient(90deg, transparent, var(--gold), transparent)" }}
+                style={{
+                  background: "linear-gradient(90deg, transparent, var(--gold), transparent)",
+                }}
                 aria-hidden
               />
             </article>
@@ -401,16 +428,13 @@ function Boards() {
             <span className="italic text-gradient-gold">& stewardship</span>.
           </h2>
           <p className="mt-8 text-muted-foreground max-w-md">
-            Beyond enterprise, a continuing commitment to institutions that advance
-            civic, cultural, and technological progress.
+            Beyond enterprise, a continuing commitment to institutions that advance civic, cultural,
+            and technological progress.
           </p>
         </div>
         <ul className="lg:col-span-7 space-y-6">
           {boardMemberships.map((a, i) => (
-            <li
-              key={a}
-              className="flex gap-6 pb-6 border-b border-border last:border-0 last:pb-0"
-            >
+            <li key={a} className="flex gap-6 pb-6 border-b border-border last:border-0 last:pb-0">
               <span className="font-display text-2xl text-gold shrink-0 w-10">0{i + 1}</span>
               <p className="text-lg text-foreground/90 leading-relaxed">{a}</p>
             </li>
@@ -430,8 +454,8 @@ function Contact() {
           Begin a <span className="italic text-gradient-gold">conversation</span>.
         </h2>
         <p className="mt-8 text-lg text-muted-foreground max-w-xl mx-auto">
-          For board appointments, partnerships, investment introductions, or press
-          inquiries — correspondence is welcomed from Riyadh and abroad.
+          For board appointments, partnerships, investment introductions, or press inquiries —
+          correspondence is welcomed from Riyadh and abroad.
         </p>
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -461,8 +485,12 @@ function Footer() {
   return (
     <footer className="border-t border-border py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-        <p className="font-display tracking-wide">© {new Date().getFullYear()} Abdulrahman Al-Shathry</p>
-        <p className="tracking-[0.25em] uppercase text-xs text-gold">Vision · Discipline · Legacy</p>
+        <p className="font-display tracking-wide">
+          © {new Date().getFullYear()} Abdulrahman Al-Shathry
+        </p>
+        <p className="tracking-[0.25em] uppercase text-xs text-gold">
+          Vision · Discipline · Legacy
+        </p>
       </div>
     </footer>
   );
