@@ -251,35 +251,70 @@ function BlogsPage() {
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-5 w-5">
                 {mobileOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
           </div>
         </div>
 
-        <div className={`${mobileOpen ? "block" : "hidden"} md:hidden border-t border-border bg-background/95 backdrop-blur-sm`}>
+        <div
+          className={`${mobileOpen ? "block" : "hidden"} md:hidden border-t border-border bg-background/95 backdrop-blur-sm`}
+        >
           <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4 space-y-3 text-sm text-foreground">
-            <Link to="/" hash="about" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+            <Link
+              to="/"
+              hash="about"
+              onClick={() => setMobileOpen(false)}
+              className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors"
+            >
               Profile
             </Link>
-            <Link to="/" hash="career" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+            <Link
+              to="/"
+              hash="career"
+              onClick={() => setMobileOpen(false)}
+              className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors"
+            >
               Career
             </Link>
-            <Link to="/" hash="investments" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+            <Link
+              to="/"
+              hash="investments"
+              onClick={() => setMobileOpen(false)}
+              className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors"
+            >
               Investments
             </Link>
-            <Link to="/blogs" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+            <Link
+              to="/blogs"
+              onClick={() => setMobileOpen(false)}
+              className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors"
+            >
               Insights
             </Link>
-            <Link to="/" hash="contact" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+            <Link
+              to="/"
+              hash="contact"
+              onClick={() => setMobileOpen(false)}
+              className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors"
+            >
               Contact
             </Link>
           </div>
         </div>
-      </header>
       </header>
 
       <section className="relative overflow-hidden border-b border-border">
