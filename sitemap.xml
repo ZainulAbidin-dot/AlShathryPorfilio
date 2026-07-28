@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+  <!-- Core Pages -->
+  <url>
+    <loc>https://www.alshathryce.com/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/about.html</loc>
+    <lastmod>2025-12-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/companies.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/contact.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://www.alshathryce.com/blogs/index.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://www.alshathryce.com/blogs/the-future-of-smart-infrastructure-in-saudi-arabia.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/digital-transformation-leadership-saudi-arabia.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/building-automation-evolution-saudi-arabia.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/saudi-controls-pioneering-smart-infrastructure.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/iot-building-management-systems-people-first.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/energy-efficiency-engineering-advanced-control-technology.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/how-automation-is-transforming-urban-infrastructure-a-personal-story.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/smart-cities-saudi-arabia.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/datastar-international-digital-connectivity-mission.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/ai-data-transformation-people-drive-digital-growth.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/digital-infrastructure-saudi-arabia-connected-economy.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/digital-connectivity-sustainable-development.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/cloud-migration-saudi-arabia-legacy-modernization.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.alshathryce.com/blogs/bridging-technology-and-business.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Industry News -->
+  <url>
+    <loc>https://www.alshathryce.com/industry-news/alshathry-ice-riyadh-2025.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.75</priority>
+  </url>
+
+</urlset>

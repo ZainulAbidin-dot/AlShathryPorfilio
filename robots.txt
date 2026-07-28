@@ -1,0 +1,12 @@
+# robots.txt for alshathry.com
+# Updated: 2025-10-30
+# Purpose: Allow full indexing of public pages, restrict private/system files
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /temp/
+Disallow: /private/
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.alshathry.com/sitemap.xml

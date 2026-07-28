@@ -13,6 +13,25 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
+  if (typeof window !== "undefined") {
+    const path = window.location.pathname;
+    const specialSlug = "a-journey-through-technology-brilliance";
+    console.log(path, path.includes(specialSlug), path.endsWith(".html"));
+    try {
+      if (path.includes(specialSlug) || path.endsWith(".html")) {
+        const key = `redirected_html:${path}`;
+        if (!sessionStorage.getItem(key)) {
+          sessionStorage.setItem(key, "1");
+          // Force a full reload so the browser requests the static file from the server
+          window.location.replace(path);
+          return null;
+        }
+      }
+    } catch (e) {
+      // ignore sessionStorage errors
+    }
+  }
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
@@ -37,9 +56,14 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
+  const isSpecialRoute =
+    typeof window !== "undefined" &&
+    window.location.href.includes("a-journey-through-technology-brilliance");
+
   useEffect(() => {
+    if (isSpecialRoute) return;
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
+  }, [error, isSpecialRoute]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -53,6 +77,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
             onClick={() => {
+              if (isSpecialRoute) return;
               router.invalidate();
               reset();
             }}
@@ -78,13 +103,39 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor" },
-      { property: "og:title", content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor" },
-      { name: "twitter:title", content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor" },
-      { name: "description", content: "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment." },
-      { property: "og:description", content: "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment." },
-      { name: "twitter:description", content: "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/2xshjrTdBBdP21nYEnDHLGynkOZ2/social-images/social-1785268227904-about-pic.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/2xshjrTdBBdP21nYEnDHLGynkOZ2/social-images/social-1785268227904-about-pic.webp" },
+      {
+        property: "og:title",
+        content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor",
+      },
+      {
+        name: "twitter:title",
+        content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor",
+      },
+      {
+        name: "description",
+        content:
+          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/2xshjrTdBBdP21nYEnDHLGynkOZ2/social-images/social-1785268227904-about-pic.webp",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/2xshjrTdBBdP21nYEnDHLGynkOZ2/social-images/social-1785268227904-about-pic.webp",
+      },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:type", content: "website" },
     ],
