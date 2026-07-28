@@ -119,24 +119,30 @@
   </script>
 
   <style>
-    /* Enhanced Home Page Styling - Matching building-automation-evolution-saudi-arabia.html */
+    body {
+      background: #f8fafc;
+    }
+
     .home-content {
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      background:
+        radial-gradient(circle at top left, rgba(59, 130, 246, 0.08), transparent 36%),
+        linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
     }
 
     .content-section {
-      background: white;
-      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 1.5rem;
       padding: 2rem;
       margin-bottom: 2rem;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      box-shadow: 0 18px 45px -24px rgba(15, 23, 42, 0.28);
+      transition: all 0.35s ease;
+      backdrop-filter: blur(8px);
     }
 
     .content-section:hover {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-      transform: translateY(-2px);
+      box-shadow: 0 22px 50px -20px rgba(15, 23, 42, 0.32);
+      transform: translateY(-3px);
     }
 
     .highlight-box {
@@ -148,12 +154,13 @@
     }
 
     .quote-section {
-      background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+      background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
       border-left: 4px solid #6366f1;
       padding: 2rem;
-      border-radius: 0.75rem;
+      border-radius: 0.9rem;
       margin: 2rem 0;
       position: relative;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
     }
 
     .quote-section::before {
@@ -163,7 +170,7 @@
       left: 1.5rem;
       font-size: 3rem;
       color: #6366f1;
-      opacity: 0.3;
+      opacity: 0.25;
       font-family: Georgia, serif;
     }
 
@@ -178,8 +185,14 @@
       transition: width 0.25s ease-out;
     }
 
+    .hero-section {
+      min-height: 78vh;
+    }
+
     .hero-enhanced {
-      background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(55, 65, 81, 0.9) 50%, rgba(17, 24, 39, 0.95) 100%);
+      background:
+        linear-gradient(135deg, rgba(2, 6, 23, 0.92) 0%, rgba(15, 23, 42, 0.88) 45%, rgba(30, 41, 59, 0.94) 100%),
+        url('./image/about-pic.webp') center/cover;
       position: relative;
       overflow: hidden;
     }
@@ -187,17 +200,62 @@
     .hero-enhanced::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(45deg, rgba(59, 130, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 50%, rgba(168, 85, 247, 0.1) 100%);
+      inset: 0;
+      background: linear-gradient(45deg, rgba(59, 130, 246, 0.16) 0%, rgba(99, 102, 241, 0.15) 50%, rgba(168, 85, 247, 0.16) 100%);
       z-index: 1;
+      animation: pulseGlow 8s ease-in-out infinite alternate;
+    }
+
+    .hero-enhanced::after {
+      content: '';
+      position: absolute;
+      width: 24rem;
+      height: 24rem;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.15);
+      filter: blur(80px);
+      top: -5rem;
+      right: -5rem;
+      z-index: 1;
+      animation: floatOrb 10s ease-in-out infinite;
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.65rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #e2e8f0;
+      backdrop-filter: blur(12px);
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-stat {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #f8fafc;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .hero-stat:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.18);
     }
 
     .card-hover-effect {
@@ -212,8 +270,8 @@
 
     .fade-in-element {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
     }
 
     .fade-in-element.visible {
@@ -223,11 +281,21 @@
 
     .section-enhanced {
       background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      border-radius: 1.5rem;
+      border-radius: 1.75rem;
       padding: 3rem;
       margin: 2rem 0;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-      border: 1px solid #e2e8f0;
+      box-shadow: 0 24px 48px -24px rgba(15, 23, 42, 0.24);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-enhanced::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(115deg, rgba(59, 130, 246, 0.04), transparent 45%, rgba(99, 102, 241, 0.05));
+      pointer-events: none;
     }
 
     .stats-card {
@@ -247,6 +315,9 @@
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      border-radius: 1.25rem;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.96));
     }
 
     .company-card::before {
@@ -256,12 +327,17 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-      transition: left 0.5s ease;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.6s ease;
     }
 
     .company-card:hover::before {
       left: 100%;
+    }
+
+    .company-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 20px 35px -20px rgba(15, 23, 42, 0.25);
     }
 
     @keyframes slideInFromBottom {
@@ -300,16 +376,37 @@
       }
     }
 
+    @keyframes pulseGlow {
+      from {
+        opacity: 0.75;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes floatOrb {
+      0%,
+      100% {
+        transform: translateY(0px) scale(1);
+      }
+
+      50% {
+        transform: translateY(16px) scale(1.05);
+      }
+    }
+
     .animate-slide-in-bottom {
-      animation: slideInFromBottom 0.6s ease-out forwards;
+      animation: slideInFromBottom 0.7s ease-out forwards;
     }
 
     .animate-slide-in-left {
-      animation: slideInFromLeft 0.6s ease-out forwards;
+      animation: slideInFromLeft 0.7s ease-out forwards;
     }
 
     .animate-slide-in-right {
-      animation: slideInFromRight 0.6s ease-out forwards;
+      animation: slideInFromRight 0.7s ease-out forwards;
     }
 
     @media (max-width: 768px) {
@@ -325,6 +422,19 @@
 
       .quote-section::before {
         font-size: 2rem;
+      }
+
+      .hero-section {
+        min-height: 70vh;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
       }
     }
   </style>
@@ -449,9 +559,15 @@
   <div id="reading-progress" class="reading-progress"></div>
 
   <header class="hero-section relative hero-enhanced">
-    <div class="overlay absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="overlay absolute inset-0 bg-black/20"></div>
     <section class="z-10 relative py-24 hero-content">
       <div class="py-16 px-6 mx-auto text-center lg:py-32">
+        <div class="fade-in-element">
+          <div class="hero-badge mx-auto">
+            <span class="h-2.5 w-2.5 rounded-full bg-cyan-400"></span>
+            Visionary leadership in smart infrastructure
+          </div>
+        </div>
         <div class="fade-in-element">
           <h1 class="mb-6 text-4xl font-bold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Shaping Saudi Arabia's <span
@@ -466,7 +582,7 @@
           </p>
         </div>
         <div class="fade-in-element">
-          <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <div class="flex flex-col mb-8 lg:mb-10 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a href="about.html"
               class="card-hover-effect inline-flex justify-center items-center py-4 px-8 text-base font-medium text-white rounded-xl border-2 border-white/30 hover:text-gray-900 hover:bg-white hover:border-white focus:ring-4 focus:ring-white/20 backdrop-blur-sm bg-white/10">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -484,6 +600,11 @@
               Get in Touch
             </a>
           </div>
+        </div>
+        <div class="fade-in-element flex flex-wrap items-center justify-center gap-3 text-sm text-slate-200">
+          <div class="hero-stat">26+ Years of leadership</div>
+          <div class="hero-stat">Smart infrastructure focus</div>
+          <div class="hero-stat">Saudi & global impact</div>
         </div>
       </div>
     </section>
@@ -977,28 +1098,28 @@
 
   // Fade in animation on scroll
   function initFadeInAnimation() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+      document.querySelectorAll('.fade-in-element, .content-section, .section-enhanced').forEach(el => el.classList.add('visible'));
+      return;
+    }
+
     const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // Add staggered animation for multiple elements
-          if (entry.target.classList.contains('fade-in-element')) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }
+          observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    // Observe fade-in elements
-    document.querySelectorAll('.fade-in-element').forEach(el => {
-      observer.observe(el);
-    });
+    document.querySelectorAll('.fade-in-element, .content-section, .section-enhanced').forEach(el => observer.observe(el));
   }
 
   // Enhanced hover effects for cards
@@ -1040,9 +1161,9 @@
 
     window.addEventListener('scroll', () => {
       const scrolled = window.pageYOffset;
-      const parallaxSpeed = 0.2;
+      const parallaxSpeed = 0.12;
       hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-    });
+    }, { passive: true });
   }
 
   // Counter animation for stats
@@ -1082,16 +1203,16 @@
   // Text reveal animation
   function initTextReveal() {
     const heroTitle = document.querySelector('.hero-section h1');
-    if (heroTitle) {
-      heroTitle.style.opacity = '0';
-      heroTitle.style.transform = 'translateY(30px)';
+    if (!heroTitle) return;
 
-      setTimeout(() => {
-        heroTitle.style.transition = 'all 1s ease';
-        heroTitle.style.opacity = '1';
-        heroTitle.style.transform = 'translateY(0)';
-      }, 300);
-    }
+    heroTitle.style.opacity = '0';
+    heroTitle.style.transform = 'translateY(24px)';
+
+    setTimeout(() => {
+      heroTitle.style.transition = 'all 0.9s ease';
+      heroTitle.style.opacity = '1';
+      heroTitle.style.transform = 'translateY(0)';
+    }, 220);
   }
 
   // Initialize all functionality when DOM is loaded
@@ -1106,10 +1227,9 @@
     // Initial reading progress update
     updateReadingProgress();
 
-    // Add staggered animation to hero elements
     const heroElements = document.querySelectorAll('.hero-section .fade-in-element');
     heroElements.forEach((el, index) => {
-      el.style.animationDelay = `${index * 0.2}s`;
+      el.style.animationDelay = `${index * 0.18}s`;
       el.classList.add('animate-slide-in-bottom');
     });
   });
@@ -1124,15 +1244,14 @@
   window.addEventListener('load', function () {
     document.body.classList.add('loaded');
 
-    // Trigger initial animations after a short delay
     setTimeout(() => {
       document.querySelectorAll('.content-section, .section-enhanced').forEach((el, index) => {
         setTimeout(() => {
           el.style.opacity = '1';
           el.style.transform = 'translateY(0)';
-        }, index * 100);
+        }, index * 90);
       });
-    }, 500);
+    }, 300);
   });
 
   // Toggle functionality for expandable content (if needed)
