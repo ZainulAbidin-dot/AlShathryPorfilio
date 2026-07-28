@@ -170,7 +170,7 @@ function Hero() {
             Abdulrahman
             <br />
             <span className="text-gradient-gold italic">Al-Shathry</span>
-            <span className="font-sans text-xl align-top text-muted-foreground ml-3">B.Sc.</span>
+            {/* <span className="font-sans text-xl align-top text-muted-foreground ml-3">B.Sc.</span> */}
           </h1>
           <p className="mt-6 text-sm tracking-[0.25em] uppercase text-muted-foreground">
             Chairman &amp; Chief Executive Officer · Entrepreneur · Investor
