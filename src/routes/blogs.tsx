@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 
 export const Route = createFileRoute("/blogs")({
   head: () => ({
@@ -205,10 +206,12 @@ const sections: Section[] = [
 ];
 
 function BlogsPage() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background text-foreground bg-noise">
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-3">
             <span className="h-8 w-8 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
               A
@@ -232,13 +235,51 @@ function BlogsPage() {
               Contact
             </Link>
           </nav>
-          <Link
-            to="/"
-            className="hidden md:inline-flex items-center gap-2 text-sm px-4 py-2 rounded-full border-hairline text-gold hover:bg-gold hover:text-primary-foreground transition-all"
-          >
-            <span aria-hidden>←</span> Back to profile
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              to="/"
+              className="hidden md:inline-flex items-center gap-2 text-sm px-4 py-2 rounded-full border-hairline text-gold hover:bg-gold hover:text-primary-foreground transition-all"
+            >
+              <span aria-hidden>←</span> Back to profile
+            </Link>
+            <button
+              type="button"
+              onClick={() => setMobileOpen((open) => !open)}
+              aria-expanded={mobileOpen}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-gold hover:text-gold md:hidden"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-5 w-5">
+                {mobileOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+
+        <div className={`${mobileOpen ? "block" : "hidden"} md:hidden border-t border-border bg-background/95 backdrop-blur-sm`}>
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4 space-y-3 text-sm text-foreground">
+            <Link to="/" hash="about" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+              Profile
+            </Link>
+            <Link to="/" hash="career" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+              Career
+            </Link>
+            <Link to="/" hash="investments" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+              Investments
+            </Link>
+            <Link to="/blogs" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+              Insights
+            </Link>
+            <Link to="/" hash="contact" onClick={() => setMobileOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-gold/10 transition-colors">
+              Contact
+            </Link>
+          </div>
+        </div>
+      </header>
       </header>
 
       <section className="relative overflow-hidden border-b border-border">
