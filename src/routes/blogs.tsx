@@ -291,11 +291,8 @@ function BlogsPage() {
                   href={p.href}
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open(
-                      `${window.location.origin}${p.href}`,
-                      "_blank",
-                      "noopener,noreferrer",
-                    );
+                    const targetUrl = p.href.startsWith("http") ? p.href : `${window.location.origin}${p.href}`;
+                    window.open(targetUrl, "_blank", "noopener,noreferrer");
                   }}
                   target="_blank"
                   rel="noopener noreferrer"
