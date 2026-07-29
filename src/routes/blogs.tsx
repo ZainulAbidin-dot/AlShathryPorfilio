@@ -213,8 +213,8 @@ function BlogsPage() {
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-3">
-            <span className="h-8 w-8 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
-              A
+            <span className="h-8 w-12 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
+              AAA
             </span>
             <span className="font-display text-lg tracking-wide">Al-Shathry</span>
           </Link>
