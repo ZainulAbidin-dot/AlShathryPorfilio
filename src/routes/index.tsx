@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import heroPortrait from "@/assets/hero-portrait.jpeg";
+import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -116,10 +117,10 @@ function Nav() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between gap-4">
         <a href="#top" className="flex items-center gap-3">
-          <span className="h-8 w-12 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
-            AAA
+          <img src={logo} alt="AAA Logo" className="h-8 w-12 object-cover" />
+          <span className="font-display text-lg tracking-wide hover:text-gold transition-colors">
+            Al-Shathry
           </span>
-          <span className="font-display text-lg tracking-wide hover:text-gold">Al-Shathry</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
