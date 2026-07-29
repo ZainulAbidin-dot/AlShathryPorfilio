@@ -216,7 +216,9 @@ function BlogsPage() {
             <span className="h-8 w-12 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
               AAA
             </span>
-            <span className="font-display text-lg tracking-wide">Al-Shathry</span>
+            <span className="font-display text-lg tracking-wide hover:text-gold transition-colors">
+              Al-Shathry
+            </span>
           </Link>
           <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
             <Link to="/" hash="about" className="hover:text-gold transition-colors">

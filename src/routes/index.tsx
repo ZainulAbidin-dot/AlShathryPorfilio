@@ -333,7 +333,7 @@ function Marquee() {
         {items.map((i, idx) => (
           <span key={i} className="flex items-center gap-6">
             <span className="tracking-[0.2em] uppercase text-xs">{i}</span>
-            {idx < items.length - 1 && <span className="text-gold/50">◆</span>}
+            {idx < items.length - 1 && idx !== 3 && <span className="text-gold/50">◆</span>}
           </span>
         ))}
       </div>
