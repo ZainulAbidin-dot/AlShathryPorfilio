@@ -119,7 +119,7 @@ function Nav() {
           <span className="h-8 w-12 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
             AAA
           </span>
-          <span className="font-display text-lg tracking-wide">Al-Shathry</span>
+          <span className="font-display text-lg tracking-wide hover:text-gold">Al-Shathry</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
