@@ -547,6 +547,8 @@ function Contact() {
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="mailto:info@alshathryce.com"
+            onClick={() => (window.location.href = "mailto:info@alshathryce.com")}
+            aria-label="Send email to info@alshathryce.com"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gold text-primary-foreground font-medium hover:bg-gold-soft transition-colors"
           >
             info@alshathryce.com
