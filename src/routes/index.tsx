@@ -117,7 +117,7 @@ function Nav() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between gap-4">
         <a href="#top" className="flex items-center gap-3">
           <span className="h-8 w-8 rounded-sm border-hairline flex items-center justify-center font-display text-gold text-lg">
-            A
+            AAA
           </span>
           <span className="font-display text-lg tracking-wide">Al-Shathry</span>
         </a>
