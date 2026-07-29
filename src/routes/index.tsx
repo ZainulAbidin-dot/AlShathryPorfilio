@@ -250,7 +250,7 @@ function Hero() {
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
             Abdulrahman
             <br />
-            <span className="text-gradient-gold italic">Al-Shathry</span>
+            <span className="text-gradient-gold italic px-2">Al Shathry</span>
             {/* <span className="font-sans text-xl align-top text-muted-foreground ml-3">B.Sc.</span> */}
           </h1>
           <p className="mt-6 text-sm tracking-[0.25em] uppercase text-muted-foreground">
@@ -346,7 +346,7 @@ function About() {
           </h2>
           <div className="mt-10 space-y-6">
             <FactRow label="Date of Birth" value="22 January 1958" />
-            <FactRow label="Nationality" value="Saudi" />
+            <FactRow label="Saudi Nationality" value="" />
             <FactRow
               label="Education"
               value="B.Sc. Civil Engineering — University of Southern California, USA"
@@ -374,7 +374,7 @@ function About() {
             <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
               {expertise.map((e) => (
                 <li key={e} className="flex items-start gap-3 text-foreground/90">
-                  <span className="text-gold mt-2">◆</span>
+                  <span className="text-gold">◆</span>
                   <span>{e}</span>
                 </li>
               ))}
@@ -428,7 +428,7 @@ function Career() {
                 <article className="relative pl-8 md:pl-0 md:pr-10">
                   <span
                     className="absolute left-0 md:left-auto md:right-[-45px] top-2 h-3 w-3 rounded-full bg-gold ring-4 ring-background md:right-auto md:left-1/2"
-                    style={{ left: "-4px" }}
+                    style={{ left: "-20px", top: "0rem" }}
                     aria-hidden
                   />
                   <p className="text-xs tracking-[0.25em] uppercase text-gold mb-3">{c.year}</p>
@@ -477,7 +477,7 @@ function Investments() {
               <ul className="space-y-2">
                 {g.items.map((it) => (
                   <li key={it} className="flex items-start gap-3 text-foreground/85">
-                    <span className="text-gold mt-2 text-xs">◆</span>
+                    <span className="text-gold text-xs">◆</span>
                     <span>{it}</span>
                   </li>
                 ))}
