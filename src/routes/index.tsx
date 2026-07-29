@@ -250,7 +250,13 @@ function Hero() {
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
             Abdulrahman
             <br />
-            <span className="text-gradient-gold italic px-2">Al Shathry</span>
+            <span className="text-gradient-gold px-2">
+              <span className="italic">Al&nbsp;</span>
+              <span className="not-italic" style={{ fontFamily: "monospace", fontSize: "0.8em" }}>
+                -
+              </span>
+              <span className="italic">Shathry</span>
+            </span>
             {/* <span className="font-sans text-xl align-top text-muted-foreground ml-3">B.Sc.</span> */}
           </h1>
           <p className="mt-6 text-sm tracking-[0.25em] uppercase text-muted-foreground">
