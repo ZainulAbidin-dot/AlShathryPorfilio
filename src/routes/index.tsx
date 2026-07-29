@@ -329,7 +329,7 @@ function Marquee() {
   ];
   return (
     <div className="border-y border-border py-6 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-wrap justify-center gap-x-10 gap-y-3 items-center text-sm text-muted-foreground">
+      <div className="max-w-6xl mx-auto px-6 lg:px-10 flex flex-wrap justify-center gap-x-10 gap-y-3 items-center text-sm text-muted-foreground">
         {items.map((i, idx) => (
           <span key={i} className="flex items-center gap-6">
             <span className="tracking-[0.2em] uppercase text-xs">{i}</span>
