@@ -104,6 +104,7 @@ function Index() {
       <Career />
       <Investments />
       <Boards />
+      <ITSSection />
       <Contact />
       <Footer />
     </div>
@@ -375,6 +376,7 @@ function About() {
             sustainable technology, mining, and design. The through-line is consistent: disciplined
             capital, multidisciplinary thinking, and enterprises built to endure.
           </p>
+
           <div className="rule-gold my-10" />
           <div>
             <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">Core Expertise</p>
@@ -528,6 +530,31 @@ function Boards() {
             </li>
           ))}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+function ITSSection() {
+  return (
+    <section id="its" className="relative py-24 lg:py-32 border-t border-border">
+      <div className="max-w-6xl mx-auto px-6 lg:px-10">
+        <div className="rounded-3xl border border-gold/20 bg-card/80 p-8 md:p-12 lg:p-14 shadow-xl text-center">
+          <p className="text-xs tracking-[0.3em] uppercase text-gold mb-5">
+            Intelligent Traffic Systems
+          </p>
+          <h3 className="font-display text-3xl sm:text-4xl text-foreground mb-6">Saudi Controls</h3>
+          <p className="mx-auto max-w-4xl text-lg leading-relaxed text-foreground/90">
+            Saudi Controls is a Saudi-based systems integrator with extensive experience in
+            Intelligent Traffic Systems (ITS) and Smart Mobility Infrastructure across the Kingdom.
+            We support infrastructure contractors and public entities with end-to-end services,
+            including system design, integration, implementation, and long-term operation and
+            maintenance for traffic management and related smart city solutions. Our local presence,
+            multi-disciplinary engineering teams, and familiarity with Saudi regulatory and project
+            environments make Saudi Controls a reliable partner for ITS deployments aligned with
+            Vision 2030 and major national infrastructure programs.
+          </p>
+        </div>
       </div>
     </section>
   );
