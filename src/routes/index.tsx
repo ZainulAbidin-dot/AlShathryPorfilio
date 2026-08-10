@@ -105,6 +105,7 @@ function Index() {
       <Investments />
       <Boards />
       <ITSSection />
+      <BMSSection />
       <Contact />
       <Footer />
     </div>
@@ -535,6 +536,112 @@ function Boards() {
   );
 }
 
+function BMSSection() {
+  const capabilities = [
+    "BMS Design & Engineering",
+    "HVAC & Chiller Control",
+    "Building Automation & Integration",
+    "Energy & Power Monitoring",
+    "Sensors, Meters & IoT Integration",
+    "Centralized Monitoring & Control",
+    "Alarms, Trends & Reporting",
+    "Programming & Configuration",
+    "Testing & Commissioning",
+    "Maintenance & Technical Support",
+    "BMS Upgrades & Modernization",
+  ];
+
+  const results = [
+    "Better visibility",
+    "Improved energy management",
+    "Greater occupant comfort",
+    "Faster response to alarms",
+    "More effective maintenance",
+    "More efficient facility operations",
+  ];
+
+  const tags = [
+    "SaudiControls",
+    "BMS",
+    "BuildingManagementSystem",
+    "BuildingAutomation",
+    "SmartBuildings",
+    "BuildingAutomationSystem",
+    "HVAC",
+    "EnergyManagement",
+    "FacilityManagement",
+    "SystemsIntegration",
+    "SaudiArabia",
+    "SmartInfrastructure",
+    "DigitalTransformation",
+  ];
+
+  return (
+    <section id="bms" className="relative py-24 lg:py-32 border-t border-border">
+      <div className="max-w-6xl mx-auto px-6 lg:px-10">
+        <div className="rounded-3xl border border-gold/20 bg-card/80 p-8 md:p-12 lg:p-14 shadow-xl">
+          <p className="text-xs tracking-[0.3em] text-center uppercase text-gold mb-5">
+            Building Management Systems
+          </p>
+          <h3 className="font-display text-3xl text-center sm:text-4xl text-foreground mb-4">
+            Saudi Controls Ltd.
+          </h3>
+          <p className="mx-auto max-w-4xl text-lg leading-relaxed text-foreground/90 text-justify">
+            As buildings become more connected and complex, Building Management Systems (BMS) are
+            playing a critical role in improving how facilities are monitored, controlled, and
+            managed. At Saudi Controls, we provide end-to-end BMS and building automation solutions
+            designed to help organizations achieve greater operational visibility, energy
+            efficiency, reliability, and occupant comfort.
+          </p>
+
+          <div className="mt-8 grid md:grid-cols-2 gap-4">
+            {capabilities.map((item) => (
+              <div
+                key={item}
+                className="flex items-start gap-3 rounded-xl border border-border bg-background/40 p-3"
+              >
+                <span className="text-gold mt-1">◆</span>
+                <span className="text-sm text-foreground/85">{item}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 grid md:grid-cols-2 gap-8">
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase text-gold mb-3">The result</p>
+              <ul className="space-y-2 text-sm text-foreground/85">
+                {results.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="text-gold">◆</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase text-gold mb-3">Who it serves</p>
+              <p className="text-sm leading-relaxed text-foreground/85 text-justify">
+                From commercial buildings and offices to hospitals, hotels, industrial facilities,
+                malls, and government buildings, BMS can provide the intelligence needed to operate
+                modern facilities more efficiently.
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-8 text-base leading-relaxed text-foreground/90 text-justify">
+            A modern BMS can bring systems such as HVAC, lighting, energy meters, pumps, sensors,
+            and other building technologies into a centralized operational environment. At Saudi
+            Controls, we combine systems integration and engineering expertise to deliver building
+            automation solutions tailored to the requirements of each facility. Building smarter
+            starts with connecting the right systems.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ITSSection() {
   return (
     <section id="its" className="relative py-24 lg:py-32 border-t border-border">
@@ -543,8 +650,10 @@ function ITSSection() {
           <p className="text-xs tracking-[0.3em] uppercase text-gold mb-5">
             Intelligent Traffic Systems
           </p>
-          <h3 className="font-display text-3xl sm:text-4xl text-foreground mb-6">Saudi Controls</h3>
-          <p className="mx-auto max-w-4xl text-lg leading-relaxed text-foreground/90">
+          <h3 className="font-display text-3xl sm:text-4xl text-foreground mb-6">
+            Saudi Controls Ltd.
+          </h3>
+          <p className="mx-auto max-w-4xl text-lg leading-relaxed text-foreground/90 text-justify">
             Saudi Controls is a Saudi-based systems integrator with extensive experience in
             Intelligent Traffic Systems (ITS) and Smart Mobility Infrastructure across the Kingdom.
             We support infrastructure contractors and public entities with end-to-end services,
