@@ -262,13 +262,13 @@ function Hero() {
             </span>
             {/* <span className="font-sans text-xl align-top text-muted-foreground ml-3">B.Sc.</span> */}
           </h1>
-          <p className="mt-6 text-sm tracking-[0.25em] uppercase text-muted-foreground">
+          <p className="mt-6 text-xs tracking-[0.25em] uppercase text-muted-foreground">
             Chairman &amp; Chief Executive Officer · Entrepreneur · Investor
           </p>
           <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            Visionary Saudi business leader with over four decades of experience in engineering,
-            construction, technology, and international investment — recognized for founding,
-            expanding, and restructuring organizations into multidisciplinary enterprises.
+            Visionary Saudi business leader with 40+ years of experience in engineering,
+            construction, technology and international investment. Founder, expander and
+            restructurer of organizations into multidisciplinary enterprises.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -366,16 +366,16 @@ function About() {
 
         <div className="lg:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            For more than forty years, Abdulrahman Al-Shathry has stood at the intersection of
-            engineering discipline and executive vision — founding, scaling, and restructuring
-            enterprises that helped define Saudi Arabia's modern industrial and technological
-            landscape.
+            For the past four decades, Abdulrahman Al-Shathry has straddled the line between
+            engineering discipline and executive vision, founding, growing and restructuring
+            enterprises that helped shape the modern industrial and technological landscape of Saudi
+            Arabia.
           </p>
           <p>
             His career spans engineering and construction, automation and controls, satellite
-            communications, and a portfolio of international investments across food, lifestyle,
-            sustainable technology, mining, and design. The through-line is consistent: disciplined
-            capital, multidisciplinary thinking, and enterprises built to endure.
+            communications and a portfolio of international investments in food, lifestyle,
+            sustainable technology, mining and design. The through-line remains the same:
+            disciplined capital, multidisciplinary thinking and enterprises built to last.
           </p>
 
           <div className="rule-gold my-10" />
