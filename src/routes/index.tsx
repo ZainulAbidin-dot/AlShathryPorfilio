@@ -6,20 +6,20 @@ import logo from "@/assets/logo.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Abdulrahman Alshathry — Chairman, CEO, Entrepreneur & Investor" },
+      { title: "Abdulrahman Alshathry - Chairman, CEO, Entrepreneur & Investor" },
       {
         name: "description",
         content:
-          "Executive profile of Abdulrahman Alshathry — Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+          "Executive profile of Abdulrahman Alshathry - Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
       {
         property: "og:title",
-        content: "Abdulrahman Alshathry — Chairman, CEO, Entrepreneur & Investor",
+        content: "Abdulrahman Alshathry - Chairman, CEO, Entrepreneur & Investor",
       },
       {
         property: "og:description",
         content:
-          "Executive profile of Abdulrahman Alshathry — Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+          "Executive profile of Abdulrahman Alshathry - Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -37,16 +37,16 @@ const pillars = [
 
 const careerHighlights = [
   {
-    year: "1997 — Present",
+    year: "1997 - Present",
     title: "Chairman & CEO, Saudi Controls Ltd.",
     detail:
-      "Built the company into one of the Kingdom's leading automation and control firms — 100+ engineers, 300+ completed projects across mission-critical infrastructure.",
+      "Built the company into one of the Kingdom's leading automation and control firms - 100+ engineers, 300+ completed projects across mission-critical infrastructure.",
   },
   {
     year: "Founder",
     title: "The Alshathry Group of Companies",
     detail:
-      "Established and led multiple firms spanning engineering, construction, satellite communications, technology, and design services — a multidisciplinary enterprise built through disciplined expansion.",
+      "Established and led multiple firms spanning engineering, construction, satellite communications, technology, and design services - a multidisciplinary enterprise built through disciplined expansion.",
   },
   {
     year: "Merger & Divestiture",
@@ -55,7 +55,7 @@ const careerHighlights = [
       "Merged Alshathry Consulting Engineers with Omrania to form A&O, scaling to 300+ professionals, later divested to Kingdom Holdings (HRH Prince Al-Waleed bin Talal).",
   },
   {
-    year: "2000 — 2015",
+    year: "2000 - 2015",
     title: "Founder & Major Shareholder, Datastar International",
     detail:
       "Specialized in satellite data communication and remote asset management. USD 12M capitalization with a 35% personal stake.",
@@ -365,7 +365,7 @@ function About() {
             <FactRow label="Saudi Nationality" value="" />
             <FactRow
               label="Education"
-              value="B.Sc. Civil Engineering — University of Southern California, USA"
+              value="B.Sc. Civil Engineering - University of Southern California, USA"
             />
             <FactRow label="Secondary" value="Choueifat, Lebanon" />
           </div>
