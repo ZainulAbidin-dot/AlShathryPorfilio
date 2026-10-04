@@ -102,29 +102,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor" },
+      { title: "Abdulrahman Alshathry — Chairman, CEO, Entrepreneur & Investor" },
       {
         property: "og:title",
-        content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor",
+        content: "Abdulrahman Alshathry — Chairman, CEO, Entrepreneur & Investor",
       },
       {
         name: "twitter:title",
-        content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor",
+        content: "Abdulrahman Alshathry — Chairman, CEO, Entrepreneur & Investor",
       },
       {
         name: "description",
         content:
-          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+          "Executive profile of Abdulrahman Alshathry — Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
       {
         property: "og:description",
         content:
-          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+          "Executive profile of Abdulrahman Alshathry — Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
       {
         name: "twitter:description",
         content:
-          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+          "Executive profile of Abdulrahman Alshathry — Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
       {
         property: "og:image",

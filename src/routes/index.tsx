@@ -6,20 +6,20 @@ import logo from "@/assets/logo.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor" },
+      { title: "Abdulrahman Alshathry — Chairman, CEO, Entrepreneur & Investor" },
       {
         name: "description",
         content:
-          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+          "Executive profile of Abdulrahman Alshathry — Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
       {
         property: "og:title",
-        content: "Abdulrahman Al-Shathry — Chairman, CEO, Entrepreneur & Investor",
+        content: "Abdulrahman Alshathry — Chairman, CEO, Entrepreneur & Investor",
       },
       {
         property: "og:description",
         content:
-          "Executive profile of Abdulrahman Al-Shathry — Chairman & CEO of Saudi Controls Ltd., founder of The Al-Shathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
+          "Executive profile of Abdulrahman Alshathry — Chairman & CEO of Saudi Controls Ltd., founder of The Alshathry Group, with 40+ years of leadership in engineering, technology, and international investment.",
       },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -29,9 +29,9 @@ export const Route = createFileRoute("/")({
 });
 
 const pillars = [
-  { k: "40+", v: "Years of executive leadership" },
+  { k: "45+", v: "Years of executive leadership" },
   { k: "300+", v: "Projects delivered by Saudi Controls" },
-  { k: "100+", v: "Engineers under leadership" },
+  { k: "150+", v: "Engineers under leadership" },
   { k: "1997", v: "Saudi Controls Ltd. founded" },
 ];
 
@@ -44,15 +44,15 @@ const careerHighlights = [
   },
   {
     year: "Founder",
-    title: "The Al-Shathry Group of Companies",
+    title: "The Alshathry Group of Companies",
     detail:
       "Established and led multiple firms spanning engineering, construction, satellite communications, technology, and design services — a multidisciplinary enterprise built through disciplined expansion.",
   },
   {
     year: "Merger & Divestiture",
-    title: "Al-Shathry Consulting Engineers → A&O",
+    title: "Alshathry Consulting Engineers → A&O",
     detail:
-      "Merged Al-Shathry Consulting Engineers with Omrania to form A&O, scaling to 300+ professionals, later divested to Kingdom Holdings (HRH Prince Al-Waleed bin Talal).",
+      "Merged Alshathry Consulting Engineers with Omrania to form A&O, scaling to 300+ professionals, later divested to Kingdom Holdings (HRH Prince Al-Waleed bin Talal).",
   },
   {
     year: "2000 — 2015",
@@ -79,17 +79,28 @@ const investments = [
     group: "Design & Retail",
     items: ["Nour Lighting", "House of Lights", "Baby Gift Company (London)"],
   },
+  {
+    group: "Factories & Manufacturing",
+    items: [
+      "Saudi Controls Ltd. for EV Chargers",
+      "Saudi Controls Ltd. for Traffic Lights and Smart Poles",
+    ],
+  },
+  {
+    group: "Sourcing & Partnerships",
+    items: ["Strategic Sourcing & Partnerships (SSP)"],
+  },
 ];
 
 const boardMemberships = [
-  "Member — Children with Disability Association (CWDA)",
-  "Member — CAFS · Council of Arab and Foreign Societies",
+  "Member - Children with Disability Association (CWDA)",
+  "Member - CAFS · Saudi-French Business Council (Conseil d'Affaires Franco Saoudien)",
   "KIP Thales Network",
 ];
 
 const expertise = [
   "Leadership in Engineering, Construction, and Technology",
-  "Cross-border Strategic Investments & M&A",
+  "Cross-border Strategic Investments & M&A (Mergers and Acquisitions)",
   "Multidisciplinary Business Development",
   "Client-Centric, Sustainable Growth",
 ];
@@ -121,7 +132,7 @@ function Nav() {
         <a href="#top" className="flex items-center gap-3">
           <img src={logo} alt="AAA Logo" className="h-8 w-12 object-cover" />
           <span className="font-display text-lg tracking-wide hover:text-gold transition-colors">
-            Al-Shathry
+            Alshathry
           </span>
         </a>
 
@@ -254,11 +265,7 @@ function Hero() {
             Abdulrahman
             <br />
             <span className="text-gradient-gold px-2">
-              <span className="italic">Al&nbsp;</span>
-              <span className="not-italic" style={{ fontFamily: "monospace", fontSize: "0.8em" }}>
-                -
-              </span>
-              <span className="italic">Shathry</span>
+              <span className="italic">Alshathry</span>
             </span>
             {/* <span className="font-sans text-xl align-top text-muted-foreground ml-3">B.Sc.</span> */}
           </h1>
@@ -266,7 +273,7 @@ function Hero() {
             Chairman &amp; Chief Executive Officer · Entrepreneur · Investor
           </p>
           <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            Visionary Saudi business leader with 40+ years of experience in engineering,
+            Visionary Saudi business leader with 45+ years of experience in engineering,
             construction, technology and international investment. Founder, expander and
             restructurer of organizations into multidisciplinary enterprises.
           </p>
@@ -304,7 +311,7 @@ function Hero() {
             <div className="relative rounded-xl overflow-hidden border-hairline shadow-2xl">
               <img
                 src={heroPortrait}
-                alt="Editorial portrait of Abdulrahman Al-Shathry"
+                alt="Editorial portrait of Abdulrahman Alshathry"
                 width={1280}
                 height={1600}
                 className="w-full h-auto object-cover"
@@ -366,7 +373,7 @@ function About() {
 
         <div className="lg:col-span-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            For the past four decades, Abdulrahman Al-Shathry has straddled the line between
+            For the past four decades, Abdulrahman Alshathry has straddled the line between
             engineering discipline and executive vision, founding, growing and restructuring
             enterprises that helped shape the modern industrial and technological landscape of Saudi
             Arabia.
@@ -516,7 +523,7 @@ function Boards() {
           <h2 className="mt-6 font-display text-4xl lg:text-5xl leading-tight">
             Service
             <br />
-            <span className="italic text-gradient-gold">& stewardship</span>.
+            <span className="italic text-gradient-gold">& Institutional Impact</span>.
           </h2>
           <p className="mt-8 text-muted-foreground max-w-md">
             Beyond enterprise, a continuing commitment to institutions that advance civic, cultural,
@@ -683,12 +690,12 @@ function Contact() {
         </p>
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="mailto:info@alshathryce.com"
-            onClick={() => (window.location.href = "mailto:info@alshathryce.com")}
-            aria-label="Send email to info@alshathryce.com"
+            href="mailto:alshathry@saudicontrols.com"
+            onClick={() => (window.location.href = "mailto:alshathry@saudicontrols.com")}
+            aria-label="Send email to alshathry@saudicontrols.com"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gold text-primary-foreground font-medium hover:bg-gold-soft transition-colors"
           >
-            info@alshathryce.com
+            alshathry@saudicontrols.com
           </a>
           <a
             href="https://www.linkedin.com/in/abdulrahman-a-z-alshathry-66990484/"
@@ -712,7 +719,7 @@ function Footer() {
     <footer className="border-t border-border py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
         <p className="font-display tracking-wide">
-          © {new Date().getFullYear()} Abdulrahman Al-Shathry
+          © {new Date().getFullYear()} Abdulrahman Alshathry
         </p>
         <p className="tracking-[0.25em] uppercase text-xs text-gold">
           Vision · Discipline · Legacy

@@ -5,13 +5,13 @@ import logo from "@/assets/logo.png";
 export const Route = createFileRoute("/blogs")({
   head: () => ({
     meta: [
-      { title: "Insights & Perspectives — Abdulrahman Al-Shathry" },
+      { title: "Insights & Perspectives — Abdulrahman Alshathry" },
       {
         name: "description",
         content:
-          "Essays on leadership, digital transformation, AI, smart infrastructure, and sustainable growth by Abdulrahman Al-Shathry.",
+          "Essays on leadership, digital transformation, AI, smart infrastructure, and sustainable growth by Abdulrahman Alshathry.",
       },
-      { property: "og:title", content: "Insights & Perspectives — Abdulrahman Al-Shathry" },
+      { property: "og:title", content: "Insights & Perspectives — Abdulrahman Alshathry" },
       {
         property: "og:description",
         content:
@@ -195,7 +195,7 @@ const sections: Section[] = [
     title: "International Events & Perspectives",
     posts: [
       {
-        title: "Eng. Abdulrahman A Z Al-Shathry at ICE Riyadh 2025",
+        title: "Eng. Abdulrahman A Z Alshathry at ICE Riyadh 2025",
         tag: "Saudi–Italian Partnerships",
         excerpt:
           "ICE Riyadh 2025 — Saudi Italian Investment and Business Forum · Mandarin Oriental Al Faisaliah, Riyadh.",
@@ -216,7 +216,7 @@ function BlogsPage() {
           <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="AAA Logo" className="h-8 w-12 object-cover" />
             <span className="font-display text-lg tracking-wide hover:text-gold transition-colors">
-              Al-Shathry
+              Alshathry
             </span>
           </Link>
           <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
@@ -424,7 +424,7 @@ function BlogsPage() {
       <footer className="border-t border-border py-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p className="font-display tracking-wide">
-            © {new Date().getFullYear()} Abdulrahman Al-Shathry
+            © {new Date().getFullYear()} Abdulrahman Alshathry
           </p>
           <p className="tracking-[0.25em] uppercase text-xs text-gold">
             Vision · Discipline · Legacy
