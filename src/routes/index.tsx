@@ -44,7 +44,7 @@ const careerHighlights = [
   },
   {
     year: "Founder",
-    title: "The Alshathry Group of Companies",
+    title: "Alshathry Group of Companies",
     detail:
       "Established and led multiple firms spanning engineering, construction, satellite communications, technology, and design services - a multidisciplinary enterprise built through disciplined expansion.",
   },
@@ -80,7 +80,7 @@ const investments = [
     items: ["Nour Lighting", "House of Lights", "Baby Gift Company (London)"],
   },
   {
-    group: "Factories & Manufacturing",
+    group: "Manufacturing",
     items: [
       "Saudi Controls Ltd. for EV Chargers",
       "Saudi Controls Ltd. for Traffic Lights and Smart Poles",
